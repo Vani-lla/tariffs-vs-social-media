@@ -1,4 +1,3 @@
-# --- ZIELONE PLIKI (Potok scalania danych, panele czasowe i prezentacja) ---
 from .loaders import CleanLoader, as_bool, tag_of
 from .features import eff_day, window_stats, day_window_stats, fnspid_daily, media_features
 from .events import EventBuilder
