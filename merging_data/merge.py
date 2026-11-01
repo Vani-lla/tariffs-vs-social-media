@@ -12,12 +12,14 @@ check_merged(res)  -> tabela testów; test 'BŁĄD' oznacza złamany niezmiennik
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
 from cleaning_data.base import Config, show
 from .events import EventBuilder
-from .features import DAY, fnspid_daily, media_features
+from .features import DAY, eff_day, fnspid_daily, media_features
 from cleaning_data.horizons import HorizonTools
 from .loaders import CleanLoader, tag_of
 from .panel import build_daily_panel, build_hourly_panel, event_market_long, to_trading_days
@@ -34,9 +36,16 @@ def _wide_market(long: pd.DataFrame, values=("ret", "excess_ret", "excess_abs", 
 
 
 def build_merged(cfg: Config, gap: str = "6h", k: int = 20, seed: int = 0, instruments: list | None = None,
-                 hourly: bool = True, save: bool = True) -> dict:
+                 hourly: bool = True, save: bool = True, relevant_col: str = "relevant",
+                 trump: pd.DataFrame | None = None) -> dict:
+    """relevant_col: która kolumna wybiera posty-zdarzenia (domyślnie słownik `relevant`; np. 'relevant_strict' albo
+    kolumna z predykcji klasyfikatora). trump: gotowa tabela postów (np. trump_clean z doklejonymi etykietami)."""
     L = CleanLoader(cfg)
-    tr = L.trump()
+    tr = L.trump() if trump is None else trump.copy()
+    if relevant_col != "relevant":
+        if relevant_col not in tr:
+            raise KeyError(f"Brak kolumny {relevant_col} w tabeli postów.")
+        tr["relevant"] = tr[relevant_col].astype(str).str.lower().isin(["true", "1", "tak"])
     fn, gkg, gta, fr = L.optional("fnspid"), L.optional("gkg"), L.optional("gta"), L.optional("fr")
     gkg_files = L.gkg_files() if gkg is not None else None
     mk = L.market_all()
