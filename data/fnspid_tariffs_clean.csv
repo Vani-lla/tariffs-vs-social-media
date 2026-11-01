@@ -1,0 +1,896 @@
+Date,date_day,Stock_symbol,Article_title,Publisher
+2019-10-08 00:00:00+00:00,2019-10-08,A,Shares of several healthcare companies are trading lower with the broader market after the US expanded its trade blacklist to include China's top AI firms. The US also will increase its tariffs on $250 billion worth of goods from 25% to 30% on Oct 15.,Benzinga Newsdesk
+2019-08-05 00:00:00+00:00,2019-08-05,A,Shares of several gold companies are trading higher amid heightened US-China trade tensions. Concerns of a trade war have led investors into 'safe-haven' assets such as gold.,Benzinga Newsdesk
+2019-10-08 00:00:00+00:00,2019-10-08,AA,"Shares of several basic material companies are trading lower as optimism around the upcoming U.S.-China trade talks waned. A report says China is toning down its expectations of the meeting. The U.S. expanded its trade blacklist, and scheduled an increase in tariffs on $250 billion worth of Chinese goods from 25% to 30% on Oct. 15, which will go into effect if no progress is made.",Benzinga Newsdesk
+2019-07-09 00:00:00+00:00,2019-07-09,AA,Shares of several steel companies are trading lower after Russia launched a complaint at the WTO to challenge US anti-dumping measures on imports of hot-rolled flat-rolled carbon-quality steel from Russia.,Benzinga Newsdesk
+2019-05-17 00:00:00+00:00,2019-05-17,AA,"Reports: US Set To Drop Steel And Aluminum Tariffs On Mexico, Canada",Dave Royse
+2019-05-17 00:00:00+00:00,2019-05-17,AA,"US Poised To Remove Steel, Aluminum Tariffs On Canada, Mexico",Benzinga Newsdesk
+2019-01-17 00:00:00+00:00,2019-01-17,AA,"Moody's Says U.S. Tariffs Benefit U.S. Steel, Aluminum Sectors; Hurt U.S. Manufacturing Sectors Vulnerable To Higher Input Price",Charles Gross
+2018-11-07 00:00:00+00:00,2018-11-07,AA,"US Dept. Of Commerce To Impose Final Anti-Dumping, Anti-Subsidy Duties Of 96.3-176.2% On Chinese Common Aluminum Sheet",Benzinga Newsdesk
+2018-10-17 00:00:00+00:00,2018-10-17,AA,"Alcoa CFO ""Says US Smelters Helped By Tariffs Pushing Up Midwest Regional Premium, Says Impact Of Tariffs In Quarter A Net Benefit Of $27M",Benzinga_Newsdesk
+2018-10-01 00:00:00+00:00,2018-10-01,AA,"Pres Trump Says Steel, Aluminum Tariffs Will Remain",Benzinga Newsdesk
+2018-09-18 00:00:00+00:00,2018-09-18,AA,'JUST IN: Rusal's aluminum plant in Armenia starts reducing output due to U.S. sanctions - sources'-Reuters Business Tweets,Benzinga_Newsdesk
+2018-07-19 00:00:00+00:00,2018-07-19,AA,Alcoa Shares Trading Down 11.9% After Co. Cut FY18 EBITDA Guidance; Co. Late Wednesday Announced Expected $12M-$14M Negative Monthly Impact As Long As Tariffs Are In Place,Benzinga Newsdesk
+2018-07-18 00:00:00+00:00,2018-07-18,AA,From Alcoa Q2 Conference Call: Co. Expects $12M-$14M Negative Monthly Impact As Long As Tariffs Are In Place,Benzinga_Newsdesk
+2018-06-03 00:00:00+00:00,2018-06-03,AA,"Larry Kudlow Says Steel, Aluminum Tariffs on U.S. Allies May Go on for Awhile or Not, Subject to Negotiation",Benzinga Newdesk
+2018-06-01 00:00:00+00:00,2018-06-01,AA,"'EU initiates WTO case against U.S. steel, aluminum tariffs: WTO official' - Reuters",Benzinga Newsdesk
+2018-05-31 00:00:00+00:00,2018-05-31,AA,"Canada Will Impose 25% Tariff On US-Exported Steel, 10% Tariff On US Aluminum",Paul Quintaro
+2018-05-31 00:00:00+00:00,2018-05-31,AA,"'A source tells me the decision on steel and aluminum tariffs is ""99.9%"" done, and expectation is President Trump will impose the duties on Canada, Mexico and the EU later this morning'",Paul Quintaro
+2018-05-30 00:00:00+00:00,2018-05-30,AA,"Steel, Aluminum Stocks Higher Amid Report US Is Planning To Impose Tariffs On Steel, Aluminum Imports From The EU",Paul Quintaro
+2018-05-22 00:00:00+00:00,2018-05-22,AA,"Treasury's Mnuchin Says Steel and Aluminum Tariffs To Remain In Force With Regard to China, Shares of Alcoa, United States Steelk, AK Steel Move Higher On This Comment",Benzinga Newsdesk
+2018-05-22 00:00:00+00:00,2018-05-22,AA,"Russia Tells WTO That Retaliation Against U.S. Steel, Aluminium Tariffs Could Amount to $538M",Benzinga Newdesk
+2018-05-01 00:00:00+00:00,2018-05-01,AA,Trump Extends Tariff Deadline For Key US Allies,Wayne Duggan
+2018-04-27 00:00:00+00:00,2018-04-27,AA,Alcoa Shares Fall ~$0.75 Over Last Few Mins.; 'Deripaska agrees to relinquish control of sanction-hit Rusal',Paul Quintaro
+2018-04-23 00:00:00+00:00,2018-04-23,AA,"U.S. Treasury Sec. Mnuchin Says It Will Weigh Rusal's Petition For Delisting, Will Consider 'Impact On Our Partners And Allies' Regarding Rusal Petition; Could Give Sanctions Relief To Rusal If Deripaska Cedes Control Of Co.",Eddie Staley
+2018-04-23 00:00:00+00:00,2018-04-23,AA,"Watching Stock Futures Largely Unaffected, But Metals Trading Lower Likely Related To Headline US Could Relieve Rusal Sanctions If Deripaska Divests Control",Paul Quintaro
+2018-04-18 00:00:00+00:00,2018-04-18,AA,"Trump Says Proposed U.S. Steel, Aluminum Tariffs has Brought Many Countries to Negotiating Table",Charles Gross
+2018-04-16 00:00:00+00:00,2018-04-16,AA,Shares of Alcoa and Century Aluminum Both Moved Lower On Washington Post Report Trump Has 'Put The Brakes' On New Russia Sanctions; Those Stocks Moved Higher On Expectation Sanctions Could Mean Support For North American Aluminum Producers,Hal Lindon
+2018-04-06 00:00:00+00:00,2018-04-06,AA,"Watch Shares Of Century Aluminum, Alcoa, Arconic, Commercial Metals, Kaiser Aluminum Following Trump Tweet On Aluminum Tariffs",Eddie Staley
+2018-03-22 00:00:00+00:00,2018-03-22,AA,"Source Close To French Pres. Sees Possibility But Not Certainty US Will Exempt EU Member States From Steel, Aluminum Tariffs",Paul Quintaro
+2018-03-20 00:00:00+00:00,2018-03-20,AA,"Height Capital Markets Says It Believes Add'l Tariff Exemptions Are Likely For Companies Including Germany, Expects Tariff Exemption Headlines To Increase Headwinds For Domestic U.S. Steel and Aluminum Cos.",Hal Lindon
+2018-03-19 00:00:00+00:00,2018-03-19,AA,"U.S. Commerce Department Says Will Start Accepting Requests for Exclusions from New U.S. Steel, Aluminum Tariffs on Monday",Charles Gross
+2018-03-14 00:00:00+00:00,2018-03-14,AA,"US Dept. Of Commerce Has Briefed Congressional Staffers On Exclusions Related To Metal Tariffs, Show 'Few' Product Exclusions To Steel, Aluminum Tariffs",Paul Quintaro
+2018-03-09 00:00:00+00:00,2018-03-09,AA,"After Trump's Announcement Of Steel, Aluminum Tariffs, The Sell-Side Reacts",Wayne Duggan
+2018-03-08 00:00:00+00:00,2018-03-08,AA,"Trump Senior Admin. Official Says Trump Will On Thurs. Announce Import Tariffs Of 25% On Steel, 10% On Aluminum Starting In 15 Days",Hal Lindon
+2018-03-08 00:00:00+00:00,2018-03-08,AA,"AP Tweets 'BREAKING: AP sources: Trump tariffs on steel, aluminum to take effect in 15 days; Mexico and Canada exempted indefinitely.'",Hal Lindon
+2018-03-08 00:00:00+00:00,2018-03-08,AA,WSJ Publishes 'Trump to Meet Metal Workers as Aides Ready Tariff Rollout' $,Hal Lindon
+2018-03-07 00:00:00+00:00,2018-03-07,AA,White House Signing Ceremony For Tariffs Scheduled For 3:30 p.m. EST Thurs.,Hal Lindon
+2018-03-07 00:00:00+00:00,2018-03-07,AA,"100+ House Republicans Sign Letter Objecting To Trump's Steel, Aluminum Tariffs",Hal Lindon
+2018-03-07 00:00:00+00:00,2018-03-07,AA,"White House Official Says Pres Trump Hopes To Sign Steel, Aluminum Tariffs On Thurs. Afternoon, But Could Happen Fri.",Hal Lindon
+2018-03-07 00:00:00+00:00,2018-03-07,AA,"Canadian Prime Minister Justin Trudeau Says Pres Trump Was Very Clear In Phone Call He Is Focused On Moving NAFTA Forward, And If We Could Get A Good Deal, There's No Need For Tariffs",Hal Lindon
+2018-03-07 00:00:00+00:00,2018-03-07,AA,"Bloomberg's Kevin Cirilli Tweets 'Sec. Wilbur Ross tells me in reporter gaggle that Trump administration considering OTHER exemptions for tariffs with other countries, a la Mexico and Canada with NAFTA'",Hal Lindon
+2018-03-06 00:00:00+00:00,2018-03-06,AA,"Watching Steel, Aluminum Stocks After Hours Amid Axios Report Trump Cancelled Thurs. Tariff Meeting: US Steel, AK Steel Indicated Up ~0.4%, Alcoa Indicated Up $0.01",Hal Lindon
+2018-03-06 00:00:00+00:00,2018-03-06,AA,"CNBC Now Tweets: 'JUST IN: American aluminum producers told President Donald Trump in a letter Monday that they were ""deeply concerned"" about the effect global tariffs would have on their industry, including jobs, and offered alternatives'",Hal Lindon
+2018-03-06 00:00:00+00:00,2018-03-06,AA,"Treasury Secretary Steve Mnuchin Says Steel, Aluminum Tariffs Will Not Apply To Canada, Mexico If NAFTA Talks Successful",Hal Lindon
+2018-03-02 00:00:00+00:00,2018-03-02,AA,"China Commerce Ministry, Reacting to Aluminum, Steel Tariffs, Says Hopes US Will Respect Multilateral Trade System; Says Will Take Measures to Safeguard its Interests if US Trade Measures Hurt Chinese Interests",Charles Gross
+2018-03-01 00:00:00+00:00,2018-03-01,AA,"White House Says Details of Steel, Aluminum Tariffs Will Not be Provide Ahead of Next Week's Signing -Reuters",Charles Gross
+2018-03-01 00:00:00+00:00,2018-03-01,AA,"Trump's Comments On Steel, Aluminum Tariffs Shake The Markets",Wayne Duggan
+2018-03-01 00:00:00+00:00,2018-03-01,AA,"Trump Said Duration For Steel, Aluminum Tariffs Would Be 'Unlimited'",Paul Quintaro
+2018-03-01 00:00:00+00:00,2018-03-01,AA,Trump Says U.S. To Set 25% Tariff For Steel And 10% For Aluminum,Eddie Staley
+2018-03-01 00:00:00+00:00,2018-03-01,AA,Aluminum Makers Now Seeing Small Pop Higher Following Trump Comments On Tariffs,Eddie Staley
+2018-03-01 00:00:00+00:00,2018-03-01,AA,Alcoa Shares Down 1.5% From Highs Following News White House Will Not Make Tariff Announcement Thurs.,Paul Quintaro
+2018-03-01 00:00:00+00:00,2018-03-01,AA,"Height Securites Says Pres. Trump's Expected Meeting Today With Steel/Aluminum Execs Unlikely To Result In Finalized Tariff Proposal, Though Headlines From The Meeting Could Be Positive For Steel Names",Hal Lindon
+2018-02-23 00:00:00+00:00,2018-02-23,AA,"Alcoa Shares Indicated Up ~$0.50 After Hours, Watching Other Aluminum Stocks; Trump Said To Consider Global Tariff Of 10% On Aluminum",Paul Quintaro
+2018-02-16 00:00:00+00:00,2018-02-16,AA,"US Steel, Aluminum Stocks Rally After Commerce Dept. Calls For Tariffs",Jayson Derrick
+2018-02-16 00:00:00+00:00,2018-02-16,AA,"U.S. Commerce Dept. Recommends Trump Impose 24% Global Steel Tariff ON All Products As One Option In Steel 232 Probe, Recommends Alt. Option of 53% Tariff On Steel Imports On 12 Countries Including China, Vietnam, And South Korea",Eddie Staley
+2018-02-16 00:00:00+00:00,2018-02-16,AA,CNBC Now Tweets 'Commerce Department suggests Trump impose steep tariffs or quotas on foreign steel and aluminum — sources',Paul Quintaro
+2018-02-13 00:00:00+00:00,2018-02-13,AA,"Watching Steel, Aluminum Stocks Amid Comment From Pres Trump Related To Consideration Of Tariffs And/Or Quotes On Steel, Aluminum Imports via Section 232 Review",Paul Quintaro
+2018-01-22 00:00:00+00:00,2018-01-22,AA,"CNBC Publishes 'Commerce Secretary Wilbur Ross offers Trump a wide range of options, including higher tariffs, to fight steel, aluminum dumping'",Paul Quintaro
+2018-01-21 00:00:00+00:00,2018-01-21,AA,"President Trump Reviewing Report on U.S. Aluminum Imports that Could Result in Tariffs, Quotas -Bloomberg",Charles Gross
+2019-05-31 00:00:00+00:00,2019-05-31,AAC,Shares of many healthcare companies are trading lower following a tweet from President Trump late Thursday stating the US will impose a 5 percent tariff on goods from Mexico.,Benzinga Newsdesk
+2019-11-20 00:00:00+00:00,2019-11-20,AAL,American Airlines shares are trading lower in sympathy with the overall market on worries around the U.S.-China trade deal. A report said the phase one deal may not be completed before 2020.,Benzinga Newsdesk
+2018-07-18 00:00:00+00:00,2018-07-18,AAOI,Potential Winners And Losers In The Optical Space From The Tariff Dispute,Wayne Duggan
+2019-05-06 00:00:00+00:00,2019-05-06,AAON,Shares of several multinational companies are trading lower following a tweet from President Trump which hinted at additional tariffs on China and China indicated it may back out of upcoming trade negotiations.,Benzinga  Newsdesk
+2020-05-15 00:00:00+00:00,2020-05-15,AAPL,"China's Global Times Mentions Qualcomm, Cisco, Apple And Boeing As 'four companies named by Chinese sources as possible targets for retaliation amid US moves against China's Huawei'",Benzinga Newsdesk
+2019-10-08 00:00:00+00:00,2019-10-08,AAWW,"Shares of several industrial companies are trading lower as optimism around the upcoming U.S.-China trade talks waned. A report says China is toning down its expectations of the meeting. The U.S. expanded its trade blacklist, and scheduled an increase in tariffs on $250 billion worth of Chinese goods from 25% to 30% on Oct. 15, which will go into effect if no progress is made.",Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,ABB,Shares of several industrial companies are trading higher with the overall market after the U.S. announced it is excluding and delaying the additional 10% tariff on certain products.,Benzinga Newsdesk
+2019-08-16 00:00:00+00:00,2019-08-16,ABBV,"Shares of healthcare companies are trading higher as US markets rebound from recent weakness following a yield curve inversion, which caused recession fears. Trump also recently announced the US would delay China tariffs, renewing hopes of a trade deal.",Benzinga Newsdesk
+2019-12-02 00:00:00+00:00,2019-12-02,ABEV,"Shares of Brazilian companies are trading higher despite US tariff threats. Strength has been attributed to a manufacturing expansion in China, which has spurred optimism for Brazilian markets.",Benzinga Newsdesk
+2019-09-12 00:00:00+00:00,2019-09-12,ABEV,Ambev shares are trading higher in sympathy with the broader market amid positive catalysts such as the ECB rate cute and a tariff increase delay.,Benzinga Newsdesk
+2019-08-16 00:00:00+00:00,2019-08-16,ABEV,Shares of several Brazilian companies are trading higher on renewed optimism surrounding US-China trade talks after President Trump announced earlier in the week that he would delay additional tariffs on Chinese goods until December.,Benzinga Newsdesk
+2018-01-18 00:00:00+00:00,2018-01-18,ABX,Barrick Gold Offers Comment On Revised Sanction Related To Pascua-Lama Project By Chile's SMA,Paul Quintaro
+2019-09-03 00:00:00+00:00,2019-09-03,ACH,Shares of several Chinese companies are trading lower as trade concerns increased following a new 15% tariff which was added to $112 billion worth of Chinese goods that went into effect on Sunday.,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,ACH,Shares of several Chinese companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods.,Benzinga Newsdesk
+2019-08-16 00:00:00+00:00,2019-08-16,ACH,Shares of several Chinese companies are trading higher on renewed optimism surrounding US-China trade talks after President Trump announced earlier in the week that he would delay additional tariffs on Chinese goods until December.,Benzinga Newsdesk
+2019-08-05 00:00:00+00:00,2019-08-05,ACH,Shares of Chinese companies are trading lower after the US added an additional tariff on $300 billion worth of Chinese goods. China allowed its currency to further devalue against the dollar and said that it would not purchase any agriculture products.,Benzinga Newsdesk
+2019-08-02 00:00:00+00:00,2019-08-02,ACH,Shares of Chinese companies are trading lower after President Trump announced a 10% tariff on $300 billion in Chinese goods.,Benzinga Newsdesk
+2019-06-11 00:00:00+00:00,2019-06-11,ACH,Shares of several Chinese companies are trading higher on continued trade optimism on trade tensions cooling down. Trump's tariff threats worked with Mexico; it showed confidence that it could work on China as well.,Benzinga Newsdesk
+2019-10-08 00:00:00+00:00,2019-10-08,ACN,"Shares of several technology companies are trading lower as optimism around the upcoming U.S.-China trade talks waned. A report says China is toning down its expectations of the meeting. The U.S. expanded its trade blacklist, and scheduled an increase in tariffs on $250 billion worth of Chinese goods from 25% to 30% on Oct. 15, which will go into effect if no progress is made.",Benzinga Newsdesk
+2018-03-22 00:00:00+00:00,2018-03-22,ACN,China Trade Concerns Emerge As Trump Plans To Impose Tariffs,The Ticker Tape
+2019-08-09 00:00:00+00:00,2019-08-09,ACST,"Shares of several healthcare companies are trading lower in sympathy with the overall market amid growing concerns over the U.S.-China trade war. This morning, President Trump announced the U.S. will not be doing business with Huawei.",Benzinga Newsdesk
+2019-12-12 00:00:00+00:00,2019-12-12,ADBE,"Geopolitical Jumble: UK Election Results, US Tariff Decision, Front And Center",JJ Kinahan
+2019-10-08 00:00:00+00:00,2019-10-08,ADBE,"Shares of several software companies are trading lower as optimism around the upcoming U.S.-China trade talks waned. A report says China is toning down its expectations of the meeting. The U.S. expanded its trade blacklist, and scheduled an increase in tariffs on $250 billion worth of Chinese goods from 25% to 30% on Oct. 15, which will go into effect if no progress is made.",Benzinga Newsdesk
+2019-08-16 00:00:00+00:00,2019-08-16,ADBE,Shares of several software companies are trading higher on renewed optimism surrounding the US-China trade talks after President Trump announced earlier in the week that he would delay additional tariffs on Chinese goods until December.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,ADBE,Shares of several software companies are trading higher with the overall market after the U.S. announced it is excluding and delaying the additional 10% tariff on certain products.,Benzinga Newsdesk
+2019-08-05 00:00:00+00:00,2019-08-05,ADBE,Shares of several software companies are trading lower after President Trump announced additional tariffs on Chinese goods.,Benzinga Newsdesk
+2019-06-10 00:00:00+00:00,2019-06-10,ADBE,"Shares of several technology companies are trading higher after the U.S. and Mexico signed part of an immigration deal. If reached, Mexico would avoid previously announced tariffs; if not reached, President Trump stated tariffs would be reinstated.",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,ADBE,Shares of several technology companies are trading lower with the overall market following news President Trump will impose a 5% tariff on goods from Mexico.,Benzinga Newsdesk
+2019-05-13 00:00:00+00:00,2019-05-13,ADBE,"Shares of several technology companies are trading lower amid continued US-China trade concerns. Proposed tariffs between the two nations could raise input costs, while trade tensions could hurt tech companies with China exposure.",Benzinga Newsdesk
+2019-12-10 00:00:00+00:00,2019-12-10,ADI,Large Option Traders Dumping Apple Puts Ahead Of Tariff Deadline,Wayne Duggan
+2019-12-10 00:00:00+00:00,2019-12-10,ADI,Shares of several semiconductor companies are trading higher on news U.S. and Chinese trade negotiators are planning to delay the December 15 tariffs.,Benzinga Newsdesk
+2019-10-10 00:00:00+00:00,2019-10-10,ADI,Shares of many semiconductors are trading higher on renewed trade optimism after the US was considering suspending tariff increase in exchange for a currency pact. President Trump's administration also plans to allow the sale of some supplies to Huawei.,Benzinga Newsdesk
+2019-10-08 00:00:00+00:00,2019-10-08,ADI,"Shares of several semiconductor companies are trading lower as optimism around the upcoming U.S.-China trade talks waned. A report says China is toning down its expectations of the meeting. The U.S. expanded its trade blacklist, and scheduled an increase in tariffs on $250 billion worth of Chinese goods from 25% to 30% on Oct. 15, which will go into effect if no progress is made.",Benzinga Newsdesk
+2019-09-11 00:00:00+00:00,2019-09-11,ADI,Shares of several semiconductor companies are trading higher after China released a tariff exemptions list for certain products from the U.S. Apple also released new iPhones which are expected to benefit several companies within the sector.,Benzinga Newsdesk
+2019-09-03 00:00:00+00:00,2019-09-03,ADI,"Shares of several semiconductor companies are trading lower as trade concerns continue to escalate following a new 15% tariff, which was added to $112 billion worth of Chinese goods on Sunday.",Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,ADI,Shares of several semiconductors companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,ADI,"Shares of several semiconductor companies are trading higher in sympathy with the overall market after the U.S. Trade Representative reported that some tariffs will be delayed to Dec 15 on some products including cell phones, monitors, and laptops.",Benzinga Newsdesk
+2019-08-05 00:00:00+00:00,2019-08-05,ADI,Shares of several semiconductor companies are trading lower after President Trump announced additional tariffs on Chinese goods.,Benzinga Newsdesk
+2019-05-15 00:00:00+00:00,2019-05-15,ADI,Shares of several semiconductors companies are trading higher as concerns over a trade war between the US and China have eased over the last couple days.,Benzinga Newsdesk
+2019-05-06 00:00:00+00:00,2019-05-06,ADI,Shares of several semiconductors companies are trading lower after US President Donald Trump threatened to impose 25% tariffs on nearly all Chinese imports this week.,Benzinga Newsdesk
+2019-05-15 00:00:00+00:00,2019-05-15,ADM,"Archer Daniels Midland CEO Highlights Belief US, China Will Reach Deal To End Trade War But Will Always Have Conflict",Benzinga Newsdesk
+2018-12-03 00:00:00+00:00,2018-12-03,ADM,Trade Truce: Market Appears To Get A Big Lift As Tariff Fears Retreat After G20,JJ Kinahan
+2018-04-20 00:00:00+00:00,2018-04-20,ADM,Ships Carrying U.S. Sorghum U-turns at Sea after China Retaliates on Tariffs,Charles Gross
+2018-03-27 00:00:00+00:00,2018-03-27,ADM,5 Agriculture Stocks That Could Withstand A Trade War With China,Zacks
+2018-03-26 00:00:00+00:00,2018-03-26,ADM,Trade War Averted? Talks Between China And U.S. Raise Hopes,JJ Kinahan
+2019-08-23 00:00:00+00:00,2019-08-23,AEG,Shares of several banking & broader financial companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods. Trump will respond this afternoon.,Benzinga Newsdesk
+2019-05-07 00:00:00+00:00,2019-05-07,AEG,"Many stocks are trading lower amid continued uncertainty about the future of trade between the US and China, and concerns on U.S. sanctions on Iran and Venezuela.",Benzinga Newsdesk
+2019-12-03 00:00:00+00:00,2019-12-03,AEM,Shares of gold and silver companies are trading higher amid US-China trade uncertainty after Trump implied a deal many not be reached until 2020. Continuing trade war concerns have led investors into 'safe-haven' assets such as gold and silver.,Benzinga Newsdesk
+2019-11-07 00:00:00+00:00,2019-11-07,AEM,"Shares of several precious metals companies are trading lower after the US and China agreed to phase out tariffs, easing trade war fears and leading investors to move money out of 'safe-haven' assets.",Benzinga Newsdesk
+2019-09-03 00:00:00+00:00,2019-09-03,AEM,Shares of several gold companies are trading higher amid heightened US-China trade tensions after Trump added a 15% tariff on $112 billion worth of Chinese goods on Sunday. Concerns of a trade war have led investors into 'safe-haven' assets such as gold.,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,AEM,Shares of many gold companies are trading higher on escalated trade tensions after China retaliated with tariffs on $75 billion worth of U.S goods. Precious metals are safe-haven assets which are typically used as insurance against market volatility.,Benzinga Newsdesk
+2019-12-11 00:00:00+00:00,2019-12-11,AEO,From American Eagle Q3 Call: Sees $3M-$4M Impact From Tariffs In Q4,Benzinga Newsdesk
+2019-09-03 00:00:00+00:00,2019-09-03,AEO,Shares of several apparel stores and retail companies are trading lower as the previously announced 15% tariff on $112 billion worth of Chinese goods took effect on Sunday. Retail companies are heavily impacted as many of the products come from China.,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,AEO,Shares of several retail companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods. Trump announced he will respond to China's tariffs this afternoon.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,AEO,"Shares of several retail companies are trading higher with the overall market after the U.S. Trade Representative reported that some tariffs will be delayed to Dec 15 on some products including cell phones, monitors, and laptops.",Benzinga Newsdesk
+2019-08-05 00:00:00+00:00,2019-08-05,AEO,"Shares of US retail companies are trading lower after Trump announced additional tariffs on Chinese goods, exacerbating trade tensions. NOTE: Retail is one of the more-exposed sectors to trade tensions as the majority of apparel and retail products are made in China.",Benzinga Newsdesk
+2019-08-01 00:00:00+00:00,2019-08-01,AEO,Shares of many companies in the retail sector are trading lower after Trump announced additional tariffs on Chinese goods. NOTE: Retail is one of the more-exposed sectors to trade tensions as the majority of apparel is made in China.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,AFL,"Shares of several banks and companies in the broader financial sector are trading higher with the overall market after the U.S. Trade Representative reported that some tariffs will be delayed to Dec 15 on some products including cell phones, monitors, and laptops.",Benzinga Newsdesk
+2019-09-03 00:00:00+00:00,2019-09-03,AG,Shares of many silver companies are trading higher amid heightened US-China trade tensions after Trump added a 15% tariff on $112 billion worth of Chinese goods on Sunday. Concerns of a trade war have led investors into 'safe-haven' assets such as silver,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,AG,Shares of many silver companies are trading higher on escalated trade tensions after China retaliated with tariffs on $75 billion worth of U.S goods. Precious metals are safe-haven assets which are typically used as insurance against market volatility.,Benzinga Newsdesk
+2019-08-19 00:00:00+00:00,2019-08-19,AG,Shares of several gold & several silver companies are trading lower on renewed optimism of a resolution to the U.S.-China trade war. Precious metals are safe haven assets which are typically used as insurance against volatile market action.,Benzinga Newsdesk
+2019-08-19 00:00:00+00:00,2019-08-19,AG,Shares of several gold & several silver companies are trading lower on renewed optimism of a resolution to the U.S.-China trade war. These are safe haven assets which are used as insurance against volatile market action in an investor's portfolio.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,AG,"Shares of silver companies are trading lower after the US delayed tariffs on certain Chinese goods, driving up US equities and decreasing the demand for precious metals.",Benzinga Newsdesk
+2019-08-05 00:00:00+00:00,2019-08-05,AG,Shares of silver companies are trading higher amid heightened US-China trade tensions. Concerns of a looming trade war have driven up the demand for 'safe-haven' assets such as metals.,Benzinga Newsdesk
+2019-05-14 00:00:00+00:00,2019-05-14,AGCO,A Trade War Agriculture Pair Trade From JPMorgan,Wayne Duggan
+2019-05-09 00:00:00+00:00,2019-05-09,AGCO,Shares of automotive and industrial companies are trading lower amid revamped US-China trade tensions. Trump's proposed tariffs could increase input and materials costs for companies in these sectors.,Benzinga Newsdesk
+2018-12-03 00:00:00+00:00,2018-12-03,AGCO,"Shares of Caterpillar and sector-related stocks are moving higher after analysts at Bank of America upgraded Caterpillar shares from Neutral to Buy, citing last week's 'less-hawkish' Fed meeting and a temporary tariff truce between the US and China.",Benzinga Newsdesk
+2018-05-22 00:00:00+00:00,2018-05-22,AGCO,Trade War Fears Ease: Will Agriculture Stocks Rake In Gains?,Zacks
+2019-08-13 00:00:00+00:00,2019-08-13,AGN,Shares of several healthcare companies are trading higher with the overall market after the U.S. announced it is excluding and delaying the additional 10% tariff on certain products.,Benzinga Newsdesk
+2019-08-19 00:00:00+00:00,2019-08-19,AKBA,Shares of several healthcare companies are trading higher as optimism increased for a resolution to the US-China trade war.,Benzinga Newsdesk
+2019-12-02 00:00:00+00:00,2019-12-02,AKS,Shares of US steel companies are trading higher after Trump said he will restore tariffs on steel and aluminum from Brazil and Argentina.,Benzinga Newsdesk
+2019-10-21 00:00:00+00:00,2019-10-21,AKS,Shares of several basic material companies are trading higher on renewed trade optimism. White House Economic Advisor Larry Kudlow said the December tariffs could be removed if U.S.-China trade talks go well.,Benzinga Newsdesk
+2019-10-08 00:00:00+00:00,2019-10-08,AKS,"Shares of several steel companies are trading lower as optimism around the upcoming U.S.-China trade talks waned. A report says China is toning down its expectations of the meeting. The U.S. expanded its trade blacklist, and scheduled an increase in tariffs on $250 billion worth of Chinese goods from 25% to 30% on Oct. 15, which will go into effect if no progress is made.",Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,AKS,"Shares of several metals/steels stocks are trading higher with the overall market after the U.S. Trade Representative reported that some tariffs will be delayed to Dec 15 on some products including cell phones, monitors, and laptops.",Benzinga Newsdesk
+2019-06-24 00:00:00+00:00,2019-06-24,AKS,Supreme Court Has Rejected Challenge To Trump's Steel Tariffs,Benzinga Newsdesk
+2019-05-14 00:00:00+00:00,2019-05-14,AKS,"Donald J. Trump Tweet: In one year Tariffs have rebuilt our Steel Industry - it is booming! We placed a 25% Tariff on ""dumped"" steel from China & other countries, and we now have a big and growing industry. We had to save Steel for our defense and auto industries, both of which are coming back strong!",Charles Gross
+2019-05-14 00:00:00+00:00,2019-05-14,AKS,Indian Government Sources Say China Could Boost Steel Supplies to India After U.S. Tariff Increase,Charles Gross
+2019-04-18 00:00:00+00:00,2019-04-18,AKS,"Argus Research Notes Steel Importers Have Asked US Supreme Court To Consider Its Case Against Constitutionality Of Section 232 Steel, Aluminum Tariff",Benzinga Newsdesk
+2019-01-09 00:00:00+00:00,2019-01-09,AKS,'EU expected to clear steel import curb after Trump tariffs' -Earlier Reuters Article,Benzinga Newsdesk
+2018-08-30 00:00:00+00:00,2018-08-30,AKS,"Warren Buffett On CNBC: Says Berkshire Has Seen Impacts From Tariffs And Inflation, Cites Steel, Paint, Building Materials Specifically",Benzinga_Newsdesk
+2018-08-08 00:00:00+00:00,2018-08-08,AKS,"Chinese Gov't. Says Tariffs Will Be Implemented On 333 Products, Including Crude Oil, Coal, Diesel, Cars, Bicycles, Steel",Benzinga Newsdesk
+2018-07-31 00:00:00+00:00,2018-07-31,AKS,AK Steel Holding Corp. Shares Down 12% After Co. Fails To Demonstrate Bottom-Line Benefit Of Steel Tariffs,Benzinga Newsdesk
+2018-06-26 00:00:00+00:00,2018-06-26,AKS,"Hearing Canada Said To Prepare Steel Quotas, Tariffs On China And Others To Prevent A Potential Flood Of Steel Imports Form Global Producers Seeking TO Avoid The U.S.",Benzinga Newsdesk
+2018-06-20 00:00:00+00:00,2018-06-20,AKS,"Commerce Sec. Ross Says Steel Tariffs On Canada, Mexico Could Be Lifted If NAFTA Talks Can Pick Up Steam, Lead To New Agreement",Benzinga Newsdesk
+2018-06-05 00:00:00+00:00,2018-06-05,AKS,"Senior EU Official Doesn't Expect Any Breakthrough At G7 Summit On U.S. Steel, Aluminum Tariffs",Benzinga Newsdesk
+2018-06-01 00:00:00+00:00,2018-06-01,AKS,"Canada Files WTO Challenge Against U.S. Steel, Aluminum Tariffs; Will Also Challenge U.S. Tariffs Under NAFTA Chapter 20, Will Partner Closely With EU",Eddie Staley
+2018-05-31 00:00:00+00:00,2018-05-31,AKS,"Benzinga Pro Roundup Of Biggest Steel And Aluminum Gainers After U.S. Announced EU Tariffs: Century Aluminum Up 4.3%, US Steel Up 3.8%, AK Steel Holding Up 2.0%, Nucor Up 1.7%",Benzinga Newsdesk
+2018-05-31 00:00:00+00:00,2018-05-31,AKS,"Sec. Of Commerce Ross Says EU, Canada, Mexico To Pay 25% Steel Tariffs, 10% Steel Tariffs",Eddie Staley
+2018-05-14 00:00:00+00:00,2018-05-14,AKS,"Commerce Sec. Ross Says he Hopes To Come To A Reasonable Conclusion With The EU On Steel, Aluminum Tariffs Exemptions",Benzinga Newsdesk
+2018-05-01 00:00:00+00:00,2018-05-01,AKS,"Wilbur Ross Says Steel Tariff Negotiations With Canada, Mexico, And EU Is Making Enough Progress To Delay Imposition Another 30 Days",Eddie Staley
+2018-04-12 00:00:00+00:00,2018-04-12,AKS,AK Steel Issues Release Noting CEO Testified Today To Congress In Support Of Trump Admin's Sec. 232 Tariffs,Hal Lindon
+2018-03-23 00:00:00+00:00,2018-03-23,AKS,"Trump Tariff And The Steel Industry: The Good, The Bad And The Ugly",Zacks
+2018-03-12 00:00:00+00:00,2018-03-12,AKS,"Canada's Trudeau Says They Will Continue To Press U.S. To Gain A Permanent Exemption To Steel, Aluminum Tariffs; Trudeau Says Country Also Faces Challenge Of Global Overproduction Of Steel",Eddie Staley
+2018-03-12 00:00:00+00:00,2018-03-12,AKS,"Chet Thomson, President Of American Fuel & Petrochemical Manufacturers, Urges Trump To Reconsider Steel Import Tariffs As They Would Be Bad For Consumers And Diminish Ability To Build Infrastructure",Eddie Staley
+2018-03-07 00:00:00+00:00,2018-03-07,AKS,Hayman Capital's Kyle Bass on CNBC Talking Steel Tariffs And China,Eddie Staley
+2018-03-07 00:00:00+00:00,2018-03-07,AKS,Axios Reports Trump Wants To Sign A Presidential Proclamation Tomorrow To Set His Steel And Aluminum Tariffs In Motion According To 2 Senior Admin Officials,Eddie Staley
+2018-03-05 00:00:00+00:00,2018-03-05,AKS,Analysis: Negative Reaction To Trump's Tariffs Could Make Him More Likely To Act,Wayne Duggan
+2018-03-05 00:00:00+00:00,2018-03-05,AKS,Trump Says He's Not Backing Down On Planned Aluminum And Steel Tariffs,Eddie Staley
+2018-03-05 00:00:00+00:00,2018-03-05,AKS,U.S. House Rep. Ryan Urges Trump Not To Advance ON Planned Aluminium And Steel Tariffs,Eddie Staley
+2018-03-02 00:00:00+00:00,2018-03-02,AKS,Canada's Trudeau Says They Regard Imposition Of Any U.S. Steel And Aluminum Tariffs As 'Absolutely Unacceptable',Eddie Staley
+2018-03-02 00:00:00+00:00,2018-03-02,AKS,"Trump's Steel Tariffs Are Stronger Than The Market Expected, Says Longbow Analyst",Wayne Duggan
+2018-03-01 00:00:00+00:00,2018-03-01,AKS,AK Steel Applauds the Trump Administration's Announced Plans to Issue Tariffs on Imported Steel Under Section 232,Eddie Staley
+2018-03-01 00:00:00+00:00,2018-03-01,AKS,German Steel Association Says U.S. Plan To Impose Tariffs On Steel Imports Is Violating WTO Rules,Eddie Staley
+2018-03-01 00:00:00+00:00,2018-03-01,AKS,"U.S. Steel Exec. Burritt Says He Supports Tariffs, Trump Says U.S. Will Institute Tariffs Next Week",Eddie Staley
+2018-03-01 00:00:00+00:00,2018-03-01,AKS,"Eamon Javers Tweets: I am now told the meeting at the WH is ON for 11-ish this morning. But it is now NOT an announcement of new tariffs and instead a ""discussion of the issue"" involving steel and aluminum CEOs, members of the cabinet and WH staff.",Eddie Staley
+2018-03-01 00:00:00+00:00,2018-03-01,AKS,"CNBC's Eamon Javers Tweets: I am told that new tariffs are ""probably where this is heading"" but the administration is ""not ready for an announcement"" today.",Eddie Staley
+2018-03-01 00:00:00+00:00,2018-03-01,AKS,"Steel Stocks Move Lower Following News White House Will Not Make Tariff Announcement Thurs.: US Steel Shares Down 5.3% From Highs But Still Up 2.3% For Session, AK Steel Down 6% From Highs, Steel Dynamics Down 2%",Paul Quintaro
+2018-03-01 00:00:00+00:00,2018-03-01,AKS,"Height Securities: Concrete Proposal Unlikely To Emerge From Trump's Tariff Meeting With Steel, Aluminum Execs",Elizabeth Balboa
+2018-02-23 00:00:00+00:00,2018-02-23,AKS,Watching Steel Stocks As Trump Considering Global Tariff Of 24% On Steel Imports,Paul Quintaro
+2018-02-16 00:00:00+00:00,2018-02-16,AKS,"Steel Stocks At Session Highs As Secretary Of Commerce Wilbur Ross To Unveil Options On Steel, Aluminum Tariffs At 12 p.m. EST, Will Not Discuss Pres Trump's Decision On Section 232",Paul Quintaro
+2018-01-12 00:00:00+00:00,2018-01-12,AKS,Height Securities Says It Expects Pres. Trump On Sec. 232 Steel Investigation Will Likely Propose Relatively Low Tariffs With Natinoal Exclusions For Countries Like Canada and Australia,Hal Lindon
+2019-08-05 00:00:00+00:00,2019-08-05,ALGT,Shares of several airline companies are trading lower amid renewed US-China trade tensions. President Trump announced an addition 10% tariff on $300 billion worth of Chinese goods.,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,ALSN,Shares of several auto suppliers companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,ALV,Shares of many auto part maker companies are trading lower after a tweet from President Trump late Thursday said the US will impose a 5 percent tariff on goods from Mexico.,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,ALXN,Shares of several healthcare companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods. Trump announced he will respond to China's tariffs this afternoon.,Benzinga Newsdesk
+2019-12-10 00:00:00+00:00,2019-12-10,AM,Shares of oil and gas companies are trading higher after it was suggested the US may delay Dec. 15 China tariffs. Traders are also expecting a decline in domestic crude inventories to be reported on Wednesday.,Benzinga Newsdesk
+2019-09-03 00:00:00+00:00,2019-09-03,AM,"Shares of several oil and gas companies are trading lower as trade concerns continue to escalate following a new 15% tariff, which was added by President Trump to $112 billion worth of Chinese goods on Sunday.",Benzinga Newsdesk
+2019-08-29 00:00:00+00:00,2019-08-29,AM,Shares of several oil & gas companies are trading higher amid easing trade tensions. China's Ministry of Commerce said the country is willing to calmly resolve the trade dispute with the USA and is against any further escalation in tensions.,Benzinga Newsdesk
+2019-04-26 00:00:00+00:00,2019-04-26,AM,"Shares of several oil and gas companies are trading lower amid concerns OPEC members will raise output to counter the supply decrease caused by Iran sanctions. Additionally, Exxon Mobil reported worse-than-expected Q1 EPS and sales.",Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,AMAT,"Shares of several technology companies are trading higher after the U.S. Trade Representative reported that some tariffs will be delayed to Dec 15 on some products including cell phones, monitors, and laptops.",Benzinga Newsdesk
+2019-05-10 00:00:00+00:00,2019-05-10,AMAT,Shares of several technology companies are trading lower on continued uncertainty surrounding the future of trade relations between the US and China after the Trump Administration increased tariffs on $200 million of Chinese goods from 10% to 25%.,Benzinga Newsdesk
+2019-12-23 00:00:00+00:00,2019-12-23,AMD,"Advanced Micro Devices shares are trading higher after China announced it will lower import tariffs on over 850 products, including some types of semiconductors.",Benzinga Newsdesk
+2019-10-10 00:00:00+00:00,2019-10-10,AMP,Shares of many financial companies are trading higher on renewed trade optimism after the US was considering suspending tariff increase in exchange for a currency pact. President Trump's administration also plans to allow the sale of some supplies to Huawei.,Benzinga Newsdesk
+2019-10-08 00:00:00+00:00,2019-10-08,AMP,Shares of many financial companies are trading lower in sympathy with the overall market after the US expanded its trade blacklist to include China's top AI firms. The US also will increase its tariffs on $250B worth of goods from 25% to 30% on Oct 15.,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,AMP,Shares of several companies in the financial sector are trading higher amid renewed global economic optimism following comments from China's Commerce Ministry indicating the country is open to dialogue to resolve trade tenisons. Mexico trade concerns also eased after GOP lawmakers reportedly implied they would work to prevent Mexico tariffs and Mexican officials said it could find common ground with the US.,Benzinga Newsdesk
+2018-11-29 00:00:00+00:00,2018-11-29,AMT,4 'Tariff-Proof' Stock Picks From A Pro,Jayson Derrick
+2019-08-05 00:00:00+00:00,2019-08-05,AMTD,Shares of several financial companies are trading lower amid renewed US-China trade tensions. President Trump announced an additional 10% tariff on $300 billion worth of Chinese goods. China is manipulating their currency and announced they are not buying any agricultural products from the U.S.,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,AMX,10 Stocks Taking A Big Hit On Mexico Tariff Threat,Wayne Duggan
+2018-07-19 00:00:00+00:00,2018-07-19,AN,European Union Said To Consider Car-Retaliation Levy Of ~20% Of US Action,Benzinga Newsdesk
+2019-08-09 00:00:00+00:00,2019-08-09,ANET,"Shares of several technology companies are trading lower in sympathy with the overall market amid growing concerns over the U.S.-China trade war. This morning, President Trump announced the U.S. will not be doing business with Huawei.",Benzinga Newsdesk
+2018-03-07 00:00:00+00:00,2018-03-07,ANF,Markets Drop In Early Going; Tariff Talk Appears To Take Center Stage Again,JJ Kinahan
+2019-05-31 04:33:15+00:00,2019-05-31,ANV,Shares of several gold companies are trading higher as gold futures rise amid global economic concerns following President Trump's announcement of tariffs on Mexican goods.,Benzinga Newsdesk
+2019-08-08 10:47:31+00:00,2019-08-08,APC,"Carl Icahn Rips Anadarko Buyout, Talks Cloudera And Trade War",Wayne Duggan
+2019-05-07 00:00:00+00:00,2019-05-07,APC,Market Remains Shaken Over Tariff Threats Ahead Of U.S.-China Trade Talks,JJ Kinahan
+2019-09-03 00:00:00+00:00,2019-09-03,APO,Shares of several financial companies are trading lower as the previously announced 15% tariff on $112 billion worth of Chinese goods took effect on Sunday. Trade tensions slow global economic growth which decreases the demand for loans from banks.,Benzinga Newsdesk
+2019-08-16 00:00:00+00:00,2019-08-16,APO,"Shares of several banks are trading higher, rebounding from recent weakness. Trump's announcement of a tariff delay has renewed US-China trade optimism and US markets appear to be rebounding from recession fears caused by a yield curve inversion.",Benzinga Newsdesk
+2019-08-06 00:00:00+00:00,2019-08-06,APO,Apollo Global Management shares are trading higher on no company-specific news. The overall market is rebounding from yesterday's news that China retaliated in the trade war.,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,AREX,Shares of several oil and gas companies are trading lower after President Trump threatened to impose tariffs on Mexico. Heightened US trade tensions with Mexico and China have lead to concerns over economic growth and oil demand.,Benzinga Newsdesk
+2019-12-02 03:02:18+00:00,2019-12-02,ARGT,"Donald Trump Tweets: Effective Immediately, I will Restore Tariffs on all Steel & Aluminum Imported from Brazil and Argentina",Charles Gross
+2019-05-13 00:00:00+00:00,2019-05-13,ARNA,"Shares of several healthcare companies are trading lower amid continued trade dispute between the US and China. Also, the United States filed a lawsuit against drug manufacturers alleging price fixing.",Benzinga Newsdesk
+2019-05-13 00:00:00+00:00,2019-05-13,ARTW,Shares of automotive and industrial companies are trading lower amid revamped US-China trade tensions. New tariffs between the two nations could increase input and materials costs for companies in these sectors and harm their overseas operations.,Benzinga Newsdesk
+2019-11-07 00:00:00+00:00,2019-11-07,ATHM,"Shares of several Chinese companies are trading higher after it was announced China and the US have agreed to remove existing trade tariffs, lifting expectations around a possible resolution to the ongoing U.S.-China trade war.",Benzinga Newsdesk
+2019-10-21 00:00:00+00:00,2019-10-21,ATHM,Shares of several Chinese companies are trading higher on renewed trade optimism. White House Economic Advisor Larry Kudlow said the December tariffs could be removed if U.S.-China trade talks go well.,Benzinga Newsdesk
+2019-10-15 00:00:00+00:00,2019-10-15,ATHM,Shares of several Chinese companies are trading higher on continued optimism as investors hope the US will reduce its tariff on Chinese goods.,Benzinga Newsdesk
+2019-10-10 00:00:00+00:00,2019-10-10,ATHM,Shares of many Chinese companies are trading higher on renewed trade optimism after the US was considering suspending tariff increase in exchange for a currency pact. President Trump's administration also plans to allow the sale of some supplies to Huawei.,Benzinga Newsdesk
+2019-10-08 00:00:00+00:00,2019-10-08,ATHM,"Shares of several Chinese companies are trading lower as optimism around the upcoming U.S.-China trade talks waned. A report says China is toning down its expectations of the meeting. The U.S. expanded its trade blacklist, and scheduled an increase in tariffs on $250 billion worth of Chinese goods from 25% to 30% on Oct. 15, which will go into effect if no progress is made.",Benzinga Newsdesk
+2019-09-11 00:00:00+00:00,2019-09-11,ATHM,Shares of Chinese companies are trading higher after China granted tariff exemptions to certain US goods.,Benzinga Newsdesk
+2019-06-26 00:00:00+00:00,2019-06-26,ATHM,"Shares of several Chinese companies are trading higher on continued optimism for a potential trade deal to be reached between the USA and China, which would avoid an additional tariff on another $300 billion.",Benzinga Newsdesk
+2019-05-20 00:00:00+00:00,2019-05-20,ATHM,Shares of several Chinese companies are trading lower on continued uncertainty of a trade war between the US and China. Concerns after Pres Trump blacklisted Huawei products from the US heightened that uncertainty.,Benzinga Newsdesk
+2019-05-13 00:00:00+00:00,2019-05-13,ATHM,Shares of several Chinese companies are trading lower amid continued US-China trade tensions. President Trump earlier threatened China and accused the country of backing out of a proposed trade deal. China will reportedly raise tariffs on US goods.,Benzinga Newsdesk
+2019-05-09 00:00:00+00:00,2019-05-09,ATHM,Shares of several Chinese stocks are trading lower due to concern a trade deal with the US may not be finalized by Friday and threatened tariffs will go into effect.,Hal Lindon
+2019-05-06 00:00:00+00:00,2019-05-06,ATHM,Shares of several Chinese companies are trading lower following a tweet from President Trump hinting at additional tariffs on China. China has indicated it may back out of negotiations this week.,Benzinga  Newsdesk
+2019-05-06 00:00:00+00:00,2019-05-06,ATHM,Shares of several Chinese companies are trading lower following a tweet from President Trump hinting at more tariffs on China and a new trade war. China has indicated it may back out of negotiations this week.,Benzinga Newsdesk
+2019-03-29 00:00:00+00:00,2019-03-29,ATHM,Shares of several Chinese companies are trading higher after the US and China discussed the wording of an agreement to resolve a bilateral trade dispute.,Benzinga Newsdesk
+2019-02-25 00:00:00+00:00,2019-02-25,ATHM,Several Chinese stocks are trading higher after president Trump said he would delay tariff increases on China in order to reach a trade deal.,Benzinga Newsdesk
+2018-06-01 00:00:00+00:00,2018-06-01,ATHN,"The Market In 5 Minutes: Big Jobs Data Beat, Fannie And Freddie, Tariffs And More",Benzinga Newsdesk
+2018-06-15 00:00:00+00:00,2018-06-15,ATI,"The Market In 5 Minutes: Tariffs, NXPI, Powell And More",Benzinga Newsdesk
+2018-11-08 00:00:00+00:00,2018-11-08,ATV,Acorn International Says it 'Foresees Little Impact From Trade War on its Business',Benzinga Newsdesk
+2019-08-16 00:00:00+00:00,2019-08-16,ATVI,Shares of several technology companies are trading higher with the broader market on renewed optimism surrounding US-China trade talks after President Trump announced earlier in the week that he would delay additional tariffs on Chinese goods until Decemb,Benzinga Newsdesk
+2019-02-21 00:00:00+00:00,2019-02-21,ATVI,Chip Makers Get A Lift As Tariff Talks With China Looking More Positive,JJ Kinahan
+2018-07-27 00:00:00+00:00,2018-07-27,ATVI,"Caterpillar Earnings Preview: Economic Outlook Seems Good, Tariffs Adding Uncertainty",JJ Kinahan
+2018-05-03 00:00:00+00:00,2018-05-03,ATVI,"'UPDATE: Wall Street Journal parent company Dow Jones statement to CNBC on Activision earnings report— ""We regret our error as well as inadvertently breaking the embargo. We have issued a correction and are reviewing our processes.""'",Paul Quintaro
+2019-12-11 00:00:00+00:00,2019-12-11,AU,"Shares of gold companies are trading higher ahead of today's Fed rate decision and outlook statements, as well as the Dec. 15 US-China tariff deadlines.",Benzinga Newsdesk
+2019-11-13 00:00:00+00:00,2019-11-13,AU,Shares of several gold companies are trading higher amid US-China trade uncertainty. Concerns of the tariff war have led investors into 'safe-haven' assets such as gold.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,AU,"Shares of gold companies are trading lower as gold prices dip after the US agreed to delay China tariffs, pushing US stocks higher and decreasing the demand safe-haven assets like gold.",Benzinga Newsdesk
+2019-08-16 00:00:00+00:00,2019-08-16,AUY,Shares of several gold companies are trading lower following a renewed optimism surrounding US-China trade talk after President Trump announced earlier in the week that he would delay additional tariffs on Chinese goods until December.,Benzinga Newsdesk
+2019-12-11 00:00:00+00:00,2019-12-11,AVGO,5G Stocks Are Heating Up Ahead Of Tariff Deadline,Wayne Duggan
+2019-05-24 00:00:00+00:00,2019-05-24,AVGO,Leveraged Chip ETFs Embody Trade War Volatility,ETF Professor
+2019-10-23 00:00:00+00:00,2019-10-23,AVH,Avianca Holdings 6-K Shows Co. Recently Became Aware It Is Subject To US Jurisdiction For Purposes Of Certain US Sanctions Laws Administered By US Treasury's Office Of Foreign Assets Control,Benzinga Newsdesk
+2019-02-25 00:00:00+00:00,2019-02-25,AWI,A Peek Into The Markets: US Stock Futures Gain As Trump Delays China Tariff Hike,Lisa Levin
+2019-11-20 00:00:00+00:00,2019-11-20,AXL,Shares of several auto-related companies are trading lower in sympathy with the overall market on worries around the U.S.-China trade deal. A report said the phase one deal between the two countries may not be completed before 2020.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,AXL,American Axle shares are trading higher in sympathy with the overall market after the U.S. announced it is excluding and delaying the additional 10% tariff on certain products.,Benzinga Newsdesk
+2019-09-23 00:00:00+00:00,2019-09-23,AYI,"Baird Maintains Outperform, $160 Target On Acquity Brands As Firm's' Q4 'Lighting Survey Suggests Industry Benefited Early In Fq4 From Pre-Buys And Project Releases Ahead Of Tariff-induced Price Increases, With Demand Anecdotally Easing Back Into August'",Benzinga_Newsdesk
+2018-05-22 00:00:00+00:00,2018-05-22,AZO,"China, U.S. Back Away From Trade War, Helping Market Sentiment",JJ Kinahan
+2019-12-19 00:00:00+00:00,2019-12-19,BABA,'Chinese private firms diversify markets amid trade war' -Earlier Global Times Article,Benzinga Newsdesk
+2019-11-11 00:00:00+00:00,2019-11-11,BABA,Shares of Chinese companies are trading lower amid concerns that US-China tariff rollbacks and trade progress have stalled. Further escalation in Hong Kong has also added to political turmoil in the country.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,BABA,"Shares of several Chinese companies are trading higher after the USTR said some products are being removed from the tariff list based on health, safety, national security, and other factors. They will not face the additional 10% tariff.",Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,BABA,Investors Continue To Fret About Global Economy As Trade War Drags On,JJ Kinahan
+2019-08-01 00:00:00+00:00,2019-08-01,BABA,Shares of Chinese companies are trading lower after President Trump announced additional tariffs on Chinese goods.,Benzinga Newsdesk
+2019-07-01 00:00:00+00:00,2019-07-01,BABA,Shares of several Chinese stocks are trading higher after President Trump and President Xi said they would pause new tariffs between the US and China.,Benzinga Newsdesk
+2019-06-18 00:00:00+00:00,2019-06-18,BABA,A Surprising ETF Stands Firm Amid Trade War Controversy,ETF Professor
+2019-05-31 00:00:00+00:00,2019-05-31,BABA,Tariff Issues Blew May Markets Into Rough Seas,JJ Kinahan
+2019-05-31 00:00:00+00:00,2019-05-31,BABA,Many mega-cap stocks trading lower following a tweet from President Trump late Thursday the US will impose a 5 percent tariff on goods from Mexico.,Benzinga Newsdesk
+2019-05-13 00:00:00+00:00,2019-05-13,BABA,Alibaba's Q4 Results On Tap Amid Escalating Trade War,JJ Kinahan
+2019-05-13 00:00:00+00:00,2019-05-13,BABA,Trade War Heats Up As China Retaliates With Raised Tariffs Of Its Own,JJ Kinahan
+2019-05-10 00:00:00+00:00,2019-05-10,BABA,Shares of several Chinese companies are trading lower on continued uncertainty surrounding the future of trade relations between the US and China after the Trump Administration increased tariffs on $200 million of Chinese goods from 10% to 25%.,Benzinga Newsdesk
+2019-05-06 00:00:00+00:00,2019-05-06,BABA,"Boeing, Caterpillar, Chipmakers Retreat After Trump Threats To Raise China Tariffs",JJ Kinahan
+2019-01-17 00:00:00+00:00,2019-01-17,BABA,Chinese stocks spike higher amid reports the US is considering lifting China tariffs.,Benzinga Newsdesk
+2018-12-03 00:00:00+00:00,2018-12-03,BABA,Chinese stocks are trading higher after positive comments emerge from the G20 Summit on relations between the US and China. President Trump tweeted China will remove tariffs on US cars exported to China.,Benzinga Pro Newsdesk
+2018-09-18 00:00:00+00:00,2018-09-18,BABA,"Alibaba Chairman Jack Ma Says That Nobody Benefits from Trade War With U.S.; Says Trade Frictions Will Likely Last for Long Time, Be Messy",Charles Gross
+2018-08-23 00:00:00+00:00,2018-08-23,BABA,Pro Remains Confident In Alibaba Despite Trade War Concerns,Jayson Derrick
+2018-04-04 00:00:00+00:00,2018-04-04,BABA,13 Stocks And ETFs To Watch Amid China's 25% Tariff Threat,Wayne Duggan
+2018-03-22 00:00:00+00:00,2018-03-22,BABA,"Trump's $60B Tariff Plan Rattles Markets, Chinese Tech Stocks",Wayne Duggan
+2019-12-03 00:00:00+00:00,2019-12-03,BAC,Option Traders Betting Against Bank Of America Following Trump Tariff Comments,Wayne Duggan
+2019-08-01 00:00:00+00:00,2019-08-01,BAC,Shares of several bank companies are trading lower after President Trump announced an additional 10% tariff on the remaining $300 billion of goods and products coming from China.,Benzinga Newsdesk
+2019-06-10 00:00:00+00:00,2019-06-10,BAC,"Shares of several financial companies are trading higher after the U.S. and Mexico signed part of an immigration deal. If reached, Mexico would avoid previously announced tariffs; if not reached, President Trump stated tariffs would be reinstated.",Benzinga Newsdesk
+2019-05-13 00:00:00+00:00,2019-05-13,BAC,Shares of several financial companies are trading lower amid continued trade dispute between the US and China.,Benzinga Newsdesk
+2019-05-07 00:00:00+00:00,2019-05-07,BAC,Shares of several financial companies are trading lower in continued uncertainty of a trade war between the US and China.,Benzinga Newsdesk
+2019-05-06 00:00:00+00:00,2019-05-06,BAC,Shares of several financial companies are trading lower following a tweet from President Trump which hinted at additional tariffs on China and China indicated it may back out of upcoming trade negotiations.,Benzinga Newsdesk
+2018-11-05 00:00:00+00:00,2018-11-05,BAC,Bank of America CEO Says Impact On Loan Book From Tariffs Will Not Be Material,Benzinga Newsdesk
+2019-05-14 04:13:12+00:00,2019-05-14,BAL,The China Trade War Is Crushing This Commodity ETN,ETF Professor
+2019-11-20 00:00:00+00:00,2019-11-20,BBD,Shares of several Brazilian companies are trading lower in sympathy with the overall market after trade experts said the Phase One U.S.-China deal will not be reached until 2020 due to China pushing for more tariff rollbacks and the U.S. countering with more demands.,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,BBD,Shares of several South American companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods. The trade war slows global economic growth.,Benzinga Newsdesk
+2019-05-09 00:00:00+00:00,2019-05-09,BBL,Shares of several mining and materials companies are trading lower following continued threats from President Trump indicating there may be additional tariffs on China. Material companies may be especially hard hit if a trade dispute slows growth.,Benzinga Newsdesk
+2019-05-06 00:00:00+00:00,2019-05-06,BBL,Shares of several mining and materials companies are trading lower following a tweet from President Trump indicating there may be additional tariffs on China. Material companies may be especially hard hit if a trade dispute slows growth.,Benzinga  Newsdesk
+2018-12-06 00:00:00+00:00,2018-12-06,BBL,Metal stocks are trading lower after the arrest of a Chinese executive in Canada is causing increased concern for a US and Chinese trade war.,Benzinga Pro Newsdesk
+2020-02-06 00:00:00+00:00,2020-02-06,BBVA,Shares of several financial companies are trading higher after China announced it will cut tariffs U.S. goods worth roughly $75 billion.,Benzinga Newsdesk
+2018-12-27 00:00:00+00:00,2018-12-27,BC,"UPDATE: Brunswick Says Exclusions Reduce Co.'s Estimated Net Pretax Tariff Impact In FY19 To ~$17M-$22M, From $30M-$3%M Previously",Benzinga Newsdesk
+2018-12-27 00:00:00+00:00,2018-12-27,BC,"Brunswick Reports Has Been Granted Exclusions From Section 301 Tariffs At Its 40, 50, 60hp Mercury Marine Engines",Benzinga Newsdesk
+2019-02-28 00:00:00+00:00,2019-02-28,BG,Headline Edge: Which Stocks Have Been Most Impacted By The US-China Trade War?,Chris Dier-Scalise
+2018-11-07 00:00:00+00:00,2018-11-07,BG,"Tariffs, Drug Prices, Legislative Gridlock: What Economists Are Watching Following The Midterm Election",Wayne Duggan
+2018-10-31 00:00:00+00:00,2018-10-31,BG,Bunge CEO Says Recent Strong Growth In China's Soybean Imports And Soymeal Demand To Pause For At Lease A Season Due To Trade War,Benzinga Newsdesk
+2019-05-14 00:00:00+00:00,2019-05-14,BHP,"Shares of copper mining companies are trading higher as copper prices rebound from recent lows on renewed US-China trade optimism, despite looming tariffs.",Benzinga Newsdesk
+2018-08-29 00:00:00+00:00,2018-08-29,BID,Sotheby's Says Does Not Support US Tariff On Works Of Art Of Chinese Origin; Says Co. Does Not Believe Proposed Tariff Will Have A Materiel Effect On Results,Benzinga_Newsdesk
+2018-07-09 00:00:00+00:00,2018-07-09,BIDU,PreMarket Prep for July 9: Monday's 'Buy The Dip' Market; David Breuhan On Trade Tariffs,Spencer Israel
+2019-08-30 00:00:00+00:00,2019-08-30,BIG,"Big Lots Rallies On Q2 Earnings Beat, CEO Says Retailer Navigating Tariff Headwinds",Tanzeel Akhtar
+2019-05-13 00:00:00+00:00,2019-05-13,BIG,"Shares of several companies in the consumer retail sector are trading lower after both the US and China hiked tariffs between the two nations, which will raise consumer prices on many goods.",Benzinga Newsdesk
+2018-07-09 00:00:00+00:00,2018-07-09,BIIB,What Trade War? Positive Sentiment Seems To Continue From Friday,JJ Kinahan
+2018-07-06 00:00:00+00:00,2018-07-06,BIIB,"The Market In 5 Minutes: Biogen, Pruitt, Unemployment, Tariffs And More",Benzinga Newsdesk
+2018-07-06 00:00:00+00:00,2018-07-06,BIIB,A Peek Into The Markets: US Stock Futures Drop As US-China Trade War Begins,Lisa Levin
+2019-07-08 00:00:00+00:00,2019-07-08,BKH,Black Hills Corp. Electric Utilities Receive Approvals For Renewable Ready Service Tariffs And $57M Wind Generation Project,Benzinga Newsdesk
+2019-03-07 00:00:00+00:00,2019-03-07,BKS,"As Oil Gains On Sanctions, OPEC Cuts, Stocks Continue Looking For A Catalyst",JJ Kinahan
+2019-08-16 00:00:00+00:00,2019-08-16,BMA,Shares of several Argentinian companies are trading higher on renewed optimism surrounding US-China trade talks after President Trump announced earlier in the week that he would delay additional tariffs on Chinese goods until December.,Benzinga Newsdesk
+2019-06-05 09:26:16+00:00,2019-06-05,BMS,"Toying With Tariffs: Trade War With Mexico Could Hurt Mattel, While China Spat Affects Hasbro",Dave Royse
+2019-06-04 00:00:00+00:00,2019-06-04,BOOT,"UPDATE: Boot Barn Reports 47% Of Total Sales Not Yet Subject To Added China, Mexico Tariffs, 25% Mexico Sourced Product Potentially Subject To May 30 Announced Tariff, 25% Non-China, Non-Mexico Sourced All Brands, 3% Product Tariffed At 10%",Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,BOOT,"Boot Barn 8-K Includes Slides For Upcoming Presentations, Last Slide Includes Potential Tariff Exposures",Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,BP,Shares of several oil & gas companies are trading higher with the overall market after the U.S. announced it is excluding and delaying the additional 10% tariff on certain products.,Benzinga Newsdesk
+2019-08-05 00:00:00+00:00,2019-08-05,BP,Shares of oil & gas companies are trading lower after the US added an additional tariff on $300 billion worth of Chinese goods. China allowed its currency to further devalue against the dollar and said that it would not purchase any agricultural products.,Benzinga Newsdesk
+2019-04-01 00:00:00+00:00,2019-04-01,BP,Shares of several oil stocks are trading higher on strength in the underlying commodity amid declining Iranian oil supply and US sanctions on Venezuela.,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,BPT,Shares of several oil & gas companies are trading lower on escalated trade tensions after China announced it plans to impose a 5%-10% tariff rate on $75 billion worth of U.S. goods.,Benzinga Newsdesk
+2019-05-06 00:00:00+00:00,2019-05-06,BRK.A,Fire Stoked In US-China Trade War: How The Experts Are Reacting,Jayson Derrick
+2019-05-31 00:00:00+00:00,2019-05-31,BRKS,Shares of many technology companies are trading lower with the overall market following news President Trump will impose a 5% tariff on goods from Mexico.,Benzinga Newsdesk
+2019-04-09 00:00:00+00:00,2019-04-09,BSX,"Port Report: Year After First Salvo, U.S.-China Trade War In Ceasefire, But New Ones Are Starting",FreightWaves
+2019-12-23 00:00:00+00:00,2019-12-23,BTE,Shares of several oil and gas companies are trading higher after China announced it will lower import tariffs on several US products. This has offset concerns of Russia easing output cuts.,Benzinga Newsdesk
+2020-04-14 03:22:53+00:00,2020-04-14,BTI,The Times Reports British American Tobacco Is Being Probed By The DOJ Over Suspected Sanctions Busing,Benzinga Newsdesk
+2019-08-05 00:00:00+00:00,2019-08-05,BTI,Shares of several large-cap companies are trading lower with the overall market on renewed US-China trade tensions. President Trump announced an additional 10% tariff on $300 billion worth of Chinese goods. China is manipulating its currency and announced they are not buying any agricultural products from the U.S.,Benzinga Newsdesk
+2018-05-01 00:00:00+00:00,2018-05-01,BTI,"The Market In 5 Minutes: WhatsApp, Tariff Delay, May Day And More",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,BUD,"Beer Institute CEO Says Proposed Mexico Tariff Will Have $12.5M Cost Increase To Beer Industry Importers During June Alone; Says If Proposed Mexico Tariff Remains At 25%, Cost To Beer Industry Will Be $984M Per Year",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,BUD,Shares of several beer companies are trading lower after President Trump announced he will impose a 5% tariff on goods from Mexico.,Benzinga Newsdesk
+2019-05-13 00:00:00+00:00,2019-05-13,BUD,Shares of several multinational companies are trading lower due to the trade dispute between the US and China.,Benzinga Newsdesk
+2018-07-03 00:00:00+00:00,2018-07-03,BUD,"Anheuser-Busch Exec Talks New Beers, Aluminum Tariffs",Jayson Derrick
+2018-03-02 00:00:00+00:00,2018-03-02,BUD,Trump's Tariff Decision Could Make Your Beer More Expensive: Here's How,Jayson Derrick
+2019-09-17 00:00:00+00:00,2019-09-17,BURL,"UBS Upgrades Burlington, Says Tariffs Likely 'Net Positive'",Priya Nigam
+2019-08-30 00:00:00+00:00,2019-08-30,BURL,"UPDATE: DA Davidson Maintains Buy On Burlington Stores, Raises Target To $235 As Firm Notes 'we are still buyers'; Firm Also Notes 'Tariffs curating a beneficial buying environment for BURL'; Firm Sees Promising Outlook For The Back Half",Benzinga_Newsdesk
+2018-07-13 00:00:00+00:00,2018-07-13,C,Citi CEO Says He Hasn't Seen Any Changes To Client Reactions/Behavior To Trade Tariffs,Benzinga Newsdesk
+2018-06-24 00:00:00+00:00,2018-06-24,C,"Barron's Picks And Pans: Sustainable Investing, Bank Buybacks, Tariff Picks And More",Nelson Hem
+2018-04-10 00:00:00+00:00,2018-04-10,C,Testimony And Tariffs: Zuckerberg To Face Lawmakers; China Comments Ease Trade Fears,JJ Kinahan
+2019-05-06 06:18:49+00:00,2019-05-06,CAF,Shares of several Chinese companies are trading lower after China has indicated it may back out of negotiations this week following a tweet from President Trump hinting at more tariffs on China and a new trade war.,Benzinga Newsdesk
+2019-09-02 00:00:00+00:00,2019-09-02,CAG,"Donald J. Trump Tweet: ""Brazil will allow more American Ethanol to enter the country without Tariffs, a decision that Brazilian mills are celebrating.",Charles Gross
+2019-08-23 00:00:00+00:00,2019-08-23,CAG,"Moody's Says Potential Inclusion Of Agricultural Goods In China's Tariffs On $75 Bln Goods Would Be Credit Negative For U.S. Agriculture, Agriculture-Related Sectors",Benzinga_Newsdesk
+2019-08-01 00:00:00+00:00,2019-08-01,CAG,Shares of several packaged foods companies trading higher amid strong Kellogg earnings. Packaged foods stocks failed to move sharply lower following news of added 10% tariffs on goods from China as these companies products are produced domestically.,Benzinga Newsdesk
+2019-05-13 00:00:00+00:00,2019-05-13,CAG,Trump Says Portion Of Funds US Takes In From Tariffs On Chinese Imports Will Go To US Farmers,Benzinga Newsdesk
+2019-01-28 00:00:00+00:00,2019-01-28,CAG,US Department Of Agriculture Says Has Paid Out Almost $6B As Of Jan. 28 To Farmers In Aid Designed To Offset Tariff Impact,Benzinga Newsdesk
+2018-08-27 07:22:24+00:00,2018-08-27,CARZ,"President Trump on Call with Mexico's Nieto Says He Will Call Canadian Prime Minister Shortly, Says the Easiest Action Would be to Put Tariffs on Cars, According to Reuters",luke@benzinga.com
+2018-06-26 10:17:25+00:00,2018-06-26,CARZ,"Major Auto Trade Group To Tell Trump Admin That A 25% Tariff On Imported Vehicles Would Cost U.S. Consumers $45B In Higher Vehicle Costs, U.S. Buyers Of Imported Vehicles Would Face An Avg. Price Increase Of $5,800",Benzinga Newsdesk
+2019-10-09 00:00:00+00:00,2019-10-09,CAT,Increased Optimism On The Tariff Front Could Help Trade-Sensitive Stocks Like Chipmakers,JJ Kinahan
+2019-08-29 00:00:00+00:00,2019-08-29,CAT,Shares of agricultural and industrial companies are trading higher after China said it would try to resolve US trade conflicts and would not immediately respond to tariff hikes. Note: China previously announced it would not buy US agriculture products.,Benzinga Newsdesk
+2019-08-27 00:00:00+00:00,2019-08-27,CAT,"Neutral Zone: Stocks, Bonds Both Up As Next Moves In Trade War Anxiously Awaited",JJ Kinahan
+2019-08-23 00:00:00+00:00,2019-08-23,CAT,Shares of several industrial companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods. Trump announced he will respond to China's tariffs this afternoon.,Benzinga Newsdesk
+2019-08-05 00:00:00+00:00,2019-08-05,CAT,"Amid Trade War Flare, Earnings Continue With Disney And Uber This Week",JJ Kinahan
+2019-07-24 00:00:00+00:00,2019-07-24,CAT,Caterpillar Inc Says Still Expect Tariffs To Cost $250M-$350M In 2019,Benzinga Newsdesk
+2019-07-01 00:00:00+00:00,2019-07-01,CAT,"Ceasefire: Tariff Tailwind Injects Early Euphoria, With New Record Highs In Sight",JJ Kinahan
+2019-05-13 00:00:00+00:00,2019-05-13,CAT,Why Boeing Could Be A Big Loser In US-China Trade War,Wayne Duggan
+2019-05-08 00:00:00+00:00,2019-05-08,CAT,Hitting A Wall: More Red Ink Appears Ready To Spill As New Tariffs Loom,JJ Kinahan
+2019-05-07 00:00:00+00:00,2019-05-07,CAT,"Tariff-Related Losses Put Pressure On Multinationals, FAANGs, Semiconductors",JJ Kinahan
+2019-05-02 00:00:00+00:00,2019-05-02,CAT,"Caterpillar CFO Says Tariffs Will Cost Company $250 Million To $350M In 2019, If No Relief; Says 'We Generally See More Demand Opportunities Than Negatives Out There At The Moment'",Benzinga Newsdesk
+2019-02-22 00:00:00+00:00,2019-02-22,CAT,"Watching Caterpillar, Xerox Shares Amid Headline EU Said Its Ready To Target Cat, Xerox If Pres Trump Targets Auto Tariffs",Benzinga Newsdesk
+2019-01-28 00:00:00+00:00,2019-01-28,CAT,Caterpillar Says Tariffs Cost the Company $100M in 2018,Benzinga Newsdesk
+2018-10-23 00:00:00+00:00,2018-10-23,CAT,Will Tariffs Weigh On Boeing and Ford Earnings? Analysts Don't Seem Too Worried,JJ Kinahan
+2018-10-23 00:00:00+00:00,2018-10-23,CAT,"Caterpillar shares are down 9.1% following Q3 earnings; Though the company beat consensus estimates, it reported higher manufacturing costs in the quarter due to tariffs and said freight costs were unfavorable due to increases in steel prices.",Benzinga_Newsdesk
+2018-10-23 00:00:00+00:00,2018-10-23,CAT,"Caterpillar Tumbles After Q3 Earnings Release, Sees Higher Costs Ahead Due To Tariffs",Jayson Derrick
+2018-09-19 00:00:00+00:00,2018-09-19,CAT,"Stock Market Appears To Focus On US-China Tariff News As US, Canada Continue Talks",JJ Kinahan
+2018-07-25 00:00:00+00:00,2018-07-25,CAT,"Deere, Caterpillar Shares Volatile Following Recent Headlines Of EU Concessions To U.S. To Avoid Trade War",Benzinga_Newsdesk
+2018-07-24 00:00:00+00:00,2018-07-24,CAT,'White House readies plan to extend about $12 billion in emergency aid to farmers caught in Trump's escalating trade war' -Washington Post,Benzinga Newsdesk
+2018-06-21 00:00:00+00:00,2018-06-21,CAT,Analysts: Caterpillar's Stock Could Be Front And Center In A Trade War,Jayson Derrick
+2018-06-19 00:00:00+00:00,2018-06-19,CAT,"Russian Economic Development Minister Oreshkin Says Russia May Impose Tariffs On Imports Of U.S. Road-Building Machinery, Says Russia Won't Impose Tariffs On Imports Of Medicine From U.S.",Benzinga Newsdesk
+2018-06-19 00:00:00+00:00,2018-06-19,CAT,Pressure Mounts: President Doubles Down On Tariff Threat To China,JJ Kinahan
+2018-04-09 00:00:00+00:00,2018-04-09,CAT,Worried About A Trade War? Consider Cramer's Hedge Trades,Jayson Derrick
+2019-08-23 00:00:00+00:00,2019-08-23,CDNS,Shares of several technology companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods.,Benzinga Newsdesk
+2018-05-23 00:00:00+00:00,2018-05-23,CDTI,CDTi Advanced Materials Shares Down 16.5% After Spiking Tuesday On News Of China's Planned Reduction In Auto Import Tariffs,Benzinga Newsdesk
+2018-05-22 00:00:00+00:00,2018-05-22,CDTI,"CDTi Shares Up 133%; Traders Attributing Upside To Report China Will Reduce Import Tariffs On Some Auto Parts, Vehicles; However, Reminder This Could Be A Low-Float Play, Has ~16M Shares Outstanding",Benzinga Newsdesk
+2018-05-22 00:00:00+00:00,2018-05-22,CDTI,"CDTi Advanced Materials Shares Halted For 2nd Time, Up 120.7% Amid News China Will Cut Tariffs On Some Auto Parts and Vehicles",Benzinga Newsdesk
+2019-03-08 00:00:00+00:00,2019-03-08,CENX,"Trump Tweets: 'Aluminum prices are down 12% since I instituted Tariffs on Aluminum Dumping - and the U.S. will be taking in Billions, plus jobs. Nice!'",Benzinga Newsdesk
+2019-11-07 00:00:00+00:00,2019-11-07,CEO,Shares of oil and gas companies are trading higher after the US and China agreed to phase out tariffs.,Benzinga Newsdesk
+2019-11-05 00:00:00+00:00,2019-11-05,CEO,Shares of several oil & gas companies are trading higher on optimism around U.S.-China trade talks. It was earlier reported that Trump administration officials are considering tariff cuts of 15% on approximately $112 billion in Chinese imports that was imposed on September 1.,Benzinga Newsdesk
+2019-10-08 00:00:00+00:00,2019-10-08,CEO,"Shares of several oil and gas companies are trading lower as optimism around the upcoming U.S.-China trade talks waned. A report says China is toning down its expectations of the meeting. The U.S. expanded its trade blacklist, and scheduled an increase in tariffs on $250 billion worth of Chinese goods from 25% to 30% on Oct. 15, which will go into effect if no progress is made.",Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,CEO,Shares of several oil & gas companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods.,Benzinga Newsdesk
+2019-04-22 00:00:00+00:00,2019-04-22,CEO,Shares of several oil stocks are trading higher on an increase in the price of crude oil due to an expected announcement from the US that buyers of Iranian oil need to end imports or face sanctions.,Benzinga Newsdesk
+2019-10-09 00:00:00+00:00,2019-10-09,CHA,11 Chinese Stock Plays On Trade War Weakness,Wayne Duggan
+2019-04-15 00:00:00+00:00,2019-04-15,CHA,UPDATE: Goldman Upgrades China Telecom To Buy As Firm Sees Co. As Main Beneficiary From 'the slowdown in data tariff reductions and the introduction of national mobile number portability',Benzinga_Newsdesk
+2018-08-31 04:00:33+00:00,2018-08-31,CHIQ,China ETFs Try To Rebound From Trade War Concerns,ETF Professor
+2019-04-26 00:00:00+00:00,2019-04-26,CHK,"Shares of oil and gas companies are trading lower amid concerns OPEC members will raise output to counter the supply decrease caused by Iran sanctions. Additionally, Exxon Mobil reported worse-than-expected Q1 EPS and sales.",Benzinga Newsdesk
+2018-07-10 00:00:00+00:00,2018-07-10,CHK,TD Ameritrade Traders Adopt Some Old And New Approaches To The Trade War Market In June's IMX,Chris Dier-Scalise
+2020-02-06 00:00:00+00:00,2020-02-06,CHL,China Mobile shares are trading higher after it was announced China will cut its tariffs by half on $75 billion worth of US goods.,Benzinga Newsdesk
+2018-03-08 00:00:00+00:00,2018-03-08,CI,"Payroll Data Up Next, But M&A, ECB And Tariffs All In Focus Ahead Of Jobs Report",JJ Kinahan
+2018-09-04 00:00:00+00:00,2018-09-04,CIEN,"B. Riley Downgrades Fabrinet, II-VI, Says Optical Companies 'Will Suffer The Consequences' Of Tariffs",Hannah Genig
+2018-04-25 00:00:00+00:00,2018-04-25,CIEN,"Hearing Jefferies Commenting Ciena, Infinera And Nokia Winners In The Huawei Sanction Concern",Paul Quintaro
+2019-08-16 00:00:00+00:00,2019-08-16,CLVS,"Shares of healthcare companies are trading higher as US markets rebound from recent weakness following a yield curve inversion, which caused recession fears. Trump also recently announced the US would delay China tariffs, renewing hopes of a trade deal",Benzinga Newsdesk
+2019-09-03 00:00:00+00:00,2019-09-03,CMC,Shares of several metals/steel companies are trading lower as global trade tension continues to rise after President Trump added a 15% tariff on $112 billion worth of Chinese goods on Sunday.,Benzinga Newsdesk
+2019-08-01 00:00:00+00:00,2019-08-01,CMC,Shares of many metals/steels stocks trading lower following news President Trump has said the US will impose an added 10% tariff on goods from China.,Benzinga Newsdesk
+2020-05-11 00:00:00+00:00,2020-05-11,CMCSA,FCC Responds To Trump Tweet: This is not how our rules work. The FCC doesn't sanction stations for what journalists say.,Benzinga Newsdesk
+2019-09-03 00:00:00+00:00,2019-09-03,CMCSA,"Shares of several large-cap companies are trading lower as trade concerns continue to escalate following a new 15% tariff, which was added to $112 billion worth of Chinese goods on Sunday.",Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,CMCSA,Shares of several large-cap companies are trading lower in sympathy with the overall market on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods.,Benzinga Newsdesk
+2019-08-19 00:00:00+00:00,2019-08-19,CMCSA,Shares of several large-cap companies are trading higher on renewed optimism for a solution to the U.S.-China trade war.,Benzinga Newsdesk
+2019-08-16 00:00:00+00:00,2019-08-16,CMCSA,Shares of several large-cap companies are trading higher with the broader market on renewed optimism surrounding US-China trade talks after Donald Trump announced earlier in the week that he would delay additional tariffs on Chinese goods until December.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,CMCSA,Shares of several large-cap companies are trading higher in sympathy with the overall market after the U.S. announced it is excluding and delaying the additional 10% tariff on certain products.,Benzinga Newsdesk
+2018-07-11 00:00:00+00:00,2018-07-11,CMCSA,"The Market In 5 Minutes: More Tariffs, App Store's Birthday, PPI Data And More",Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,CMG,Chipotle CFO Guides To 'Minor Impact' From Mexican Tariffs,Jayson Derrick
+2019-06-03 00:00:00+00:00,2019-06-03,CMG,Chipotle Warns Of Potential Impact From Mexican Tariffs,Tanzeel Akhtar
+2019-06-03 00:00:00+00:00,2019-06-03,CMG,"Chipotle CFO Says If Announced Tariffs On Mexican Imports Are Enacted, Could Reduce Margins By 20-30 Basis Points In 2019; Says Could Consider Passing On Rising Costs, As A Result Of Tariffs, Through Modest Price Increase, Such As About A Nickel A Burrito",Benzinga Newsdesk
+2019-06-03 00:00:00+00:00,2019-06-03,CMG,"Chipotle CFO Says If Tariffs Become Permanent, Co. Would Look To Offset Costs Through Other Margin Improvement Efforts Already Underway",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,CMG,"Chipotle Mexican Grill shares are trading lower after the company announced if Mexico tariffs are enacted, it would negatively impact the company's costs.",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,CMG,Chipotle Mexican Grill Says Monitoring The Situation And Working With Suppliers To Minimize The Impact Of New Tariffs On Mexican Imports,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,CMG,"Chipotle Mexican Grill Says If Announced Mexico Tariffs Are Enacted, They Would Negatively Impact Co's Costs",Benzinga Newsdesk
+2018-05-31 00:00:00+00:00,2018-05-31,CMG,"UPDATE: Mexican Ministry Says Will Tariff Flat Steel, Some Pork, Other Foods",Paul Quintaro
+2018-10-30 00:00:00+00:00,2018-10-30,CMI,"From Cummin's Q3 Earnings Conference Call: Tariffs Will Impact 2019 Results By $150M Directly, $100M Via Increases In Metal Market",Benzinga Newsdesk
+2018-10-30 00:00:00+00:00,2018-10-30,CMI,From Cummins Conference Call: Cp. Says Expects To Offset Majority Of Tariff Cost Through Combination Of Pricing And Supply Chain Adjustments,Benzinga Newsdesk
+2018-03-19 00:00:00+00:00,2018-03-19,CMI,"Deutsche Bank Revisits Machinery Group After Tariffs, Macro Shifts",Shanthi Rexaline
+2019-08-05 00:00:00+00:00,2019-08-05,CMRE,Shares of several shipping and logistics companies are trading lower amid renewed US-China trade tensions. President Trump announced an addition 10% tariff on $300 billion worth of Chinese goods.,Benzinga Newsdesk
+2019-05-14 00:00:00+00:00,2019-05-14,CMRE,Danaos Sees Little Tariff Fallout For Box-Ship Chartering,FreightWaves
+2018-04-04 00:00:00+00:00,2018-04-04,CNHI,"Watching Deere, CNH Industrial Shares As Hearing Berenberg Highlighted Possibility China's 25% Tariff Will Have Negative Readthrough For Tractor OEMs",Paul Quintaro
+2018-11-12 00:00:00+00:00,2018-11-12,CNI,China's Exports To US Hit New Record On 'Pull Forward' From Tariffs With No Let Up Yet Seen,FreightWaves
+2018-09-13 00:00:00+00:00,2018-09-13,CNI,Canadian National Says Current Embargo Of Ethanol Deliveries Into Argo Trading Hub Could Be Lifted As Early As Tomorrow,Benzinga_Newsdesk
+2019-06-24 00:00:00+00:00,2019-06-24,COLM,Columbia Sportswear Issues Press Release Highlighting It Testified Before Office Of US Trade Rep To Warn Against Trump's Proposed 25% Tariffs On Products Manufactured In China,Benzinga Newsdesk
+2018-07-11 00:00:00+00:00,2018-07-11,CONN,A Peek Into The Markets: US Stock Futures Tumble As Trump Administration Unveils More China Tariffs,Lisa Levin
+2019-08-20 00:00:00+00:00,2019-08-20,COP,"Conocophillips, Encana To Ask US Regulator To Reject Fee To Offset Trump Administration's 25% Steel Tariff",Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,COP,Shares of many oil & gas companies are trading higher with the overall market after the U.S. announced it is excluding and delaying the additional 10% tariff on certain products.,Benzinga Newsdesk
+2018-07-26 00:00:00+00:00,2018-07-26,COP,Conoco Exec Says Steel Tariffs Are Becoming A 'Fairly Significant' Cost And WIll Impact Cap. Spending In 2019,Benzinga_Newsdesk
+2019-06-05 09:44:39+00:00,2019-06-05,CORN,Proposed Mexican List Of Possible Retaliatory Tariffs On US Goods Excludes Corn,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,CP,Shares of several transportation companies are trading higher in sympathy with the overall market after the U.S. announced it is excluding and delaying the additional 10% tariff on certain products.,Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,CPB,Campbell Soup Executive Says Avoidance Of Any Retaliatory Tariffs With Respect To Canada Will Avoid A Fairly Significant Cost For Co.,Benzinga Newsdesk
+2018-05-18 00:00:00+00:00,2018-05-18,CPB,"'JUST IN: After Campbell Soup cites tariffs as an impact on their quarterly earnings, Commerce Secretary Wilbur Ross tells CNBC the company is using that ""as a cover up for other problems""'-CNBC Now Tweet",Benzinga Newsdesk
+2019-09-11 00:00:00+00:00,2019-09-11,CRM,Salesforce.com shares are trading higher on seemingly no company-specific news. The stock could potentially be trading higher on optimism after China announced a tariff exemption list on some U.S. goods.,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,CROX,"Shares of several footware companies are trading lower in sympathy with Foot Locker after the company reported weak Q2 earnings results. China also announced it will impose additional tariffs, which could potentially further impact retail companies.",Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,CSCO,A New Trade War ETF Arrives Right On Time,ETF Professor
+2019-05-19 00:00:00+00:00,2019-05-19,CSCO,Barron's On: Investing For A Trade War,Nelson Hem
+2019-05-10 00:00:00+00:00,2019-05-10,CSCO,Tariff Troubles: Market Retreat Looks To Continue As U.S. Raises Levies On China Goods,JJ Kinahan
+2018-09-11 00:00:00+00:00,2018-09-11,CSCO,"Piper Jaffray Out On Cisco, Says Q1 Product Estimates May Be conservative As Mgmt. Is Embedding Lighter Than Normal Seasonality; Also Notes That The Co. CEO Expects To Have To Pass Through New U.S. Tariffs To Customers",Benzinga Newsdesk
+2019-12-05 00:00:00+00:00,2019-12-05,CSIQ,Weakness In Solar Stocks Attributed To Report US Trade Court Has Granted Injunction In Solar Tariff Dispute,Benzinga Newsdesk
+2019-12-05 00:00:00+00:00,2019-12-05,CSIQ,Solar Stocks On Watch Following Reports Stating US Trade Court Has Granted Injunction In Solar Tariff Dispute,Benzinga Newsdesk
+2019-06-12 00:00:00+00:00,2019-06-12,CSIQ,US Grants Tariff Exemption For Bifacial Solar Panels,Benzinga Newsdesk
+2018-06-07 00:00:00+00:00,2018-06-07,CSIQ,"Vertical Group's Johnson On Benzinga's PreMarket Prep, When Asked What Possible Removal Of Chinese Tariffs Could Mean For Solar Sector Says, 'This is gonna be bad for all parties'",Benzinga Newsdesk
+2018-02-15 00:00:00+00:00,2018-02-15,CSIQ,Height Securities Expects Rollback Of Solar Tariff Amid Global Challenges,Elizabeth Balboa
+2018-02-15 00:00:00+00:00,2018-02-15,CSIQ,"Height Securities Says It Believes Trump Admin. Will Eventually Roll Back 30% Tariffs On Solar Panels As Chinese 'Retaliation' Intensifies, Also Noting 3 Canadian Solar Panel Manufacturers Including Canadian Solar Have Filed Suit Against The U.S.",Hal Lindon
+2018-01-22 00:00:00+00:00,2018-01-22,CSIQ,Vertical Group's Johnson On USTR News: 2.5GW Cell Import Exemption Will Not Be Good For Chinese Solar Players As 'highly unlikely' They Will Be Anxious 'to build new module plants in the US for 4 years of declining tariffs',Paul Quintaro
+2018-01-22 00:00:00+00:00,2018-01-22,CSIQ,Vertical Group's Gordon Johnson Responds To USTR Announcement: 'I do believe FSLR is the biggest beneficiary here as their panels are excluded from the scope of the tariff',Paul Quintaro
+2018-01-22 00:00:00+00:00,2018-01-22,CSIQ,"Canadian Solar Shares Down 0.9% After Hours Following Report US Trade Rep Said Trump Approved Safeguard Tariffs On Washers, Solar Cell Imports; SunPower Shares Unaffected",Paul Quintaro
+2018-01-22 00:00:00+00:00,2018-01-22,CSIQ,"U.S. Trade Rep Says Trump Approves Safeguard Tariffs On Washers and Solar Cells Imports; Watch Whirlpool, First Solar, Canadian Solar, SunPower, SunRun",Hal Lindon
+2018-01-11 00:00:00+00:00,2018-01-11,CSIQ,A Look Ahead To Trump's Decision On Solar Tariffs,Wayne Duggan
+2018-01-11 00:00:00+00:00,2018-01-11,CSIQ,"Height Securities Notes Pres. Trump To Decide On Sec. 201 Solar Tariffs By Jan. 26; If Tariffs Are Enacted FirstSolar and Canadian Solar Seen As Winners, SunPower and Sunrun As Losers",Hal Lindon
+2019-09-25 00:00:00+00:00,2019-09-25,CTAS,"UPDATE: Morgan Stanley On Cintas Also Notes 'with all of the additional noise in the marketplace from interest rates, tariffs,and the upcoming election, management is more cautious now than it was at the beginning of the summer'",Benzinga_Newsdesk
+2018-04-05 00:00:00+00:00,2018-04-05,CVS,"Stocks On The Rise As Markets Shake Off Tech, Tariff Woes Ahead Of Fri. Jobs Report",JJ Kinahan
+2019-06-07 00:00:00+00:00,2019-06-07,CVTI,Truckload Stocks Looking Past Upcoming Tariffs,FreightWaves
+2018-08-21 00:00:00+00:00,2018-08-21,DAKT,"Daktronics Chair, Pres, CEO Warned, 'While we remain optimistic about long-term growth in the digital display industry, most of us are aware the current global tariff and trade environment is very dynamic'",luke@benzinga.com
+2019-05-15 00:00:00+00:00,2019-05-15,DAL,"Delta Says Is Contractually Committed To Buying Several Billion Dollars Of Planes From Airbus, Says Tariffs Would Hit Co., Not Airbus",Benzinga Newsdesk
+2019-11-12 00:00:00+00:00,2019-11-12,DE,"Author, CNBC Editor Says Tariffs Harm US Importers, Consumers",FreightWaves
+2019-09-13 00:00:00+00:00,2019-09-13,DE,"China Will Not Impose Added Tariffs On Soy, Pork, Other Ag Goods From US",Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,DE,Deere & Co shares are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods. Trump announced he will respond to China's tariffs this afternoon.,Benzinga Newsdesk
+2019-08-09 00:00:00+00:00,2019-08-09,DE,How An Agribusiness ETF Is Dealing With The Trade War,ETF Professor
+2019-06-05 00:00:00+00:00,2019-06-05,DE,US Agriculture Under Secretary Mckinney Says 'There Has Been Disappointment' In Agriculture Sector Over Trump Tariff Plans,Benzinga Newsdesk
+2019-05-20 00:00:00+00:00,2019-05-20,DE,"Tariffs, Trade Cloud Short-Term Future For Deere, But RBC Says Plow Ahead",Dave Royse
+2019-04-09 00:00:00+00:00,2019-04-09,DE,"US Secretary Of Agriculture Sonny Perdue Notes US Is Talking With China About Cutting Tariffs On US Ethanol, Says 'Things Look Positive'",Benzinga Newsdesk
+2019-02-15 00:00:00+00:00,2019-02-15,DE,Deere Says Expect US Tariffs On Chinese Imports To Cost Company $100M In 2019,Benzinga Newsdesk
+2019-02-15 00:00:00+00:00,2019-02-15,DE,Deere shares are trading lower after the company reported Q1 EPS of $1.54 versus the $1.76 analyst estimate despite better than expected revenue. The company cited higher material costs and customer tariff concern as weaknesses during the quarter.,Benzinga  Newsdesk
+2018-11-21 00:00:00+00:00,2018-11-21,DE,From Deere Conference Call: Sees Section 301 Tariffs Costing Co. ~$100M-$125M In 2019,Benzinga Newsdesk
+2018-07-24 00:00:00+00:00,2018-07-24,DE,Trump's Bailout For Farmers Caught In The Trade War: What You Need To Know,Wayne Duggan
+2018-06-07 00:00:00+00:00,2018-06-07,DE,Stocks Fall To Session Lows; US Trade Rep Chief Agricultural Negotiate Gregg Doud Says $20B+ Of $140B In US Farm Exports Has Or Is Likely To Have Retaliatory Tariffs Against,Benzinga Newsdesk
+2018-05-24 00:00:00+00:00,2018-05-24,DE,"The Market In 5 Minutes: GE, Tariffs, Summit, Jobless Claims And More",Benzinga Newsdesk
+2019-05-20 00:00:00+00:00,2019-05-20,DECK,"Footwear Distributors, Retailers Of America Says Dozens Of Shoe Retailers Have Signed Letter To Pres Trump Urging Halt To Tariffs On Shoes Made In China",Benzinga Newsdesk
+2019-10-07 00:00:00+00:00,2019-10-07,DF,"Dean Foods shares are trading higher as the USTR is reportedly planning on imposing tariffs on EU agricultural products, which could be a near-term positive for US agricultural companies.",Benzinga Newsdesk
+2019-08-30 00:00:00+00:00,2019-08-30,DG,"UPDATE: Piper Jaffray On Dollar General Also Notes 'In a volatile consumer environment, where others have more tariff risk, we argue DG is one of the top defensive growth names in Consumer, and therefore worth owning' Even With Valuation At All Time High",Benzinga_Newsdesk
+2018-11-16 00:00:00+00:00,2018-11-16,DHI,"Friday Follies: Brexit, Semiconductor, And Tariffs All Take Center Stage",JJ Kinahan
+2019-12-09 00:00:00+00:00,2019-12-09,DHR,3M's Stock Buzzing Despite The Harmful Trade War,IAM Newswire
+2019-10-03 00:00:00+00:00,2019-10-03,DHT,Ocean Rate Report: Sanctions Still Stoking Supertankers,FreightWaves
+2019-10-01 00:00:00+00:00,2019-10-01,DHT,Sanctions Are Cleaving The Global Shipping Fleet In Two,FreightWaves
+2019-08-14 00:00:00+00:00,2019-08-14,DHT,How U.S-China Trade Dispute Steers Ocean Shipping Stocks,FreightWaves
+2019-08-26 00:00:00+00:00,2019-08-26,DIA,Market Bounces Back After Trump Suggests 'Very Positive Development' In Trade War,Wayne Duggan
+2019-08-23 00:00:00+00:00,2019-08-23,DIA,China To Raise Import Tariffs On $75B Additional US Goods,Wayne Duggan
+2019-08-05 00:00:00+00:00,2019-08-05,DIA,Market Sell-Off Accelerates Following China Trade War Retaliation,Wayne Duggan
+2019-08-02 00:00:00+00:00,2019-08-02,DIA,"Report: 10% Tariffs Could Be Delayed, Halted If China Talks Action Before Sept. 1",Wayne Duggan
+2019-07-10 00:00:00+00:00,2019-07-10,DIA,"Powell: Trade War, Global Weakness 'Weigh On The US Economic Outlook'",Wayne Duggan
+2019-06-06 00:00:00+00:00,2019-06-06,DIA,"Fed's Williams Says There's A Shift From Tailwind Of Fiscal Policies To Headwind Of Trade, Tariff Issues",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,DIA,Trump Says US Will Impose 5% Tariff On Mexico Imports Starting June 10,Jayson Derrick
+2019-05-30 00:00:00+00:00,2019-05-30,DIA,"Trump Says Tariffs Working, Promises 'Dramatic' US-Mexico Border Announcement",Dave Royse
+2019-03-20 00:00:00+00:00,2019-03-20,DIA,Fed Says No Rate Hikes In 2019; Trump Warns China Tariffs Could Stand For A 'Substantial Period Of Time',Wayne Duggan
+2019-01-17 00:00:00+00:00,2019-01-17,DIA,"Major averages now falling back down from highs after the US Treasury says on recommendations have been made on China tariffs, contradicting earlier rumors.",Benzinga Newsdesk
+2019-01-10 00:00:00+00:00,2019-01-10,DIA,Fed's Powell Says Doesn't Think Tariffs Have Showed Much Of A Visible Mark On Chinese Or Us Economy; Says A More Protectionist Economy Would Be Less Productive,Benzinga Newsdesk
+2019-01-03 00:00:00+00:00,2019-01-03,DIA,Trump Economic Advisor Says 'Heck Of A Lot Of US Companies' Have Trade War Earnings Risk,Wayne Duggan
+2018-12-27 00:00:00+00:00,2018-12-27,DIA,USTR Approves 984 Requests For Exclusions From Tariffs,Benzinga Newsdesk
+2018-12-18 00:00:00+00:00,2018-12-18,DIA,"The US Trade Deficit, Explained",Wayne Duggan
+2018-09-28 00:00:00+00:00,2018-09-28,DIA,"JP Morgan Sees Tariffs On All Chinese Goods Would Cut GDP By 0.2% In 2019, Raise Core Inflation By 0.2%-0.3%",Benzinga_Newsdesk
+2018-09-26 00:00:00+00:00,2018-09-26,DIA,"Fed Chair Powell In Press Conference: Says Effects Of Trade Tensions Are Still Relatively Small, Says Widespread Tariffs And More Protectionist World Would Be Bad For US And Global Economy",Benzinga_Newsdesk
+2019-09-03 00:00:00+00:00,2019-09-03,DKS,ProPublica: Trump Tariffs Throw Curveball At Sporting Gear Industry,Randy Elias
+2019-06-03 00:00:00+00:00,2019-06-03,DLPH,"Auto Makers, Parts Companies Eye Mexico Tariff Talks After Trump Threat",Dave Royse
+2019-11-27 00:00:00+00:00,2019-11-27,DLTR,"UPDATE: UBS Maintains Buy On Dollar Tree, Lowers Tgt To $108 Notes 'Looking ahead, steady top line momentum should lead the way to better margins, esp. as factors like tariffs & shrink subside';'pullback presents a compelling risk-reward for LT investors'",Benzinga_Newsdesk
+2019-11-26 00:00:00+00:00,2019-11-26,DLTR,Dollar Tree Inc Exec On Tariffs Says Nearly All The Expected Impact Is Related To The Introduction Of List 4A Tariffs,Benzinga Newsdesk
+2019-08-30 00:00:00+00:00,2019-08-30,DLTR,"BMO Maintains Market Perform, $102 Target On Dollar Tree As Firm Notes Co's 'Encouraging Family Dollar Comps' But Notes Co. Faces 'faces headwinds from a global helium shortage and the potential impact of List 4 tariffs'",Benzinga_Newsdesk
+2019-08-29 00:00:00+00:00,2019-08-29,DLTR,"Dollar Tree Said it Increased Inventory to Mitigate Tariffs, Says New Tariffs Will Cost the Company ~26M",luke@benzinga.com
+2019-05-30 00:00:00+00:00,2019-05-30,DLTR,"Dollar Tree shares are trading higher after the company reported better-than-expected Q1 sales results. The stock has reversed from pre-market weakness, as strong earnings now appear to offset concerning guidance and tariff concerns.",Benzinga Newsdesk
+2019-05-30 00:00:00+00:00,2019-05-30,DLTR,"Dollar Tree Inc Says Until Co. Has More Clarity, Outlook Excludes Impact Of Tariffs On List 4 Products",Benzinga Newsdesk
+2018-11-29 00:00:00+00:00,2018-11-29,DLTR,"Dollar Tree Shares Up 14% From Pre-Market Low Set Immediately Following Concern Q3 Report, Bad Guidance, Up 4% For Session; On Call, Exec Expressed Possibility Co. Has Already Mitigated 50% Of Impact From Potential Section 301 Tariffs",Benzinga Newsdesk
+2018-04-17 00:00:00+00:00,2018-04-17,DM,Will Solar Import Tariffs Hurt U.S. Alternative Energy?,Zacks
+2019-09-24 00:00:00+00:00,2019-09-24,DOW,"Shares of chemical companies are trading lower. While speaking in front of the UN, Trump criticized China's trade policies, reigniting concerns of a trade war and slowing global growth. This has impacted commodity and industrial input stocks.",Benzinga Newsdesk
+2019-05-16 00:00:00+00:00,2019-05-16,DRE,UPDATE: Bank Of America Downgrades Duke Realty To Neutral To Reflect Firm's More Cautious Stance On Sector Due To Trade War Risks; Additionally Firm Believes Co. Has 'less total return potential than peers',Benzinga_Newsdesk
+2019-12-04 00:00:00+00:00,2019-12-04,DSX,Ocean Shipping In Crossfire Again As Trade War Reignites,FreightWaves
+2018-12-04 00:00:00+00:00,2018-12-04,DSX,Dry Bulk Carrier Stocks Win Big On China Tariff Delay,FreightWaves
+2020-03-10 00:00:00+00:00,2020-03-10,E,"Sanctions, Stimuli And COVID-19: Today's Oil News",Elizabeth Balboa
+2019-06-17 00:00:00+00:00,2019-06-17,EBIX,Ebix Downplays Retaliatory Tariffs By India,Tanzeel Akhtar
+2019-06-17 00:00:00+00:00,2019-06-17,EBIX,"Ebix Spokesperson Tells Benzinga Indian Tariff Impact Speculation By Traders 'Seems Nonsensical, But Does Play Into The Short Position'; Stock Down More Than 11%",Benzinga Newsdesk
+2019-06-17 00:00:00+00:00,2019-06-17,EBIX,"Ebix Says Is Not Aware Of Any News, Events Or Tariffs Which Would Negatively Impact Its Business Or Account For Today's Abnormal Trading Activity",Benzinga Newsdesk
+2019-06-17 00:00:00+00:00,2019-06-17,EBIX,Ebix Shares Down 15%; Traders Attributing Downside To News Of Retaliatory Tariffs Imposed By India On US; Co. Sales From India Were ~40% In 2018,Benzinga Newsdesk
+2019-03-11 06:42:04+00:00,2019-03-11,EDC,What Trade War? Emerging Markets Defy The Odds By Rolling With The Punches,Chris Dier-Scalise
+2020-02-27 05:40:49+00:00,2020-02-27,EEM,Comparing COVID-19 To The 2019 US-China Trade War,Wayne Duggan
+2020-01-28 00:00:00+00:00,2020-01-28,EGLE,Eagle Shipping Settles US Sanctions Violations Case,FreightWaves
+2019-05-13 00:00:00+00:00,2019-05-13,EGLE,How An Escalating Trade War Could Play Out For Ocean Shipping,FreightWaves
+2019-08-23 00:00:00+00:00,2019-08-23,EMN,Shares of several chemical companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods. Trump announced he will respond to China's tariffs this afternoon.,Benzinga Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,EMN,Shares of several materials/chemicals companies are trading higher in sympathy with the overall market after the U.S. announced it is excluding and delaying the additional 10% tariff on certain products.,Benzinga Newsdesk
+2018-04-04 00:00:00+00:00,2018-04-04,ENDP,"The Market In 5 Minutes: China Tariffs, Zuckerberg, Spotify, Model 3 Deliveries And More",Benzinga Newsdesk
+2018-09-12 00:00:00+00:00,2018-09-12,ENPH,"Enphase Energy Expands Manufacturing Capacity with Flex in Mexico; Starting Q2 2019, The Co. Will Begin Delivering Enphase Products Produced In Mexico To The US Market As A Part Of A Mitigation Plan For Impending USTR Section 301 Tariff In The U.S.",Benzinga_Newsdesk
+2018-03-06 00:00:00+00:00,2018-03-06,ENPH,Has Trump's 30% Tariff Slam Sent Solar Stocks Into A Free Fall?,Zacks
+2018-01-23 00:00:00+00:00,2018-01-23,ENPH,"Solar Stocks Volatile On Monday's Tariff News; Vivint Solar +5.63%, Sunrun +6.71%, Sunworks +6.25%, SunPower -6.53%, JinkoSolar -6.95%, Yingli Green Energy -3.7%, Enphase Energy +6.09%",Hal Lindon
+2018-03-13 00:00:00+00:00,2018-03-13,ERJ,Embraer Shares Fall ~$1 Over Last Min. Amid Report Brazil Officials Have Said US Steel Tariffs Will Harm Possible Deal With Boeing,Paul Quintaro
+2019-04-11 00:00:00+00:00,2019-04-11,ESV,"Rowan Cos. 8-K Shows Received Full Sanction By High Court Of Justice Of England, Wales For Merger With Ensco",Benzinga Newsdesk
+2019-06-03 00:00:00+00:00,2019-06-03,EW,"Fitch Ratings Says US Tariffs On Mexico May Threaten USMCA, Corporate Cash Flow",Benzinga Newsdesk
+2020-04-04 00:00:00+00:00,2020-04-04,EWC,"US, Canada Discuss Putting Tariffs on Saudi and Russian Oil",Charles Gross
+2019-12-10 00:00:00+00:00,2019-12-10,EWC,"US Commerce Secretary Ross, Asked If Dec 15 Tariffs On Chinese Imports Will Take Effect, Says It Is More Important To Get A Good Deal For US",Benzinga Newsdesk
+2019-07-09 00:00:00+00:00,2019-07-09,EWC,"Mexico's Lopez Obrador Says New US Tariffs On Some Mexican Steel Does Not Affect USMCA Trade Pact, Separate From Other Tariff Threats",Benzinga Newsdesk
+2019-06-20 00:00:00+00:00,2019-06-20,EWC,Trudeau Says 'Very Pleased' With Lifting Of Steel And Aluminum Tariffs,Benzinga Newsdesk
+2019-06-19 00:00:00+00:00,2019-06-19,EWC,US Trade Rep Lighthizer Says Does Not See Tariff Threats On Mexico Making USMCA Trade Deal Passage More Difficult,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWC,"Canadian Prime Minister Justin Trudeau, Asked About Implication Of Trump Tariff Comments On Usmca Trade Pact, Says Canada Will Move Ahead In Responsible Way On Ratification",Benzinga Newsdesk
+2019-06-03 00:00:00+00:00,2019-06-03,EWC,Mexican Deputy Foreign Minister Seade Says Tariff Threat Is A Stumbling Block That Puts Approval Of USMCA At Risk,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWC,"'Mnuchin and Lighthizer were opposed to Trump tariffs on Mexico, source says' -CNBC, Citing Sources",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWC,Canadian Foreign Minister Chrystia Freeland Says Question Of Mexico-US Border Is A Bilateral Issue When Asked About Possible New Tariffs; Says Canada Will Move In Tandem With Mexico And US In Ratifying New North American Trade Deal,Benzinga Newsdesk
+2019-05-17 00:00:00+00:00,2019-05-17,EWC,"Pres Trump, Recently Speaking On Trade Deal Between US, Canada, Mexico, Says Will Sell Products Into Canada, Mexico Without Tariffs",Benzinga Newsdesk
+2019-05-17 00:00:00+00:00,2019-05-17,EWC,"US Statement Shows Has Agreed To Eliminate Steel, Aluminum Tariffs On Canada Within 45 Hours; Canada Will Stop Retaliatory Tariffs Over Same Period",Benzinga Newsdesk
+2019-05-17 00:00:00+00:00,2019-05-17,EWC,"Canada Issues Joint Statement, Says US, Canada Have Reached Deal Lifting Metal Tariffs",Benzinga Newsdesk
+2019-05-17 00:00:00+00:00,2019-05-17,EWC,"Senior Mexican Official Says Mexico, Canada Will Lift Retaliatory Tariffs On US Products Once US Has Announced Deal Reached On Lifting Steel, Aluminum Duties",Benzinga Newsdesk
+2019-05-17 00:00:00+00:00,2019-05-17,EWC,"CBC Reports US, Canada Close To Deal On Metal Tariffs",Benzinga Newsdesk
+2019-05-15 00:00:00+00:00,2019-05-15,EWC,"Canadian Foreign Minister Freeland Says As Long As Tariffs Remain In Place, Ratification Of USMCA Would Be 'Very Problematic'",Benzinga Newsdesk
+2019-05-15 00:00:00+00:00,2019-05-15,EWC,"'Canada's Freeland emerges from 1hr meeting with ⁦@USTradeRep - won't say if tariff deal is reached, but hinted the window is closing to ratify nafta b/c parliament breaks soon. She's on her way to Capitol Hill now' -Richard Madan Tweets",Benzinga_Newsdesk
+2019-05-15 00:00:00+00:00,2019-05-15,EWC,'USTR Lighthizer plans to float proposal today in meeting with Canada's Freeland that would chart path forward on USMCA that would include process for removing steel & aluminum tariffs...' -tweet From CNBC Now,Benzinga Newsdesk
+2019-05-15 00:00:00+00:00,2019-05-15,EWC,"Treasury Secretary Mnuchin On Removing Steel, Aluminum Tariffs With Mexico, Canada, Says 'I Think We Are Close To An Understanding'",Benzinga Newsdesk
+2019-05-15 00:00:00+00:00,2019-05-15,EWC,'Senate Finance Chairman Chuck Grassley suggested today that U.S. and Canadian officials could be nearing a deal to lift the tariffs President Donald Trump imposed on steel and aluminum imports',Benzinga Newsdesk
+2019-05-14 00:00:00+00:00,2019-05-14,EWC,"Canada's Freeland Says Canada And Mexico Have Coordinated Closely Throughout Nafta Process, Two Nations Discussed US Metals Tariffs During Tuesday's Meeting",Benzinga Newsdesk
+2019-04-09 00:00:00+00:00,2019-04-09,EWC,World Trade Organization Ruling Largely Throws Out Canadian Challenge Against US Tariffs On Softwood Lumber,Benzinga Newsdesk
+2019-01-29 00:00:00+00:00,2019-01-29,EWC,Canadian Foreign Minister Freeland Says She Has Spoken Twice In Last Two Days With US Trade Representative Lighthizer About US Metals Tariffs,Benzinga Newsdesk
+2018-12-14 00:00:00+00:00,2018-12-14,EWC,"'Top officials of U.S., Canada discuss N.K. sanctions evasion' -Yonhap",Benzinga Newsdesk
+2018-11-15 00:00:00+00:00,2018-11-15,EWC,'Lighthizer says next round of U.S. tariffs on Chinese imports has been put on hold: report' -Canada's Globe And Mail,Benzinga Newsdesk
+2018-11-12 00:00:00+00:00,2018-11-12,EWC,Hearing Trump Planning Tuesday Meeting With trade Team Regarding Auto Tariffs,Benzinga Newsdesk
+2018-10-15 00:00:00+00:00,2018-10-15,EWC,"Canada Foreign Minister Freeland Spoke To Mexico Economy Minister Guajardo On Monday, Discussed Mexico's Concerns Over Canadian Steel Tariffs",Benzinga_Newsdesk
+2018-10-11 00:00:00+00:00,2018-10-11,EWC,"Canada Steel Tariffs Will Be Reviewed By Canadian ?International Trade Tribunal, In Place For 200 Days Pending Tribunal Findings",Benzinga_Newsdesk
+2018-10-11 00:00:00+00:00,2018-10-11,EWC,Canadian Government Announces Provisional Safeguard Tariffs On Some Steel Products From All Countries,Benzinga_Newsdesk
+2018-10-09 00:00:00+00:00,2018-10-09,EWC,"US Secretary Of Agriculture Sonny Perdue Says Talks Related To Potential End Of Steel, Aluminum Tariffs On Mexico, Canada 'Just Beginning'",Benzinga Newsdesk
+2018-10-05 00:00:00+00:00,2018-10-05,EWC,Canada's Trudeau Says Talks Continue On US Steel And Aluminum Tariffs,Benzinga_Newsdesk
+2018-09-26 00:00:00+00:00,2018-09-26,EWC,Canada's Trudeau Says US Tariffs Will Have To Be Scrapped For Canada To Feel Confident About Agreeing To New NAFTA,Benzinga_Newsdesk
+2018-09-26 00:00:00+00:00,2018-09-26,EWC,Canada's Trudeau Says Trump Has Told Him There Will Be No Need To Worry About Tariffs If New NAFTA Deal Is Agreed,Benzinga_Newsdesk
+2018-09-25 00:00:00+00:00,2018-09-25,EWC,"US Trade Rep Lighthizer Notes Steel, Aluminum Tariff Talks Will Be Dealt With Separately From NAFTA Talks",Benzinga Newsdesk
+2018-09-21 00:00:00+00:00,2018-09-21,EWC,"UPDATE: Unnamed White House Official Says US Is Assessing China's Response To The Latest Round Of Tariffs, Notes US Is Not Ready To Announce A Date For Next Round OF Tariffs",Benzinga Newsdesk
+2018-09-18 00:00:00+00:00,2018-09-18,EWC,Trump Says Canada Can't Keep Charging U.S. '300% Tariffs' On Dairy Products,Benzinga Newsdesk
+2018-09-06 00:00:00+00:00,2018-09-06,EWC,"Canada's Chrystia Freeland Says Canada Continues To Make Case to Lift U.S. 232 Tariffs, Still Sees Possibility of Trade Deal With U.S. and Mexico",Benzinga Newsdesk
+2018-08-29 00:00:00+00:00,2018-08-29,EWC,Mexico Steel Lobby Requests Mexican Gov. Seek Mexico's Exclusion From 232 Tariff Measure Before Closing Trileteral; NAFTA Renegotiation; Says Mexico Should Impose Equivalent Measures Against US Steel Imports To Even Out Playing Field In Meantime,Benzinga_Newsdesk
+2018-08-21 00:00:00+00:00,2018-08-21,EWC,"Commerce Secretary Wilbur Ross Says Trump's Auto Tariff Timetable Has Likely 'Slipped' Amid European, NAFTA Negotiations",luke@benzinga.com
+2018-07-04 00:00:00+00:00,2018-07-04,EWC,"A Trade War Primer: The Tariffs Imposed, Threatened, And Expected By The US, Canada, Mexico, China And The EU",Wayne Duggan
+2018-06-29 00:00:00+00:00,2018-06-29,EWC,"Canada Earlier Announced Tariffs On $12.6B of U.S. Goods, To Take Effect July 1",Benzinga Newsdesk
+2018-06-07 00:00:00+00:00,2018-06-07,EWC,Canadian Prim Minister Trudeau Says Canada Will Defend Industries Hit By U.S. Tariffs,Benzinga Newsdesk
+2018-06-06 00:00:00+00:00,2018-06-06,EWC,Larry Kudlow Says Steve Mnuchin Did Not Recommend Exceptions For Canada From U.S. Tariffs,Benzinga Newsdesk
+2018-05-31 00:00:00+00:00,2018-05-31,EWC,"Canada's Proposed Tariffs Are Also For Whiskey, Orange Juice, Other Food Products, In Addition to Steel, Aluminum",Paul Quintaro
+2018-05-31 00:00:00+00:00,2018-05-31,EWC,"Canadian Minister Of Foreign Affairs Freeland Says Canada Will Challenge Tariffs Under NAFTA, WTO",Paul Quintaro
+2018-04-30 00:00:00+00:00,2018-04-30,EWC,"U.S. Delays Steel Tariffs for E.U. Until June 1; Tariff Exemptions Include Canada, Mexico, Brazil, Argentina, Australia, Korea",Charles Gross
+2018-03-05 00:00:00+00:00,2018-03-05,EWC,Watch These ETFs As Trade War Risks Rise,Zacks
+2020-04-22 00:00:00+00:00,2020-04-22,EWG,German Govt Spokesman Says German Govt Has No Plans For Sanctions Related To Coronavirus,Benzinga Newsdesk
+2020-01-24 00:00:00+00:00,2020-01-24,EWG,Volkswagen CEO Says President Trump Appears Still Very Committed to U.S. Tariffs,Charles Gross
+2019-10-16 00:00:00+00:00,2019-10-16,EWI,"Trump, In Joint Press Conference With Italian Pres, Says Could Solve US, Euro Trade Problem Instantly With Tariffs But That Would Be Too Harsh",Benzinga Newsdesk
+2018-12-19 00:00:00+00:00,2018-12-19,EWI,EU Says Has Solution Which Would Allow Italy To Avoid Sanctions On Budget,Benzinga Newsdesk
+2019-11-03 00:00:00+00:00,2019-11-03,EWJ,"Secretary Ross Say U.S. May Not Need to Put Tariffs on Imported Vehicles After Holding Good Conversations With Companies in EU, Japan",Charles Gross
+2019-09-26 00:00:00+00:00,2019-09-26,EWJ,"Trump Economic Adviser Larry Kudlow Says U.S. Will Not Impose Auto Tariffs On Japan As Long As The Goodwill, Progress Continues In Japan-U.S. Trade Deal",Benzinga_Newsdesk
+2019-09-25 00:00:00+00:00,2019-09-25,EWJ,Japanese Foreign Minister Says Sees No Added Tariffs On Section 232 Of US Trade Law Will Be Imposed On Japanese Autos As Long As Bilateral Trade Deal Is Implemented Faithfully,Benzinga Newsdesk
+2019-09-25 00:00:00+00:00,2019-09-25,EWJ,"Tariffs On Japanese Cars, Car Parts Will Be Eliminated Through Further Talks, No Time Frame Set",Benzinga Newsdesk
+2019-09-25 00:00:00+00:00,2019-09-25,EWJ,"US Trade Rep Lighthizer Says US Will Eliminate Or Reduce Tariffs On Certain Industrial Goods From Japan, Including Some Machine Tools, Fasteners, Steam Turbines, Bikes, Musical Instruments",Benzinga Newsdesk
+2019-09-25 00:00:00+00:00,2019-09-25,EWJ,"US Trade Rep Lighthizer Says Once Deal Implemented, Over 90% Of US Food, Ag Products Exported To Japan Will Be Duty Free Or Receive Preferential Tariff Access",Benzinga Newsdesk
+2019-09-24 00:00:00+00:00,2019-09-24,EWJ,"Nikkei Says Japan, U.S. Fail To Agree On Us Tariff Removal Timeline",Benzinga_Newsdesk
+2019-09-23 00:00:00+00:00,2019-09-23,EWJ,'U.S.-Japan Trade Deal in Jeopardy Over Clash Over Car Tariffs' -NYT,Benzinga Newsdesk
+2019-09-20 00:00:00+00:00,2019-09-20,EWJ,"US-Japan trade Agreement to Maintain Tariffs on Japanese Auto Parts, Steel, Aluminum",Charles Gross
+2019-09-10 00:00:00+00:00,2019-09-10,EWJ,Bank of Japan Policymakers Moving Closer to Expanding Stimulus as U.S.-China Trade War Broadens,Charles Gross
+2019-08-27 00:00:00+00:00,2019-08-27,EWJ,"South Korea Rejects Abe's Accusations, Urges Japan To Retract Economic Retaliation",Benzinga Newsdesk
+2019-08-26 00:00:00+00:00,2019-08-26,EWJ,Trump Says Japan Auto Tariffs Not Being Considered At The Moment,Benzinga Newsdesk
+2019-04-17 00:00:00+00:00,2019-04-17,EWJ,'US opts for quick agreement with Japan on agriculture. Negotiators settle for tariff cuts in line with TPP' -Nikkei Asian Review,Benzinga Newsdesk
+2018-09-10 00:00:00+00:00,2018-09-10,EWJ,'Trade war likely to hurt profits for 60% of Japan's top companies' -Nikkei,luke@benzinga.com
+2018-05-22 00:00:00+00:00,2018-05-22,EWJ,Japan Tells WTO Tariff Retaliation Could Amount to $440M Based on 2017 Trade Figures,Benzinga Newdesk
+2019-10-17 00:00:00+00:00,2019-10-17,EWU,Political Declaration Allows for Ambitious Free Trade Deal With Zero Tariffs and Quotas Between EU and UK,Charles Gross
+2019-10-04 00:00:00+00:00,2019-10-04,EWU,"Spain's Acting Ag Minister Says US Tariffs On Ag, Food Sectors Are 'Unacceptable'",Benzinga Newsdesk
+2019-10-03 00:00:00+00:00,2019-10-03,EWU,Spokesperson For UK Prime Minister Johnson Says Is Disappointed By US Tariff List,Benzinga Newsdesk
+2019-10-02 00:00:00+00:00,2019-10-02,EWU,"US Trade Rep Tariff List Includes Cheese, German Tools, Welding Machinery, Camera Lenses, Coffee",Benzinga Newsdesk
+2019-10-02 00:00:00+00:00,2019-10-02,EWU,"US Trade Rep Will Target Single-Malt Irish, Scotch Whiskies In EU Aircraft Tariff List, UK-Made Sweaters, Pullovers, Cashmere Items, Wool Clothing",Benzinga Newsdesk
+2019-09-16 00:00:00+00:00,2019-09-16,EWU,Airbus CEO Cites Threat That Airlines Refuse To Buy Aircraft Because Of Risk That Future Repeat Purchases Would Then Be Uneconomic; Says A Bad Scenario Would Be Tariffs That Apply To Airbus Aircraft For A Period Before The EU Responds,Benzinga_Newsdesk
+2019-08-20 00:00:00+00:00,2019-08-20,EWU,"US Has Threatened To Impose A Tariff Of Up To 100Pc On Eu Nitrogen Products. This Would Include Automotive Grade Urea, Which Could Displace 230Mn Litres Of Def Equivalent",Benzinga_Newsdesk
+2019-08-15 00:00:00+00:00,2019-08-15,EWU,'Our London Embassy note to UKFCO: -Protested the illegal detention of Grace1; -Repeated public statements about destination; & -Made it crystal clear that EU sanctions do NOT apply to Iran—a position shared by most Europeans....' -Javad Zarif Tweets,Benzinga_Newsdesk
+2019-07-09 00:00:00+00:00,2019-07-09,EWU,'It looks like the UK Royal Navy has begun a mission in the Persian Gulf to escort UK tankers through Strait of Hormuz in fear of retaliation by Iran...' -Tweet,Benzinga Newsdesk
+2019-05-20 00:00:00+00:00,2019-05-20,EWU,"Moody's Issues Report US, China De-escalation Of Trade Tensions Through Delay In US Auto Tariffs Is 'Only Temporary'",Benzinga Newsdesk
+2019-05-03 00:00:00+00:00,2019-05-03,EWU,"US Has Renewed Sanctions Waivers Allowing Russia, UK, China, France To Continue Nonproliferation Work With Iran",Benzinga Newsdesk
+2019-04-11 00:00:00+00:00,2019-04-11,EWU,Élysée Official Says France Does Not Want Trade War Or Tension With The United States But Cannot Support Opening Of Negotiations With A Country That Does Not Respect Paris Climate Accord; Country Will Vote Against The Opening Of Trade Negotiations With US,Benzinga Newsdesk
+2019-04-10 00:00:00+00:00,2019-04-10,EWU,U.S. Treasury's Mnuchin Says EU Tariff Threats Are Specific To Airbus Subsidies Case,Benzinga_Newsdesk
+2019-04-09 00:00:00+00:00,2019-04-09,EWU,"Fitch Says Proposed U.S. Tariffs In Response To EU Subsidies For Airbus, Could Ratchet Up Trade Tensions With Europe",Benzinga_Newsdesk
+2019-04-09 00:00:00+00:00,2019-04-09,EWU,Germany's Economic Minister Says EU Is Open To Speaking With US Related To Tariffs,Benzinga Newsdesk
+2019-04-09 00:00:00+00:00,2019-04-09,EWU,"Donald Trump Tweets (1/2): The World Trade Organization finds that the European Union subsidies to Airbus has adversely impacted the United States, which will now put Tariffs on $11 Billion of EU products! The EU has taken advantage of the US on trade...",Benzinga Newsdesk
+2019-01-24 00:00:00+00:00,2019-01-24,EWU,"A Hard Brexit Would Cost Ford $800M This Year Alone, From Wto Tariffs And A Weakening Pound",Benzinga Newsdesk
+2020-01-30 00:00:00+00:00,2020-01-30,EWW,Mexican Trade Official Expresses Mexico's 'worry' Over USTR Promise To Explore Protections For US Farmers; Threatens 'Similar Measures' To Target US Farm Products As US Explores Protectionist Actions Against Seasonal Mexican Farm Exports,Benzinga Newsdesk
+2019-11-22 00:00:00+00:00,2019-11-22,EWW,Mexico's Central Bank Governor Diaz De Leon Says Protectionism Is One Of Biggest Risks To Global Economic Growth,Benzinga Newsdesk
+2019-10-22 00:00:00+00:00,2019-10-22,EWW,"Harley Says Asean Markets Benefited From Reduced Pricing Enabled By Elimination Of Tariffs Due To Supplying These Markets From Thailand Plant, Strong Growth In Emerging Markets Was Partially Offset By Softness In India And Mexico",Benzinga Newsdesk
+2019-09-06 00:00:00+00:00,2019-09-06,EWW,Mexican Foreign Minister Ebrard Does Not See A Tariff Threat From US In Migration Talks Next Week,Benzinga Newsdesk
+2019-07-23 00:00:00+00:00,2019-07-23,EWW,"Trump On Twitter Says Guatemala Has Decided To Break Safe Third Country Deal; Says He Is Now Looking At Tariffs, Remittance Fees",Benzinga Newsdesk
+2019-07-10 00:00:00+00:00,2019-07-10,EWW,Mexican Economy Ministry Says Spoke To US Commerce Minister About Tariffs On Tomatoes; Says There Is Open Dialog With The United States And Interest In Mutually Beneficial Agreement,Benzinga Newsdesk
+2019-07-10 00:00:00+00:00,2019-07-10,EWW,Mexico's Economy Minister Marquez Says Will Likely Speak To US Commerce Secretary Ross Later Today About Tomato Tariffs,Benzinga Newsdesk
+2019-06-17 00:00:00+00:00,2019-06-17,EWW,Mexican President Lopez Obrador Says Mexico Could Win Trade War With United States But That Would Be A 'Pyrrhic' Victory It Does Not Seek,Benzinga Newsdesk
+2019-06-14 00:00:00+00:00,2019-06-14,EWW,Mexican Economy Minister Says Mexico Ready With Retaliation List If United States Imposes Tariffs,Benzinga Newsdesk
+2019-06-12 00:00:00+00:00,2019-06-12,EWW,Mexico Central Bank Chief Says Any US Tariffs On Mexican Imports Would Have Adverse Effect On Economy And Price Formation,Benzinga Newsdesk
+2019-06-12 00:00:00+00:00,2019-06-12,EWW,JP Morgan's Jamie Dimon Says Direct Effect On Further US Tariffs Would Be Negative,Benzinga Newsdesk
+2019-06-11 00:00:00+00:00,2019-06-11,EWW,'Mexico Foreign Minister Ebrard will hold a news conference at 5:30pm in CDMX to answer questions on the US tariff deal...' -Tweet From Bloomberg Reporter Eric Martin,Benzinga Newsdesk
+2019-06-11 00:00:00+00:00,2019-06-11,EWW,"'If Mexico produces (which I think they will). Biggest part of deal with Mexico has not yet been revealed! China is similar, except they devalue currency and subsidize companies to lessen effect of 25% Tariff...' -Tweet From Pres Trump",Benzinga Newsdesk
+2019-06-10 00:00:00+00:00,2019-06-10,EWW,"'We do not anticipate a problem with the vote but, if for any reason the approval is not forthcoming, Tariffs will be reinstated!' -Trump Tweet",Benzinga Newsdesk
+2019-06-10 00:00:00+00:00,2019-06-10,EWW,'Mexico Agreed to Take Border Actions Months Before Trump Announced Tariff Deal' -Saturday Article From NY Times,Benzinga Newsdesk
+2019-06-08 00:00:00+00:00,2019-06-08,EWW,U.S. Treasury Secretary Mnuchin Says U.S.-Mexico Immigration Deal Met Trump's Objective Of Fixing U.S. Immigration Problems; Says Trump Will Retain Authority to Impose Tariffs if Mexico Fails to Live Up to Deal Commitments,Charles Gross
+2019-06-07 00:00:00+00:00,2019-06-07,EWW,Hearing Mexico's Business Coordinating Council Says US Tariff Threats Should Have Mirror Reaction From Mexico,Benzinga Newsdesk
+2019-06-07 00:00:00+00:00,2019-06-07,EWW,'U.S. Government not prepared to collect tariffs on Mexican goods' -Earlier Yahoo! Finance Article,Benzinga Newsdesk
+2019-06-07 00:00:00+00:00,2019-06-07,EWW,"White House Chief Of Staff For VP Pence Short Says If Talks With Mexico Go Well, Pres Trump Could Decide Not To Implement Tariffs On Mon.",Benzinga Newsdesk
+2019-06-07 00:00:00+00:00,2019-06-07,EWW,White House Chief Of Staff For VP Pence Marc Short Says Still A Long Way To Go On Mexican Tariff Talks,Benzinga Newsdesk
+2019-06-07 00:00:00+00:00,2019-06-07,EWW,White House Chief Of Staff For VP Pence Short Says Trump Administration Still Moving Ahead With Plans To Implement Tariffs On Mexican Products,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,"U.S., Mexico Make Progress on Migration Issues, but Tariffs Still Loom",Charles Gross
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,'Trump plans to declare new national emergency to impose tariffs' -The Hill,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,US Vice President Pence Says Encouraged Mexican Officials Went Into Talks On Thursday Offering To Do More On Immigration; Pence Says It Will Be Up To Trump To Decide Whether To Move Forward On Tariffs,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,"'Just in from White House: ""Position has not changed, and we are still moving forward with tariffs at this time."" Sarah Sanders' -LA Times' Noah Bierman",Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,"Mexico, US Reportedly Discussing Migration Plans; Tariffs Could Be Delayed Or Avoided",Dave Royse
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,'US-Mexico tariff talks to resume at 5:30 pm ET at State Department after 'very good discussion'' -CNBC,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,"UPDATE: 'Faced with President Trump's threat to impose escalating tariffs on Mexican goods beginning Monday, Mexican officials have pledged to deploy up to 6,000 National Guard troops to the country's border region with Guatemala.' -Washington Post",Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,'Mexico aims to avoid tariffs with potential deal that stems migrant travel' -Washington Post,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,UPDATE: US Official Says Most Likely Outcome Is Tariffs Will Go Into Effect On Monday,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,Bloomberg Reports US Weighs Delaying Mexico Tariffs As Time For Deal Runs Short,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,"Fed's Williams Says Economy Vulnerable To Uncertainty Around Trade, Says Tariffs Do Boost Inflation A Bit",Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,'SCOOP-Key members of GOP leadership worried trade war could cost senate and house seats as biz and agriculture feel impact of foreign retaliatory tariffs more no' -FBN's Charlie Gasparino,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,House Ways And Means Committee Chairman Neal Says He Would Introduce Resolution Of Disapproval If Trump Declares National Emergency To Impose Tariff On Mexican Goods,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,"Hearing Trump Aide Schlapp Says Moving Toward Path Of Mexico Tariffs, Mexico Not Offering Enough To Avert Tariffs",Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,"Mexican Pres Obrador Says He Is Confident Mexico, US Will reach Deal To Avoid Tariffs",Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,EWW,Mexican Pres Obrador Highlights Talks With US Over Tariff Threats Will Resume Thurs. Morning In Washington DC,Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,Ebrard Says Did Not Discuss Tariffs In Wednesday Meeting,Charles Gross
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,"Donald J. Trump Tweet....talks with Mexico will resume tomorrow with the understanding that, if no agreement is reached, Tariffs at the 5% level will begin on Monday, with monthly increases as per schedule. The higher the Tariffs go, the higher the number of companies that will move back to the USA!",Charles Gross
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,"'US and Mexico trade officials fail to reach a deal on tariffs, immigration: NBC News' -Recent CNBC Article",Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,US Agriculture Secretary Sonny Perdue Says He'S Hopeful That US And Mexico Can Reach An Accord To Avoid The Tariffs,Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,"Mexican Source Suggests Mexico Will Make Own Demands In Talks To Stave Off US Tariffs Including Redirecting US Security Funds Under 'Merida Initiative' To Mexican Southern Border Development, Along With Marshall Plan",Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,'White House downplays chance of deal to avert Mexico tariffs' -Recent AP Article,Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,"US Talking Points In Mexican Tariff Meeting Include: 1. Increased Asylum Cooperation, 2. Clampdown On Trafficking Networks, 3. Mexican Southern Border Enforcement, 4 Maintaining, Increasing Immigration Detentions",Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,"Mexican Pres Obrador Says Received Official List Of Proposed Retaliatory Tariffs Which Could Be Imposed On US Products If Trump Tariffs Take Effect, No Decision Has Been Made On Retaliatory Tariffs",Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,President Trump Says If Mexico Doesn'T Take Steps To Control Migrants The Tariffs Will Take Place; Says thinks Mexico Wants A Deal,Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,US Senate Finance Committee Chair Grassley Says Sees Announcement On Possible Tariff Deal With Mexico Thurs. Night,Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,US Senate Finance Committee Chair Grassley Says Mexican Officials Going Into Talks With US With 'Long List Of Things' It Will Offer To Avert Tariffs,Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,US Senate Finance Committee Chair Grassley Believes US Will Not Impose Tariffs On Mexican Imports,Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,Hearing White House Advisor Navarro Says Tariffs With Mexico May Not Have To Go Into Effect,Benzinga Newsdesk
+2019-06-05 00:00:00+00:00,2019-06-05,EWW,"Donald J. Trump Tweet: ""House Republicans support the President on Tariffs with Mexico all the way, & that makes any measure the President takes on the Border totally Veto proof. Why wouldn't you as Republicans support him when that will allow our President to make a better deal."" Thank you @GOPLeader",Charles Gross
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,"Fitch Issues Report, Says US Tariffs Could Directly Impact 1 In 5 Mexican Corporations",Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,'Support for Mexican president grows after Trump tariff threat' -Earlier Reuters Article,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,"""Really tariffs, laws, have to originate with Congress, and I think you just can't declare emergencies on spending, on tariffs, also on arms sales,"" - Sen. Rand Paul on CNN",Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,'Trump floats new emergency resolution to impose Mexico tariffs' -The Hill,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,"Trump Tweets 'Schumer on if he thinks the President is bluffing on implementing tariffs on Mexico: If past is prologue, he won't...I have a feeling this one just popped into his head. I believe he will back off..when he sees what a dumb move he's made'",Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,Senate Democratic Leader Schumer Says Believes There Will Be A Disapproval Resolution From Congress If Trump Moves Forward With Mexico Tariffs,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,Senate Majority Leader Mcconnell Says 'Not Much Support' From Republicans For Tariffs On Mexico; Says He Hopes The Tariffs Can Be Avoided Through Talks With Mexico Delegation,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,Mexican Deputy Foreign Minister Seade Met With USTR Lighthizer And US Chamber Of Commerce Chief Donohue Over Tariff Dispute,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,Senate Minority Leader Chuck Schumer Calls Pres Trump's 'Erratic' Mexican Tariff Plan 'Destabilizing',Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,US House Republican Leader Mccarthy Says Thinks Solution Will Be Worked Out With Mexico Over Tariffs,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,"Mexican President Lopez Obrador Says I Maintain My View That We Will Reach A Deal, When Asked About Trump's Comments In London About Tariffs",Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,Trump In Press Conference With UK's May Saud Senate Republicans Would Be 'Foolish' To Try And Block Mexico Tariffs,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,Trump Sees Likely Scenario Is Tariffs On Mexico Will Take Effect And Will Have Discussions With Mexican Officials While Tariffs In Place,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,EWW,"Mexican Pres Obrador Will Not Attend G20, Cites Does Not Want To Be Involved In Confrontations Over Trade War",Benzinga Newsdesk
+2019-06-03 00:00:00+00:00,2019-06-03,EWW,"White House Economic Adviser Kevin Hassett, On Recent Mexico Tariffs, Says Near Term Impact Will Be More On Mexico Than On The US",Benzinga Newsdesk
+2019-06-03 00:00:00+00:00,2019-06-03,EWW,Mexican Foreign Minister Ebrard Says Imposing Tariffs On Mexican Imports Could Be Counterproductive To Stopping Immigration Flows; Says US And Mexico Can Reach An Agreement Over Dispute,Benzinga Newsdesk
+2019-06-03 00:00:00+00:00,2019-06-03,EWW,Morgan Stanley Sees Global Recession in Three Quarters if Trump Escalates Trade War,Charles Gross
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"Mexico's National Farm Council Says US Exports To Mexico Including Grains, Pork, Apples Could Form Part Of A New List Of Possible Mexican Targets For Retaliatory Tariffs",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,'Trump got 'riled up' by talk radio and rolled out tariffs over objections by economic team: report' -Raw Story,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,Texas Governor Abbott Says He Remains Opposed To Tariffs Because Of Harm To Texas Economy,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"Mexican Deputy Economic Minister Says Mexico Will Do What Is Necessary To Defend Its Legitimate Interests, Says White House Argument Tariffs Respond To National Security Emergency Is 'Too Lax, Too Broad'",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,US Chamber Of Commerce Official Says Trump's Threatened Tariffs On Mexican Imports Are A 'Roadblock' To Approval Of USMCA Trad Deal,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"US House Ways And Means Committee Member Brady Issues Statement, Says Its In The Interest Of Both US, Mexico To Find Common Ground Before New Tariffs Take Effect",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"Trump's Top Trade Adviser Lighthizer Opposed Mexican Tariffs, Said Mexican Tariffs Could Hurt New NAFTA",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"US Chamber Of Commerce Officials Says Group Is Looking At Options On US Tariffs On Mexican Goods, Including Legal Challenge",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,'BREAKING: Business groups are considering legal action against the White House over Mexico tariffs' -CNBC Tweets,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"White House Twitter Account Sending Series Of New Tweets On Mexico Tariffs, Immigration, Drug Flow",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"'#China is not the only victim of the #US' repeated trade bullying policies, China's Foreign Ministry spokesperson said, after the US announced plans to impose more tariffs on all goods coming from #Mexico.' -Tweet From China Global Times",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,'Foreign automakers say U.S. tariffs on Mexican imports 'threaten the jobs of tens of thousands of Americans here in the United States'' -Recent Reuters Tweet,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"'In order not to pay Tariffs, if they start rising, companies will leave Mexico, which has taken 30% of our Auto Industry, and come back home to the USA. Mexico must take back their country from the drug lords and cartels...' -Tweet From Trump",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"UPDATE: JP Morgan Says Is US Tariffs On Mexican Goods Are Raised To 25%, Fed May Need To Cut Rates By Much More Than 50 Basis Points",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"Mexico Issues Formal Response To Trump Tweet, Threats Of 5% Tariffs",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"White House Advisor Navarro Says Illegal Aliens, Tariffs Are Linked To National Emergency",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,"American Automotive Policy Council Says Tariffs Imposition Against Mexico Will Undermine Its Positive Impact, Would Impose Significant Cost On US Auto Industry",Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,EWW,White House Spokeswoman In Fox News Interview Says Trump Administration Has 'Thought Through' Mexico Tariff Threat,Benzinga Newsdesk
+2019-05-30 00:00:00+00:00,2019-05-30,EWW,Mexico's Deputy Foreign Minister Seade Says Mexico Would Respond Strongly to New Tariffs,Charles Gross
+2019-05-30 00:00:00+00:00,2019-05-30,EWW,Mexico's Deputy Foreign Minister Seade Says if President Trump's Threat to Impose Tariffs is Carried Out it Would Be Disastrou,Charles Gross
+2019-05-30 00:00:00+00:00,2019-05-30,EWW,Trump Says Tariffs Will Remain at 25% Unless and Until Mexico Substantially Stops the Illegal Inflow of Aliens Coming Through its Territory,Charles Gross
+2019-05-30 00:00:00+00:00,2019-05-30,EWW,"Trump Says U.S. Will Begin Raising Tariff Beyond 5% on July 1, Will Continue Until Reaching 25% on Oct. 1",Charles Gross
+2019-05-30 00:00:00+00:00,2019-05-30,EWW,S&P Futures Fall Sharply After President Trump Announces New Tariffs on Mexico,Charles Gross
+2019-05-30 00:00:00+00:00,2019-05-30,EWW,Donald J. Trump Tweet:....at which time the Tariffs will be removed. Details from the White House to follow.,Charles Gross
+2019-05-30 00:00:00+00:00,2019-05-30,EWW,"Donald J. Trump Tweet: On June 10th, the United States will impose a 5% Tariff on all goods coming into our Country from Mexico, until such time as illegal migrants coming through Mexico, and into our Country, STOP. The Tariff will gradually increase until the Illegal Immigration problem is remedied,..",Charles Gross
+2019-05-30 00:00:00+00:00,2019-05-30,EWW,"Pence Says Trump Will Take Action In Days Ahead, And Whatever He Does Will Be To Address The Immediate Problem On The Southern Border; Declines To Comment On Whether Action On Mexico Will Be Tariffs",Benzinga Newsdesk
+2019-05-30 00:00:00+00:00,2019-05-30,EWW,'Trump prepares to threaten Mexico with new tariffs in attempt to force migrant crackdown' -Washington Post,Benzinga Newsdesk
+2019-05-17 00:00:00+00:00,2019-05-17,EWW,Mexico Commits Will Eliminate All Tariffs Imposed In Retaliation For US 232 Duties,Benzinga Newsdesk
+2019-04-23 00:00:00+00:00,2019-04-23,EWW,Mexico Foreign Minister Says US Tariffs May Have Helped Make Mexico Number 1 Trading Partner Of US,Benzinga Newsdesk
+2019-04-04 00:00:00+00:00,2019-04-04,EWW,Trump Says There Would Be A 25% Tariff On Mexican Cars Coming Into The US If He Decides To Apply Tariffs; Says Mexico Has Done A Good Job On Its Southern Border In The Last Four Days,Benzinga Newsdesk
+2019-04-04 00:00:00+00:00,2019-04-04,EWW,Trump Says Will Put Tariffs On Cars If Mexico Doesn't Help On Immigration,Benzinga Newsdesk
+2019-03-25 00:00:00+00:00,2019-03-25,EWW,"Deputy Economy Minister Says Mexico Has Rejected US's Proposal Of Steel Quotas, Reiterates 232 Tariffs Should Be Eliminated",Benzinga Newsdesk
+2019-02-25 00:00:00+00:00,2019-02-25,EWW,Mexican Economy Minister Says Has Reached Prelim. Deal For 15% Steel Tariffs OVer 6 Months With Countries It Does Not Have Free Trade Deals With,Benzinga Newsdesk
+2019-02-25 00:00:00+00:00,2019-02-25,EWW,"Hearing Mexico To Propose 25-30% Tariff On Textiles, 15% Tariff On Steel",Benzinga Newsdesk
+2018-12-20 00:00:00+00:00,2018-12-20,EWW,Mexico Economy Ministry Says Seeking Elimination Of 232 US National Security Tariff Measures,Benzinga Newsdesk
+2018-08-29 00:00:00+00:00,2018-08-29,EWW,"Exports of Cars, SUVs from Mexico Could be Subject to 25% U.S. Tariff Above 2.4M Vehicles",Charles Gross
+2018-06-14 00:00:00+00:00,2018-06-14,EWW,"Mexico Said To Study Tariffs On Billions of Dollars of U.S. Corn and Soy - Reuters, Citing Officials",Benzinga Newsdesk
+2018-05-31 00:00:00+00:00,2018-05-31,EWW,"US Vs. Everybody? Tariffs Against North American, European Allies Spark New Trade War Fears",Elizabeth Balboa
+2018-05-31 00:00:00+00:00,2018-05-31,EWW,Mexican Ministry Says Will Take Reciprocal Actions Against US Tariffs,Paul Quintaro
+2018-03-08 00:00:00+00:00,2018-03-08,EWW,"iShares MSCI Mexico ETF Spikes Nearly 1% Over Last Few Mins. Following AP Report Mexico, Canada Will Be Exempt From Tariffs 'Indefinitely'",Hal Lindon
+2019-09-06 00:00:00+00:00,2019-09-06,EWY,"North Korea Continues Its Nuclear Program, Evades Sanctions According to UN Report",Charles Gross
+2019-03-19 00:00:00+00:00,2019-03-19,EWY,N. Korea Says Sees No Justification In Maintaining Full Sanctions Since It Has Halted Nuclear Testing And Rocket Test-firing For The Last 15 Months,Charles Gross
+2019-02-28 00:00:00+00:00,2019-02-28,EWY,Trump Says Walked Away from Nuclear Deal at Summit with Kim Jong Un Because of Unacceptable Demands to Lift U.S.-led Sanctions,Charles Gross
+2018-06-12 00:00:00+00:00,2018-06-12,EWY,N.Korea Says Trump Agreed during Singapore Summit to Lift Sanctions Against N..Korea; Offer Security Guarantees,Benzinga Newdesk
+2018-06-12 00:00:00+00:00,2018-06-12,EWY,Trump Says Sanctions Will Remain in Effect on N. Korea,Benzinga Newdesk
+2018-06-12 00:00:00+00:00,2018-06-12,EWY,China Says U.N. Should Consider Easing or Lifting N. Korea Sanctions,Benzinga Newdesk
+2018-01-23 00:00:00+00:00,2018-01-23,EWY,Pres. Trump Says There Will Not Be A Trade War Because Of New Tariffs - Reuters,Hal Lindon
+2019-12-20 00:00:00+00:00,2019-12-20,EWZ,Brazil's President Bolsonaro Says Trump Told Him In A Phone Call That The United States Will Not Levy Additional Import Tariffs On Brazilian Steel And Aluminum,Benzinga Newsdesk
+2019-12-04 00:00:00+00:00,2019-12-04,EWZ,Fitch Says Tariffs On Steel Imports From Brazil Are Likely To Have Short-Term Effect On Rev And Profitability For Steel Producers In Brazil,Benzinga Newsdesk
+2019-12-02 00:00:00+00:00,2019-12-02,EWZ,Brazil's Foreign Minister Araujo Says Country Is In Talks With Different US Authorities About Steel Tariffs,Benzinga Newsdesk
+2019-12-02 00:00:00+00:00,2019-12-02,EWZ,Brazilian Government Rejects Trump's Claim That It Is Manipulating Currency; Brazilian Government In Touch With US Trade Representative And Other Agencies On Trump's Move To Restore Tariffs On Brazilian Steel And Aluminum,Benzinga Newsdesk
+2019-11-14 00:00:00+00:00,2019-11-14,EWZ,'Brazil's Implementation of Tariff Rate Quota for Wheat a Win for American Farmers' -USDA Dept. Of Agriculture,Benzinga Newsdesk
+2019-08-02 00:00:00+00:00,2019-08-02,EWZ,China Said To Turn To Brazil For Soybeans Following Trump Tariffs,Benzinga Newsdesk
+2019-03-19 00:00:00+00:00,2019-03-19,EWZ,Trump Says US Has Not Imposed Toughest Of Sanctions Yet On Venezuela,Benzinga Newsdesk
+2019-02-20 00:00:00+00:00,2019-02-20,EWZ,Impact Of US-China Trade War On Brazilian Soy Exports Will Not Be As Favorable In 2019 vs 2019,Benzinga Newsdesk
+2018-11-30 00:00:00+00:00,2018-11-30,EWZ,"Minister Of Economic Development Of The Russian Federation, Maksim Oreshkin, Speaking From G20, Noted BRIC Countries Signed A Declaration Criticizing Global Protectionism",Benzinga Newsdesk
+2018-05-02 00:00:00+00:00,2018-05-02,EWZ,"US Negotiators Related To Steel, Aluminum Import Tariffs Interrupted Talks With Brazilian Officials On Apr. 26; Brazilian Gov't. Still Sees US Exempting Nation From Tariffs",Paul Quintaro
+2019-08-06 00:00:00+00:00,2019-08-06,EXPD,"Expeditors International Navigates Trade War, Posts Earnings Beat",FreightWaves
+2020-06-05 10:36:12+00:00,2020-06-05,F,Trump Says He Will Impose Tariff On Autos Equivalent To EU Tariffs On US Related To Seafood,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,F,Moody's Says Impact On U.S. Auto Sector From Potential Dec. Tariffs By China To Be More Muted As U.S. Cos Generate Vast Majority Of Chinese Sales Through Local Production,Benzinga_Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,F,Shares of several auto manufacturers companies are trading lower on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods.,Benzinga Newsdesk
+2019-05-31 00:00:00+00:00,2019-05-31,F,Spindly Transport Stocks Dealt Another Blow In New Tariff Threats,FreightWaves
+2019-05-31 00:00:00+00:00,2019-05-31,F,Investors Hit The Brakes on Automakers After Trump Threatens Mexico With Tariffs,JJ Kinahan
+2019-05-31 00:00:00+00:00,2019-05-31,F,Shares of US automakers trading lower following news President Trump said US will impose a 5 percent tariff on goods from Mexico.,Benzinga Newsdesk
+2019-05-17 00:00:00+00:00,2019-05-17,F,"Toyota Issues Statement On Trump Announcement On Auto Tariffs, Sees As A Sign Our Investments Are Not Welcomed",Benzinga Newsdesk
+2019-05-17 00:00:00+00:00,2019-05-17,F,"Pres Trump Says EU, Japan Auto Tariffs Delayed For At Least 180 Days",Benzinga Newsdesk
+2019-05-16 00:00:00+00:00,2019-05-16,F,Commerce Secretary Wilbur Ross Says Pres Trump Could Decide Auto Tariffs Will Continue Beyond May,Benzinga Newsdesk
+2019-05-15 00:00:00+00:00,2019-05-15,F,Auto Stocks Move Higher After Report Of Import Tariff Delay,Jayson Derrick
+2019-05-15 00:00:00+00:00,2019-05-15,F,UPDATE: Trump Could Delay Auto Tariffs By Up To 6 Months,Benzinga Newsdesk
+2019-05-15 00:00:00+00:00,2019-05-15,F,"Auto-Related Stocks Move Higher Following Report Pres Trump Planning To Delay Imposing Tariffs On Auto Imports: GM, Ford, Toyota, Honda, Tesla, NIO",Benzinga Newsdesk
+2019-05-10 00:00:00+00:00,2019-05-10,F,"Fitch Says Chinese Goods Imports From US Were $120B In 2018, So China Would Be Unable To Impose Commensurate Retaliatory Tariffs As In July 2018",Benzinga Newsdesk
+2019-05-10 00:00:00+00:00,2019-05-10,F,"Fitch Says If Auto Tariffs Are Imposed By US On National Security Grounds, It Would Particularly Affect US-EU Bilateral Trading Relationship",Benzinga Newsdesk
+2020-02-23 00:00:00+00:00,2020-02-23,FB,"Mnuchin Says U.S. Opposes Discriminatory Digital Services Taxes; Will Respond With Investigations, Potential Retaliatory Tariffs; Says Working to Reach Solution for Digital Tax Reform at OECD",Charles Gross
+2019-05-16 00:00:00+00:00,2019-05-16,FCAU,Big Bearish Option Bet Against Fiat Chrysler Ahead Of Auto Tariff Deadline,Wayne Duggan
+2019-04-03 00:00:00+00:00,2019-04-03,FCAU,"Kudlow Says No Decisions Have Been Made On Potential Auto Tariffs, 90-Day Review Period Could Be Extended",Benzinga Newsdesk
+2019-03-22 00:00:00+00:00,2019-03-22,FCAU,"Pres Trump says If Automakers Build Plants In US, They Will Have No Tariffs",Benzinga Newsdesk
+2019-03-22 00:00:00+00:00,2019-03-22,FCAU,Pres Trump Says US Will Be Able To Keep 25% Tariff On Autos,Benzinga Newsdesk
+2019-03-20 00:00:00+00:00,2019-03-20,FCAU,"Auto Stocks Do Not React Following Comment Pres Trump Has Said There's No Recommendation On Auto Tariffs, It's Up For Review",Benzinga Newsdesk
+2019-02-27 00:00:00+00:00,2019-02-27,FCAU,An End In Sight For Tariffs On Canadian Steel And Aluminum,FreightWaves
+2019-02-20 00:00:00+00:00,2019-02-20,FCAU,Trump Says Will Impose Auto Tariffs If No Deal Reached With EU,Benzinga Newsdesk
+2019-02-08 00:00:00+00:00,2019-02-08,FCAU,U.S. Considers 3 Car Tariff Options,Charles Gross
+2019-01-16 00:00:00+00:00,2019-01-16,FCAU,"General Motors Shares Up 1% Following Headline Grassley Sees Trump Inclined To Do Auto Tariffs; FCA Ticked Slightly Lower, Ford Unaffected",Benzinga Newsdesk
+2019-01-16 00:00:00+00:00,2019-01-16,FCAU,US Senate Committee On Finance Chair Chuck Grassley Says He Thinks Trump Is Inclined To Do Auto Tariffs,Benzinga Newsdesk
+2018-12-11 00:00:00+00:00,2018-12-11,FCAU,"China Vice Premier Liu, Speaking With US Trade Rep Lighthizer And Treasury Secretary Steve Mnuchin Mon. Evening, Agreed To Reduce Tariffs On US Autos From 40% To 15%",Benzinga Newsdesk
+2018-12-04 00:00:00+00:00,2018-12-04,FCAU,"White House Economic Advisor Larry Kudlow Says An Auto Tariff Deal Is 'Coming,' But Is Not Yet Sealed",Benzinga Newsdesk
+2018-12-03 00:00:00+00:00,2018-12-03,FCAU,Auto Stocks Ride Reduced China Import Tax,Elizabeth Balboa
+2018-11-29 00:00:00+00:00,2018-11-29,FCAU,Barclays Estimates 'an increase in US tariffs on European cars to 25% would knock as much as 0.4pp off EA GDP growth in 2019',Benzinga_Newsdesk
+2018-10-01 00:00:00+00:00,2018-10-01,FCAU,USMCA Side Letter for Autos Permits Canada to Export 2.6M Passenger Vehicles to U.S. Tariff-Free if U.S. Imposes 232 National Security Tariffs on Autos,Charles Gross
+2018-08-21 00:00:00+00:00,2018-08-21,FCAU,UPDATE: Commerce Secretary Wilbur Ross Says It's 'Not Clear' If Auto Tariff Recommendations Will Be Coming This Month,luke@benzinga.com
+2018-07-25 00:00:00+00:00,2018-07-25,FCAU,"Trump, EU Agree On Concessions To Avoid Trade War",Hannah Genig
+2018-07-25 00:00:00+00:00,2018-07-25,FCAU,"EU Official Says US Agreed Not To Raise Tariffs For Cars, Trucks",Benzinga Newsdesk
+2018-07-25 00:00:00+00:00,2018-07-25,FCAU,"GM, FCAU, Ford All Spiking Higher Following Headlines Of EU Concessions To U.S. To Avoid Trade War",Benzinga_Newsdesk
+2018-07-25 00:00:00+00:00,2018-07-25,FCAU,Some Trump Advisors Expect Auto Tariffs To Be Imposed In 2018,Benzinga Newsdesk
+2018-07-19 00:00:00+00:00,2018-07-19,FCAU,"Toyota Motors Comments Following Auto Tariff Discussion: If New Tariffs Imposed, Sees Cost Of Toyota Tundra Truck Built In Texas Going Up By $2,800",Benzinga Newsdesk
+2018-07-19 00:00:00+00:00,2018-07-19,FCAU,"Automaker Trade Group Has Said The Proposed Trump Import Tariffs On Cars, Auto Parts Would Raise Prices On US Vehicles By $83B Annually",Benzinga Newsdesk
+2018-07-05 00:00:00+00:00,2018-07-05,FCAU,German Chancellor Angela Merkel Said Thursday She Would Back Lowering European Union Tariffs on U.S. Car Imports,Benzinga Newsdesk
+2018-07-02 00:00:00+00:00,2018-07-02,FCAU,The Week Ahead: Tariffs Dominate The Headlines In Slow Market Week,Taylor Cox
+2018-06-27 00:00:00+00:00,2018-06-27,FCAU,"Jobs, Auto Freight In Crosshairs As Trump Ramps Up Tariff Talk",FreightWaves
+2018-06-22 00:00:00+00:00,2018-06-22,FCAU,Trump Threatens 20% Tariffs On EU Cars,Elizabeth Balboa
+2018-06-07 00:00:00+00:00,2018-06-07,FCAU,German Publication FAZ Reporting German Automakers Want EU To Offer Trump Lower Tariffs,Benzinga Newsdesk
+2018-06-01 00:00:00+00:00,2018-06-01,FCAU,"Fiat Chrysler CEO Marchionne Says U.S. Aluminum, Steel Tariffs Unlikely To Trigger Wider Trade War, Says There's Minimal Impact On Auto Maker; Co. Says It Has No Plans To Kill Off Chrysler Brand In U.S. Market",Eddie Staley
+2018-05-31 00:00:00+00:00,2018-05-31,FCAU,"UPDATE: Ford and Fiat Chrysler, Asked For Comment On U.S. Tariffs, Deferred To The Auto Alliance Statement",Benzinga Newsdesk
+2018-05-31 00:00:00+00:00,2018-05-31,FCAU,"Auto Industry Trade Group Auto Alliance Comments On U.S. Tariffs In Statement Obtained By Benzinga, Says Tariffs Threaten Industry's Competitiveness, Will Raise Customers' Costs, 'We encourage a careful re-evaluation of these tariffs'",Benzinga Newsdesk
+2018-05-25 00:00:00+00:00,2018-05-25,FCAU,Canada PM's Office Says Canada and Mexico Have Expressed 'Strong Concerns' About Recent Threat Of U.S. Auto Tariffs,Benzinga Newsdesk
+2018-05-24 00:00:00+00:00,2018-05-24,FCAU,UPDATE: U.S. Chamber of Commerce CEO On Potential Auto Tariffs: 'This isn't about national security. The administration has already signaled its true objective is to leverage this tariff threat in trade negotiations',Benzinga Newsdesk
+2018-05-24 00:00:00+00:00,2018-05-24,FCAU,"U.S. Chamber Of Commerce Issues Statement Opposing Sec. 232 Investigation, Trump Administration Threats To Impose Auto Tariffs",Benzinga Newsdesk
+2018-05-24 00:00:00+00:00,2018-05-24,FCAU,U.S. Senate Finance Committee Chairman Hatch Says Possible Auto Tariffs Are 'Deeply Misguided',Benzinga Newsdesk
+2018-05-23 00:00:00+00:00,2018-05-23,FCAU,"UPDATE: Trump Admin. Car-Import Case Would Involve Probe By Dept. Of Commerce, Potential Tariffs From White House",Benzinga Newsdesk
+2018-05-23 00:00:00+00:00,2018-05-23,FCAU,"Toyota, Honda Shares Indicated Lower After Hours Amid Report Trump Admin. Considering Plan To Apply New Tariffs To Imported Vehicles",Benzinga Newsdesk
+2018-04-04 00:00:00+00:00,2018-04-04,FCAU,Trade Fears Dominate As China Announces New Tariffs Against U.S. Products,JJ Kinahan
+2018-03-06 00:00:00+00:00,2018-03-06,FCAU,Ferrari Says US Tariffs Could Impact Results,Hal Lindon
+2018-01-29 00:00:00+00:00,2018-01-29,FCAU,"UPDATE: Height On NAFTA: 'We consider the larger role played by Wilbur Ross, Gary Cohn at Davos as indications the staunchly protectionist view of certain groups within the White House is being tempered somewhat.'",Paul Quintaro
+2018-01-29 00:00:00+00:00,2018-01-29,FCAU,"Following Conclusion Of 6th Round of NAFTA Negotiations, Height Securities Reduces Odds Trump Will Withdraw U.S. From Pact From 65% to 45%, Seeing Diminished White House Protectionism",Hal Lindon
+2020-03-05 00:00:00+00:00,2020-03-05,FCEL,Fuelcell Says California Public Utilities Commission Has Clarified And Reinforced That 'the use of directed biogas is permissible under the Bioenergy Market Adjusting Tariff (BioMAT) program',luke@benzinga.com
+2018-12-20 00:00:00+00:00,2018-12-20,FCEL,FuelCell Energy Reports Subsidiary Signed First Of 3 Long-Term Power Purchase Deals Under Fuel Cell Resources Feed-In Tariff IV Program Administered By PSEG Long Island,Benzinga Newsdesk
+2019-12-11 00:00:00+00:00,2019-12-11,FCX,"Freeport-McMoRan shares are trading higher ahead of today's Fed rate decision and outlook statements, as well as the Dec. 15 US-China tariff deadlines.",Benzinga Newsdesk
+2019-08-02 00:00:00+00:00,2019-08-02,FCX,Shares of several metals/steels stocks trading lower on continued momentum after President Trump said the US will impose an added 10% tariff on goods from China.,Benzinga Newsdesk
+2018-11-27 00:00:00+00:00,2018-11-27,FCX,Freeport-McMoRan shares are trading lower on a drop of metal prices amid the pending US and Chinese trade war.,Benzinga Pro Newsdesk
+2019-09-18 00:00:00+00:00,2019-09-18,FDX,Fed And FedEx: Rate Decision Looms As Tariff Repercussions Seen In FDX Q1,JJ Kinahan
+2019-08-26 00:00:00+00:00,2019-08-26,FDX,"Summer Doldrums Explode Along With Tariff War, Tweets",FreightWaves
+2018-09-18 00:00:00+00:00,2018-09-18,FDX,"New U.S. Tariffs On China Lighter Than Some Expected, Potentially Lending Positive Tone",JJ Kinahan
+2018-06-15 00:00:00+00:00,2018-06-15,FDX,"Tariff Troubles: Focus Turns Back To Possible Trade War, Bringing Pressure",JJ Kinahan
+2020-02-06 00:00:00+00:00,2020-02-06,FEYE,A Peek Into The Markets: US Stock Futures Gain As China Cuts Tariffs,Lisa Levin
+2018-05-08 00:00:00+00:00,2018-05-08,FITB,FINRA Sanctions Fifth Third Securities $6M For Cost & Fee Disclosure Failures & Unsuitable Recommendations Related To Variable Annuity Exchanges,Eddie Staley
+2019-06-06 00:00:00+00:00,2019-06-06,FIVE,"The Street's Reaction To Five Below's Earnings, Tariff Commentary",Jayson Derrick
+2019-06-05 00:00:00+00:00,2019-06-05,FIVE,"Five Below Says Q2, FY19 Guidance 'now includes the expectation that Section 301 tariffs will be 25% on List 1, 2 and 3 goods'",Benzinga Newsdesk
+2018-04-05 00:00:00+00:00,2018-04-05,FIX,"'BREAKING: Dow futures slide, point to 420+ drop at tomorrow's market open, after Trump asks USTR to consider $100B more in tariffs against Chinese products'",Paul Quintaro
+2019-11-21 00:00:00+00:00,2019-11-21,FL,"Despite Tariff Fears, Market Shows Signs Of Resilience As Retail Earnings Continue",JJ Kinahan
+2019-08-28 00:00:00+00:00,2019-08-28,FL,Footwear Companies Lobby Trump To Remove Tariffs,Randy Elias
+2018-03-02 00:00:00+00:00,2018-03-02,FL,"Piling On: After Tariff News Chills Stocks, Retailer Woes Add To Pain",JJ Kinahan
+2018-07-18 00:00:00+00:00,2018-07-18,FN,"B. Riley Says That While Tariffs Will Have A Negative Effect On The Optical Industry As A Whole, But Believes This Could Be A Beneficiary To Fabrinet, As Well As Finisar And Oclaro, As Optical Co.'s May Seek Out Non-Chinese Contract Manufacturer",Benzinga_Newsdesk
+2019-10-08 00:00:00+00:00,2019-10-08,FOSL,"Shares of several retailers are trading lower as optimism around the upcoming U.S.-China trade talks waned. A report says China is toning down its expectations of the meeting. The U.S. expanded its trade blacklist, and scheduled an increase in tariffs on $250 billion worth of Chinese goods from 25% to 30% on Oct. 15, which will go into effect if no progress is made.",Benzinga Newsdesk
+2019-07-23 00:00:00+00:00,2019-07-23,FRO,U.S. Sanctions Chinese Buyer Of Iranian Crude As Tanker Risks Rise,FreightWaves
+2020-05-29 10:23:59+00:00,2020-05-29,FSI,"'Trump's China announcement won't include additional tariffs on China or changes to trade deal, per a source. He does plan to cancel visas for some Chinese researchers.' -PBS Reporter Tweet",Benzinga Newsdesk
+2019-11-07 00:00:00+00:00,2019-11-07,FSI,White House Plan To Roll Back China Tariffs Faces Fierce Internal Opposition; No Final Decision Made Yet - Reuters,Benzinga Newsdesk
+2019-10-07 00:00:00+00:00,2019-10-07,FSLR,Trump Administration Eliminates Exemption To Solar Import Tariffs,Benzinga Newsdesk
+2018-06-07 00:00:00+00:00,2018-06-07,FSLR,"Vertical Group's Johnson On Benzinga's PreMarket Prep On First Solar Downgrade: If Solar Tariffs Were Extended, If China Reversed Its Decision On Tariffs, Those Would Be 2 Things Which Could Change Our Mind On First Solar",Benzinga Newsdesk
+2018-06-07 00:00:00+00:00,2018-06-07,FSLR,"Vertical Group's Johnson On Benzinga's PreMarket Prep: 'If Trump is not in office in 2020, tariffs are going to go away.' Given That Dynamic, Could Be Cause For Concern For First Solar, Warns Of Possible Upcoming Cancellations Of Contracts",Benzinga Newsdesk
+2018-01-24 00:00:00+00:00,2018-01-24,FSLR,Trump's Import Tariffs: ETF And Stocks In Focus,Zacks
+2018-01-23 00:00:00+00:00,2018-01-23,FSLR,"ICYMI: Ransomware Hits Allscripts, Trump's Tariffs, New IPOs, And Ethereum",Taylor Cox
+2018-01-23 00:00:00+00:00,2018-01-23,FSLR,"Whirlpool, First Solar Among The Biggest Winners From Trump Tariff Decision",Taylor Cox
+2018-01-22 00:00:00+00:00,2018-01-22,FSLR,"First Solar Shares Spike Higher After Hours, Now Up 7% Following Word US Trade Rep Said Trump Approved Safeguard Tariffs On Washers, Solar Cell Imports",Paul Quintaro
+2019-10-10 06:12:24+00:00,2019-10-10,FXA,"US Chamber Of Commerce Official Says, In US, China Trade Talks, There's A Possibility Of Currency Deal In Exchange For Delay In Tariff Hikes",Benzinga Newsdesk
+2019-07-16 07:22:18+00:00,2019-07-16,FXA,UPDATE: WTO Appeals Ruling Paves The Way For Chinese Sanctions On US Goods Under WTO Rules Unless US Removes Disputed Tariffs,Benzinga Newsdesk
+2018-07-10 00:00:00+00:00,2018-07-10,FXA,S&P 500 Futures Sell Off 13-14 Points After Hours Amid Headline US Poised To Release $200B China Tariff List,Benzinga Newsdesk
+2020-06-02 00:00:00+00:00,2020-06-02,FXI,"'U.S. launches trade probe into digital taxes, plowing ground for new tariffs' -Reuters",Benzinga Newsdesk
+2020-05-29 00:00:00+00:00,2020-05-29,FXI,'I still expect some sort of retaliation because the Chinese believe they have the upper hand because of our recession caused by a virus that came from their country.' -Jim Cramer Tweet,Benzinga Newsdesk
+2020-05-29 00:00:00+00:00,2020-05-29,FXI,Trump Will Directly Sanction PRC Officials As Consequence Of China's Hong Kong Move,Benzinga Newsdesk
+2020-05-29 00:00:00+00:00,2020-05-29,FXI,'Trump Weighing Sanctions On Targeting China's Finance Sector Through Sanctions And Trade Policy Over Hong Kong' -Bloomberg Reporter,Benzinga Newsdesk
+2020-05-29 00:00:00+00:00,2020-05-29,FXI,"Large Volume Spike In S&P 500 Futures, Volatility; Hearing Trump Could Possibly Sanction Chinese Finance Sector Amid Hong Kong Issues",Benzinga Newsdesk
+2020-05-28 00:00:00+00:00,2020-05-28,FXI,"'U.S. brings massive N. Korean sanctions case, targeting state-owned bank and former government officials' -Washington Post Report",Benzinga Newsdesk
+2020-05-28 00:00:00+00:00,2020-05-28,FXI,US Senator Toomey Says Hong Kong May Become Subject To China Tariffs,Benzinga Newsdesk
+2020-05-27 00:00:00+00:00,2020-05-27,FXI,'Top campaign advisor says Biden would sanction China over Hong Kong' -CNBC,Benzinga Newsdesk
+2020-05-27 00:00:00+00:00,2020-05-27,FXI,"House Has Enough Votes To Pass Chinese Sanctions Bill, Voting Continues",Benzinga Newsdesk
+2020-05-26 00:00:00+00:00,2020-05-26,FXI,"US Mulls Sanctions On Chinese Officials, Firms Over Hong Kong; Sanctions Discussions Ongoing",Benzinga Newsdesk
+2020-05-24 00:00:00+00:00,2020-05-24,FXI,U.S. National Security Adviser O'Brien Says China Takeover of Hong Kong Could Lead to U.S Sanctions,Charles Gross
+2020-05-12 00:00:00+00:00,2020-05-12,FXI,'China on Tuesday said new batch of imported products from #US will be excluded from punitive tariffs. The move came just days after US released #tariff exemption list for imported products from China' -China's Global Times,Benzinga Newsdesk
+2020-05-06 00:00:00+00:00,2020-05-06,FXI,"Russia's Deputy Energy Minister Says Second Wave of Economic Slowdown is Not Ruled Out, Including U.S.- China Trade War",Charles Gross
+2020-05-04 00:00:00+00:00,2020-05-04,FXI,US Ways And Means Committee Chairman Calls For 90-day Suspension Of All Tariffs On Products Releated To Coronavirus Health Crisis,Benzinga Newsdesk
+2020-05-01 00:00:00+00:00,2020-05-01,FXI,S&P Futures Fall 2%; President Trump on Thursday Threatened to Impose New tariffs on China over Coronavirus Crisis,Charles Gross
+2020-04-30 00:00:00+00:00,2020-04-30,FXI,"Trump Says He Does Not Have To Stop Debt Payments To China, He Can Do Tariffs",Benzinga Newsdesk
+2020-04-03 00:00:00+00:00,2020-04-03,FXI,Kudlow Says Individual Tariff Exemption Cases Could Still Be Examined,Benzinga Newsdesk
+2020-04-03 00:00:00+00:00,2020-04-03,FXI,Kudlow Says Trump Admin. Not Going To Change Any Of Its Tariff Policies Right Now,Benzinga Newsdesk
+2020-03-30 00:00:00+00:00,2020-03-30,FXI,"US Is Expected To Renew Sanctions Waivers Allowing Russian, Chinese, European Cos. To Continue Nonproliferation Work At Iranian Nuclear Sites",Benzinga Newsdesk
+2020-03-18 00:00:00+00:00,2020-03-18,FXI,Trump Says Doesn't See Reason To Suspend Tariffs On China Amid Coronavirus,Benzinga Newsdesk
+2020-03-18 00:00:00+00:00,2020-03-18,FXI,Trump Says China Could Ask For Relief For Tariffs,Benzinga Newsdesk
+2020-03-16 00:00:00+00:00,2020-03-16,FXI,China Urges US To Immediately Lift Sanction On Iran Amid Coronavirus,Benzinga Newsdesk
+2020-03-06 00:00:00+00:00,2020-03-06,FXI,UPDATE: 27 Cos. Granted Tariff Exemptions for 103 Products From China,Benzinga Newsdesk
+2020-03-06 00:00:00+00:00,2020-03-06,FXI,"US Has Granted Tariff Relief For Facemasks, Medical Equipment",Benzinga Newsdesk
+2020-03-03 00:00:00+00:00,2020-03-03,FXI,Treasury Secretary Mnuchin Says US Is Not Considering China Tariff Rollback,Benzinga Newsdesk
+2020-02-20 00:00:00+00:00,2020-02-20,FXI,Hearing US Agriculture Secretary Sonny Perdue Says US Could Put More Tariffs On China,Benzinga Newsdesk
+2018-04-06 00:00:00+00:00,2018-04-06,GBX,"Greenbrier On U.S. Steel Tariff Issues, Says They Are Working Closely With Suppliers Customers To Proactively Manage Sourcing Requirements",Eddie Staley
+2018-08-29 00:00:00+00:00,2018-08-29,GCI,'WASHINGTON (AP) -- US commission finds no harm to paper mills from imported newsprint; ruling kills tariffs on Canadian imports.'-CNBC's Carl Quintanilla Tweets,Benzinga_Newsdesk
+2018-07-25 00:00:00+00:00,2018-07-25,GGG,"Graco Sees FY18 Sales Growth Of Mid-To-High Single Digits, Anticipates Second Half Pressures From Tariffs, Material Costs, And Currency",Benzinga_Newsdesk
+2019-09-05 00:00:00+00:00,2019-09-05,GIII,"G-III Apparel Reports Mixed Q2 Earnings, Revises Guidance To Mitigate Impact Of Tariffs",Tanzeel Akhtar
+2019-09-04 00:00:00+00:00,2019-09-04,GIII,Bank of America: G-III Has A Tariff Problem,Jayson Derrick
+2019-09-04 00:00:00+00:00,2019-09-04,GIII,"UPDATE: Bank Of America Downgrades G-III Apparel To Neutral, Lowers Target To $21 As Firm Notes 'We no longer think it can grow 2020 EPS because of tariffs, but we also think valuation reflects the risk (at 4.4x 2020 EV/EBITDA)'",Benzinga_Newsdesk
+2019-05-14 00:00:00+00:00,2019-05-14,GIII,UPDATE: Piper Jaffray Downgrades Steven Madden And G-III Apparel Group To Neutral As Firm Notes Both Cos 'still produce a large amount of their goods in China' And Firm Believes Recently Proposed Apparel/Footwear Tariffs Will Weigh On Multiples,Benzinga_Newsdesk
+2019-08-13 00:00:00+00:00,2019-08-13,GLD,"US Stocks Rally As Some Health, Security, Safety Products Removed From China Tariff List",Wayne Duggan
+2019-08-01 00:00:00+00:00,2019-08-01,GLD,Gold Futures Ticking Higher After Trump Announced On Twitter The US Will Put 10% Tariff On $300B Of Chinese Goods On Sep. 1,Benzinga Newsdesk
+2018-11-01 00:00:00+00:00,2018-11-01,GLD,US National Security Advisor John Bolton Says Pres Trump Has Signed Order Enabling Sanctions On Venezuelan Gold,Benzinga Newsdesk
+2018-10-31 00:00:00+00:00,2018-10-31,GLD,US Plans Sanctions To Target Venezuela's Gold Exports,Benzinga Newsdesk
+2018-09-06 00:00:00+00:00,2018-09-06,GLD,Trade And Tariffs Dominates The Agenda: 5 Things The Global Markets Are Talking About Today,OANDA
+2020-01-21 00:00:00+00:00,2020-01-21,GOOG,"Macron, Trump Agree To Hold Off Tit-For-Tat Tariffs",Amit Nag
+2019-12-04 00:00:00+00:00,2019-12-04,GOOG,"Boris Johnson Affirms Plan To Tax Facebook, Google Despite Trump Retaliation",Elizabeth Balboa
+2019-12-03 00:00:00+00:00,2019-12-03,GOOG,France's Digital Services Tax Sparks Call For Hefty US Import Tariffs,FreightWaves
+2019-12-02 00:00:00+00:00,2019-12-02,GOOGL,US Wants To Put 100% Tariffs On $2.4B French Imports,Neer Varshney
+2018-07-05 00:00:00+00:00,2018-07-05,GPK,Canada Largely Wins World Trade Organization Ruling Against U.S. Anti-Dumping Duties On Exports Of Glossy Paper,Benzinga Newsdesk
+2019-08-30 00:00:00+00:00,2019-08-30,GPRO,"GoPro: Tariff Proof, But This Upcoming Catalyst Is What Really Matters",luke@benzinga.com
+2019-08-26 00:00:00+00:00,2019-08-26,GPRO,GoPro Says Tariffs Not Expected to Impact GoPro's Second Half 2019 Financial Performance,Charles Gross
+2019-11-25 00:00:00+00:00,2019-11-25,HAS,"UBS Upgrades Hasbro As Stock Price Bakes In Tariffs, Slow Holiday",Elizabeth Balboa
+2019-10-23 00:00:00+00:00,2019-10-23,HAS,"Tariff War Zaps ""Star Wars"" Toymaker Hasbro",FreightWaves
+2019-10-22 00:00:00+00:00,2019-10-22,HAS,From Hasbro Q3 Earnings Conference Call: Some Of Our Games Were Tariffed As Part Of List 3 Tariffs,Benzinga Newsdesk
+2019-08-23 00:00:00+00:00,2019-08-23,HAS,Hasbro shares are trading lower in sympathy with the overall market on escalated trade tensions after China announced it plans to impose a 5% to 10% tariff rate on $75 billion worth of U.S. goods.,Benzinga Newsdesk
+2019-05-30 00:00:00+00:00,2019-05-30,HAS,"Traders Attributing Tick Higher In Hasbro As Hearing Comment From Chair, CEO Brian Goldner At Bernstein Strategic Decisions Conference He Believes Licenses With Disney Could Be Extended, Says Tariff Costs Will Be Passed On To Consumers In Short Term",Benzinga Newsdesk
+2018-09-24 00:00:00+00:00,2018-09-24,HAS,Toy Prices Could be Impacted by China Tariffs Next Year,Charles Gross
+2020-02-25 00:00:00+00:00,2020-02-25,HD,"UPDATE: CFRA Reiterates Hold On Home Depot, Raises Target To $255 Notes 'we view the premium to HD's strong domestic business that is resilient to non-U.S. macro risks such as the coronavirus and China-U.S. trade tariffs'",Benzinga_Newsdesk
+2019-11-19 00:00:00+00:00,2019-11-19,HD,"Home Depot On Mitigating Tariff Impact Says Will Work To Change Country Of Origin, To Change Makeup Of The Product Itself",Benzinga Newsdesk
+2019-11-19 00:00:00+00:00,2019-11-19,HD,"From Home Depot Q3 Earnings Conference Call: As Expected, During Q3, We Saw Increased Costs Arising From Tariffs",Benzinga Newsdesk
+2019-09-03 00:00:00+00:00,2019-09-03,HD,"New Tariffs Appear To Have Apple, Caterpillar, Nvidia Under Pressure Early On",JJ Kinahan
+2019-08-20 00:00:00+00:00,2019-08-20,HD,"Home Depot Says Tariffs On List 1 Through 4 Chinese Imports, 4 Being At 10%, Could Raise Cost Of Sales By 2%",Benzinga Newsdesk
+2019-05-22 00:00:00+00:00,2019-05-22,HD,"After A Rainy Q1, Home Depot Analysts Look At Consumer Trends, Chinese Tariffs",Dave Royse
+2019-05-21 00:00:00+00:00,2019-05-21,HD,"From Home Depot Q1 Earnings Conference Call: Mgmt. Is Working Through Impact Of Tariffs, Have Not Yet Included Potential Impacts In Guidance",Benzinga Newsdesk
+2019-02-01 00:00:00+00:00,2019-02-01,HD,"Port Report: China And U.S. Trade War Aside, Port Tampa Bay Looks To Asia For Growth",FreightWaves
+2018-11-20 00:00:00+00:00,2018-11-20,HD,"US And China Face Last Chance To Avoid Jan. 1 Tariff Hikes, But Don't Get Your Hopes Up",FreightWaves
+2018-11-13 00:00:00+00:00,2018-11-13,HD,"Home Depot CEO on Conference Call Says if 25% Tariffs Were to Go in Place, Would Represent ~3.5% of U.S. Purchases",Charles Gross
+2019-09-23 00:00:00+00:00,2019-09-23,HDB,Shares of Indian Banks are trading higher after Indian Prime Minister Modi attended a rally for president amid talk of tariffs between the United States and India. India on Friday also announced a corporate tax cut.,Benzinga Newsdesk
+2019-10-10 00:00:00+00:00,2019-10-10,HEAR,Fitbit Pulls Out Of China To Escape Tariffs,Elizabeth Balboa
+2019-08-06 00:00:00+00:00,2019-08-06,HEI,Heico shares are trading higher on no company-specific news. The overall market is rebounding from yesterday's news that China retaliated in the trade war.,Benzinga Newsdesk
+2019-11-07 00:00:00+00:00,2019-11-07,HL,Hecla Mining shares are trading lower. The company earlier reported worse-than-expected Q3 sales. Shares are also trading lower with the rest of the gold sector after the US and China agreed to scale back tariffs.,Benzinga Newsdesk
+2019-08-26 00:00:00+00:00,2019-08-26,HMC,CNBC Takes Closer Look At Auto Stocks Amid Trade War Concerns,Jayson Derrick
+2019-05-17 00:00:00+00:00,2019-05-17,HMC,Shares of several steel and automotive-related companies are trading lower after President Trump announced a 6-month delay in auto tariffs.,Benzinga Newsdesk
+2020-01-28 00:00:00+00:00,2020-01-28,HOG,"Harley-Davidson Says EU, China Tariffs To Cost $35M In 2020 Versus $98M In 2019",Benzinga Newsdesk
+2019-07-23 00:00:00+00:00,2019-07-23,HOG,Harley-Davidson Says Expect Tariff Costs To Be $100M In 2019 Vs $100M-$120M Estimated Earlier,Benzinga Newsdesk
+2019-04-23 00:00:00+00:00,2019-04-23,HOG,Harley-Davidson CEO On Trump Tweet Says 'The Big Impact For Us Is The Eu Tariffs. And Nothing Has Changed Since The Eu Increased The Import Tariff From 6% To 31% Last June',Benzinga_Newsdesk
+2019-04-23 00:00:00+00:00,2019-04-23,HOG,"From Harley-Davidson Conference Call; CFO Says In 2019, Co. Expect Gross Margins To Be Down Year Over Year Due To Factors Including Incremental Tariffs",Benzinga Newsdesk
+2019-04-23 00:00:00+00:00,2019-04-23,HOG,"Pres Trump Tweets On Harley-Davidson's Struggles With Tariffs And The EU, Says 'So unfair to U.S. We will Reciprocate!'",Benzinga Newsdesk
+2018-10-23 00:00:00+00:00,2018-10-23,HOG,From Harley-Davidson Conference Call: Co. Expects Impact Of Recently Enacted Tariffs To Include Costs Of About $15M-$20M For Steel And Aluminum And $25M For EU Tariffs,Benzinga_Newsdesk
+2018-10-23 00:00:00+00:00,2018-10-23,HOG,"Form Harley-Davidson Conference Call: CEO Says Costs Increased By $9.9M, Driven By Higher Tariffs",Benzinga_Newsdesk
+2018-07-24 00:00:00+00:00,2018-07-24,HOG,"Harley-Davidson Says If There's No Mitigation Of EU Tariffs, They Would Cost $90-$100M To The Co. In 2019, Says They Are Marking Efforts To Mitigate Said Costs",Benzinga_Newsdesk
+2018-07-24 00:00:00+00:00,2018-07-24,HOG,"Harley-Davidson Sees Q3 Shipments 45.5K-50.5K; For FY18, Co. Sees Shipments 231K-236K, CapEx $250M-$270M, Motorcycles Operating Margin 9-10% Citing Impact Of Tariffs, Financial Services Income Flat To Up Slightly",Hal Lindon
+2018-06-26 00:00:00+00:00,2018-06-26,HOG,"'@SpeakerRyan on Harley-Davidson: ...I don't think tariffs are the right way to go. I think tariffs are basically taxes. What ends up happening is you get escalating tariffs, or escalating taxes.""' - CNN's Phil Mattingly",Benzinga Newsdesk
+2018-06-26 00:00:00+00:00,2018-06-26,HOG,"Trump Tweets (2/2): Hence, they were just using Tariffs/Trade War as an excuse. Shows how unbalanced & unfair trade is, but we will fix it.....",Benzinga Newsdesk
+2018-06-26 00:00:00+00:00,2018-06-26,HOG,Trump Tweets (1/2): Early this year Harley-Davidson said they would move much of their plant operations in Kansas City to Thailand. That was long before Tariffs were announced.,Benzinga Newsdesk
+2018-06-22 00:00:00+00:00,2018-06-22,HOG,Hearing Harley-Davidson Won't Raise Prices Because Of EU Tariffs,Benzinga Newsdesk
+2018-06-21 00:00:00+00:00,2018-06-21,HOG,Europe Imposes $3.2 Billion Tariff On The U.S.,Zacks
+2018-06-01 00:00:00+00:00,2018-06-01,HOG,"Harley-Davidson Says Import Tariffs On Steel, Aluminum Will Drive Up Costs For All Products Made With These Raw Materials; Is Currently Evaluating Options To Manage Anticipated Costs Increases Folloiwng EU's Plan To Hike Duties On U.S. Imports",Eddie Staley
+2018-03-16 00:00:00+00:00,2018-03-16,HOG,"Harley-Davidson Shares Volatile Just After Open, Up 0.7% For Session But Off Intraday Highs; 'Motorcycles' Was Included In EC List Of US Goods Which Could Be Subject To Tariff Retaliation",Paul Quintaro
+2019-12-13 00:00:00+00:00,2019-12-13,HSBC,"PreMarket Prep Recap: Trade War, Brexit Movers, Oracle Earnings",Joel Elconin
+2019-05-17 00:00:00+00:00,2019-05-17,HYG,What The Trade War Means For The Bond Market,Wayne Duggan
+2018-04-06 05:00:26+00:00,2018-04-06,HYH,"The Market In 5 Minutes: More Tariffs, Job Growth Slows, Longfin, Valeant And More",Benzinga Newsdesk
+2018-04-12 00:00:00+00:00,2018-04-12,IBB,China's State Council Says It Will Set Zero Tariffs On Imported Cancer Medication,Eddie Staley
+2019-05-16 00:00:00+00:00,2019-05-16,IBP,Trade War Fears Trigger Nomura Instinet's Downgrade Of Housing Stocks,Dave Royse
+2019-05-16 00:00:00+00:00,2019-05-16,IBP,"UPDATE: Nomura Downgrades Owens Corning, Building Products, GMS, And Top Build To Neutral As Firm Believes 'residual demand impacts from increased tariffs rates would impact companies most exposed to the new residential construction end market'",Benzinga_Newsdesk
+2019-02-06 08:20:51+00:00,2019-02-06,IGF,"State Of The Union Fallout For Trade War, Pharma And Infrastructure Stocks",Wayne Duggan
+2018-10-18 00:00:00+00:00,2018-10-18,IIIN,"UPDATE: Insteel Industries Says Outlook For Markets Remains Positive Into FY19, 'Business conditions are becoming increasingly challenging, however, due to the Administration's Section 232 imported steel tariff program'",Benzinga Newsdesk
+2018-07-19 00:00:00+00:00,2018-07-19,IIIN,"Insteel Industries Pres, CEO HO Woltz Says 'Business conditions will remain challenging, however, as we contend with rising cost pressures and supply constraints resulting from the imposition of the Section 232 tariffs...'",Benzinga Newsdesk
+2020-01-07 12:34:22+00:00,2020-01-07,ILF,"Trump Administration Considering US Sanctions Against Some Venezuelan Lawmakers, Including Luis Parra, Over Maduro-Backed Bid To Take Over Opposition-Led Congress",Benzinga Newsdesk
+2019-07-19 00:00:00+00:00,2019-07-19,ILF,US Official Says US To Impose Additional Venezuela Sanctions On Friday,Benzinga Newsdesk
+2019-06-21 00:00:00+00:00,2019-06-21,ILF,US Issues New Nicaragua-Related Sanctions,Benzinga Newsdesk
+2019-06-06 00:00:00+00:00,2019-06-06,ILF,US Treasury Amends General Licenses Relating To Venezuela Sanctions And PDVSA; Says Amendments Clarify That Licenses Do Not Authorize Transactions Related To Export Of Diluents To Venezuela,Benzinga Newsdesk
+2019-06-04 00:00:00+00:00,2019-06-04,ILF,"Hearing US Has Tightened Cuba Sanctions, Ended Group Travel, Vehicle Exports",Benzinga Newsdesk
+2019-05-10 00:00:00+00:00,2019-05-10,ILF,US Says Two Ships Targeted By Sanctions Transported Oil From Venezuela To Cuba; Says Sanctions Are 'Direct Response' To 'Illegal Arrest' Of Venezuelan National Assembly Members,Benzinga Newsdesk
+2019-05-10 00:00:00+00:00,2019-05-10,ILF,"US Treasury Secretary Mnuchin, State Dept Secretary Pompeo Determine People In Venezuela's Defense, Security Sectors May Be Subject To Sanctions",Benzinga Newsdesk
+2019-05-10 00:00:00+00:00,2019-05-10,ILF,"US Issues Fresh Venezuela-Related Sanctions; Imposes Sanctions On Two Companies, Two Vessels",Benzinga Newsdesk
+2019-05-06 00:00:00+00:00,2019-05-06,ILF,"'U.S. Readies New Sanctions on Cuba, Russia for Backing Maduro in Venezuela' -Washington Free Beacon",Benzinga Newsdesk
+2019-04-18 00:00:00+00:00,2019-04-18,ILF,Venezuela Is Funneling Cash From Oil Sales Via Russia's Rosneft To Bypass US Sanctions,Benzinga Newsdesk
+2019-04-12 00:00:00+00:00,2019-04-12,ILF,"US Issues Fresh Venezuela-Related Sanctions; Treasury Says Sanctions Target Four Companies, Nine Vessels",Benzinga Newsdesk
+2019-04-05 00:00:00+00:00,2019-04-05,ILF,Vice President Pence Says US Will Sanction 34 Vessels Owned Or Operated By PDVSA; Says Will Also Sanction Two Additional Companies That Transport Venezuelan Crude To Cuba,Benzinga Newsdesk
+2019-04-05 00:00:00+00:00,2019-04-05,ILF,US Vice President Pence Says US Is Preparing Renewed Sanctions Against Maduro,Benzinga Newsdesk
+2019-03-19 00:00:00+00:00,2019-03-19,ILF,United States Imposes Sanctions On Venezuela'S State-Run Mining Company,Benzinga Newsdesk
+2019-03-12 00:00:00+00:00,2019-03-12,ILF,Special Representative For Venezuela Abrams Says There Will Be 'Very Significant' Additional Sanctions Against Venezuela In Coming Days,Benzinga Newsdesk
+2019-03-07 00:00:00+00:00,2019-03-07,ILF,Envoy For Venezuela Abrams Says There Will Be More Sanctions On Financial Institutions Found To Be Supporting Maduro Gov,Benzinga Newsdesk
+2019-02-26 00:00:00+00:00,2019-02-26,ILF,US Special Representative For Venezuela Abrams Says U.S. Will Impose More Sanctions To Pressure Maduro Government This Week And Next Week,Benzinga Newsdesk
+2019-02-08 00:00:00+00:00,2019-02-08,ILF,US Preparing New Sanctions On Venezuela,Benzinga Newsdesk
+2019-01-29 00:00:00+00:00,2019-01-29,ILF,'Venezuela proposes new oil contract terms to sidestep U.S. sanctions' -Reuters,Benzinga Newsdesk
+2018-09-25 00:00:00+00:00,2018-09-25,ILF,"US Treasury Department Issues Venezuela-Related Sanctions Targeting Venezuela's Defense Minister, Vice President, Others",Benzinga_Newsdesk
+2020-01-17 00:00:00+00:00,2020-01-17,INDA,"UPDATE: Deal Between US, India Would Not Include A Tariff Reduction",Benzinga Newsdesk
+2019-12-18 00:00:00+00:00,2019-12-18,INDA,White House Adviser Navarro Says US Engaged With India On Potential Trade Deal; Says We've Got To Get India To Lower Tariffs,Benzinga Newsdesk
+2019-08-06 00:00:00+00:00,2019-08-06,INDA,"'China warns India of ""reverse sanctions"" if Huawei is blocked' -Reuters",Benzinga Newsdesk
+2019-07-09 00:00:00+00:00,2019-07-09,INDA,Trump Tweets: 'India has long had a field day putting Tariffs on American products. No longer acceptable!',Benzinga Newsdesk
+2019-05-14 00:00:00+00:00,2019-05-14,INDA,India may again extend retaliatory tariff deadline on US products by 30 days' -Times Of India,Benzinga Newsdesk
+2019-04-26 00:00:00+00:00,2019-04-26,INDA,India To Defer Imposition Of Retaliatory Tariffs On Us Products; Retaliatory Tariffs On 29 US Products To Be Deferred Until May 15,Benzinga Newsdesk
