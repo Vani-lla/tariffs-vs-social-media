@@ -15,6 +15,10 @@ from cleaning_data.horizons import HorizonTools
 
 NY = "America/New_York"
 DAY = pd.Timedelta("1D")
+GKG_STEP = pd.Timedelta("15min")          # rozdzielczość GKG: krótszych okien mediów nie liczymy
+GKG_DENSE_MAX = pd.Timedelta("2h")        # do tej długości okna GKG liczymy ze WSZYSTKICH paczek (także gęstych)
+# horyzonty MEDIÓW (osobne od rynkowych cfg.horizons): gęsto w pierwszych godzinach, bo tam rozstrzyga się kolejność
+MEDIA_HORIZONS = {"15m": "15min", "30m": "30min", "1h": "1h", "2h": "2h", "3h": "3h", "1d": "1D", "3d": "3D", "7d": "7D"}
 
 
 # --------------------------------------------------------------------------- efektywny dzień handlowy
@@ -100,13 +104,31 @@ def fnspid_daily(fn: pd.DataFrame) -> pd.DataFrame:
 
 
 # --------------------------------------------------------------------------- wolumeny mediów wokół zdarzeń
+def _gkg_windows(te, gkg: pd.DataFrame, files, hz: dict) -> pd.DataFrame:
+    """Artykuły o cłach na paczkę w (t, t+h] i [t-h, t) + liczba paczek w oknie + różnica po - przed."""
+    a = window_stats(te, gkg["time_utc"], hz)
+    f = window_stats(te, pd.Series(files), hz)
+    cols = {}
+    for lab in hz:
+        for side in ("post", "pre"):
+            nf, na = f[f"n_{side}_{lab}"].to_numpy(float), a[f"n_{side}_{lab}"].to_numpy(float)
+            cols[f"gkg_files_{side}_{lab}"] = nf
+            cols[f"gkg_rate_{side}_{lab}"] = np.where(nf > 0, na / np.where(nf > 0, nf, 1), np.nan)
+        both = (cols[f"gkg_files_post_{lab}"] > 0) & (cols[f"gkg_files_pre_{lab}"] > 0)
+        cols[f"gkg_rate_delta_{lab}"] = np.where(both, cols[f"gkg_rate_post_{lab}"] - cols[f"gkg_rate_pre_{lab}"], np.nan)
+    return pd.DataFrame(cols)
+
+
 def media_features(events: pd.DataFrame, fn_daily: pd.DataFrame | None, gkg: pd.DataFrame | None,
-                   gkg_files: pd.DatetimeIndex | None, posts: pd.DataFrame | None, horizons: dict) -> pd.DataFrame:
+                   gkg_files: pd.DatetimeIndex | None, posts: pd.DataFrame | None, horizons: dict,
+                   gkg_sample: pd.DataFrame | None = None, gkg_files_sample: pd.DatetimeIndex | None = None) -> pd.DataFrame:
     """Jeden wiersz na zdarzenie (klucz event_id). Tylko liczności i stawki, zawsze z flagami pokrycia:
     - FNSPID: dzienne sumy w oknach >= 1 dnia (fn_*_post_/pre_*, fn_cover_*),
     - Twitter: liczba kolejnych/wcześniejszych tweetów o cłach (tw_n_post_/pre_*), tylko zdarzenia z dokładną godziną,
-    - GKG: artykuły o cłach NA PACZKĘ w oknach (gkg_rate_*), z liczbą paczek w oknie (gkg_files_*); GKG to próbka paczek,
-      więc okno bez żadnej paczki daje NaN, a nie zero."""
+    - GKG: artykuły o cłach NA PACZKĘ w oknach (gkg_rate_*), z liczbą paczek w oknie (gkg_files_*); okno bez paczki = NaN.
+      Okna do 2h liczone ze WSZYSTKICH paczek (także gęstych wokół epizodów), dłuższe tylko z próbki równomiernej
+      (gkg_sample, gkg_files_sample): gęste okno kończy się kilka godzin po tweecie, więc w oknie 1d zawyżałoby stawkę.
+    horizons: horyzonty mediów (MEDIA_HORIZONS); okna < 15 min są pomijane (paczki GKG co 15 min)."""
     ev = events.reset_index(drop=True)
     out = pd.DataFrame({"event_id": ev["event_id"]})
     exact = (ev["precision"] == "exact").to_numpy()
@@ -115,27 +137,27 @@ def media_features(events: pd.DataFrame, fn_daily: pd.DataFrame | None, gkg: pd.
     if fn_daily is not None and len(fn_daily) and hd:
         out = pd.concat([out, day_window_stats(ev["eff_day"], fn_daily, hd)], axis=1)
 
-    hi = {l: h for l, h in horizons.items() if pd.Timedelta(h) >= pd.Timedelta("1h")}
-    if posts is not None and len(posts) and exact.any() and hi:
-        w = window_stats(ev.loc[exact, "t"], posts["time_utc"], hi).add_prefix("tw_")
+    hi = {l: h for l, h in horizons.items() if pd.Timedelta(h) >= GKG_STEP}
+
+    def exact_only(w: pd.DataFrame) -> pd.DataFrame:
         blank = pd.DataFrame(np.nan, index=range(len(ev)), columns=w.columns)
         blank.loc[exact, :] = w.to_numpy()
-        out = pd.concat([out, blank], axis=1)
+        return blank
+
+    if posts is not None and len(posts) and exact.any() and hi:
+        out = pd.concat([out, exact_only(window_stats(ev.loc[exact, "t"], posts["time_utc"], hi).add_prefix("tw_"))], axis=1)
 
     if gkg is not None and len(gkg) and gkg_files is not None and len(gkg_files) and exact.any() and hi:
         te = ev.loc[exact, "t"]
-        a = window_stats(te, gkg["time_utc"], hi)
-        f = window_stats(te, pd.Series(gkg_files), hi)
-        cols = {}
-        for lab in hi:
-            for side in ("post", "pre"):
-                nf, na = f[f"n_{side}_{lab}"].to_numpy(float), a[f"n_{side}_{lab}"].to_numpy(float)
-                cols[f"gkg_files_{side}_{lab}"] = nf
-                cols[f"gkg_rate_{side}_{lab}"] = np.where(nf > 0, na / np.where(nf > 0, nf, 1), np.nan)
-            both = (cols[f"gkg_files_post_{lab}"] > 0) & (cols[f"gkg_files_pre_{lab}"] > 0)
-            cols[f"gkg_rate_delta_{lab}"] = np.where(both, cols[f"gkg_rate_post_{lab}"] - cols[f"gkg_rate_pre_{lab}"], np.nan)
-        g = pd.DataFrame(cols)
-        blank = pd.DataFrame(np.nan, index=range(len(ev)), columns=g.columns)
-        blank.loc[exact, :] = g.to_numpy()
-        out = pd.concat([out, blank], axis=1)
+        short = {l: h for l, h in hi.items() if pd.Timedelta(h) <= GKG_DENSE_MAX}
+        long_ = {l: h for l, h in hi.items() if pd.Timedelta(h) > GKG_DENSE_MAX}
+        gs = gkg if gkg_sample is None else gkg_sample
+        fs = gkg_files if gkg_files_sample is None else gkg_files_sample
+        parts = []
+        if short:
+            parts.append(_gkg_windows(te, gkg, gkg_files, short))
+        if long_ and gs is not None and fs is not None and len(fs):
+            parts.append(_gkg_windows(te, gs, fs, long_))
+        if parts:
+            out = pd.concat([out, exact_only(pd.concat(parts, axis=1))], axis=1)
     return out

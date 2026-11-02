@@ -44,9 +44,22 @@ class GKGExplorer:
         return sorted(self.cache_dir.glob("*.gkg.csv.zip"))
 
     def _read(self, path: Path) -> pd.DataFrame:
-        return pd.read_csv(path, sep="\t", header=None, names=self.GKG_COLS, usecols=self.USECOLS, dtype=str,
-                           encoding="utf-8", encoding_errors="replace", quoting=3, on_bad_lines="skip",
-                           compression="zip")
+        try:
+            return pd.read_csv(path, sep="\t", header=None, names=self.GKG_COLS, usecols=self.USECOLS, dtype=str,
+                               encoding="utf-8", encoding_errors="replace", quoting=3, on_bad_lines="skip",
+                               compression="zip")
+        except pd.errors.EmptyDataError:            # paczka odchudzona do cłów, w której nie było żadnego artykułu
+            return pd.DataFrame(columns=self.USECOLS, dtype=str)
+
+    @staticmethod
+    def _thinned(path: Path) -> bool:
+        """Paczka z download_gkg_dense(thin=True): zawiera tylko artykuły o cłach (nie nadaje się do statystyk udziału)."""
+        import zipfile
+        try:
+            with zipfile.ZipFile(path) as z:
+                return z.comment == b"topic-only"
+        except (zipfile.BadZipFile, OSError):
+            return False
 
     @classmethod
     def parse_tone(cls, s: pd.Series) -> pd.DataFrame:
@@ -91,7 +104,7 @@ class GKGExplorer:
         """Statystyki per plik + mała losowa próbka wierszy. Nie trzyma całych danych w pamięci."""
         rows, cov, samples = [], [], []
         src_counter: Counter = Counter()
-        files = self._files()[:max_files]
+        files = [p for p in self._files() if not self._thinned(p)][:max_files]   # odchudzone paczki zafałszowałyby udziały
         for i, p in enumerate(files, 1):
             try:
                 df = self._read(p)
@@ -201,6 +214,7 @@ class GKGExplorer:
             except Exception:
                 c["pliki_nieczytelne"] += 1
                 continue
+            dense = self._thinned(p)                 # paczka gęsta (download_gkg_dense), nie z próbki równomiernej
             c["wczytane"] += len(df)
             url = df["DocumentIdentifier"].fillna("")
             if topic_only:
@@ -223,6 +237,7 @@ class GKGExplorer:
             c["brak_czasu/URL/źródła/tonu_lub_wordcount<=0"] += int(bad.sum())
             df = df[~bad].copy()
             df["url_key"] = self.url_key(df["DocumentIdentifier"])
+            df["file_dense"] = dense
             keep = ~df["url_key"].isin(seen) & ~df["url_key"].duplicated()
             c["duplikaty_URL"] += int((~keep).sum())
             seen.update(df.loc[keep, "url_key"])

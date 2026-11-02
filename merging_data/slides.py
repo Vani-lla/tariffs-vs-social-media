@@ -198,7 +198,7 @@ def slide_data(res: dict, main: str = "S&P 500"):
 
 # ============================================================================= SLAJD 2: rynek
 @_styled
-def slide_market(res: dict, main: str = "S&P 500", n_boot: int = 2000):
+def slide_market(res: dict, main: str = "S&P 500", n_boot: int = 2000, fdr: bool = True):
     hz = _hz_order(res)
     kinds = [("trump_episode", "epizody tweetów (dokładny czas)", BLUE, "o"),
              ("gta_announced", "ogłoszenia GTA (dzień)", VIOLET, "s"),
@@ -218,7 +218,8 @@ def slide_market(res: dict, main: str = "S&P 500", n_boot: int = 2000):
     sub = (f"Nadwyżka |zwrotu| = |log P(t+h)/P(t)| po zdarzeniu minus średnia z 20 losowych chwil o tym samym dniu tygodnia i godzinie NY. "
            f"Kropka pełna = 95% przedział ufności nie obejmuje zera. Epizody: {pl(n_ep, 0)} przy otwartym rynku.")
     foot = ("Przedziały: bootstrap klastrowy po dniach NY (2000 powtórzeń). P(t) = cena otwarcia ostatniej świecy 5-min <= t; przy zamkniętym "
-            "rynku horyzonty < 1d są puste. Zdarzenia dzienne (GTA) mają tylko horyzonty >= 1d. Horyzonty bez danych pominięte (1m wymaga świec 1-min).")
+            "rynku horyzonty < 1d są puste. Zdarzenia dzienne (GTA) mają tylko horyzonty >= 1d."
+            + (" Tabela: gwiazdka = q < 0,05 po korekcie Benjaminiego-Hochberga na wszystkich polach tabeli." if fdr else ""))
     fig, top = _canvas(2, "Rynek", title, sub, foot)
 
     ax = fig.add_axes([0.07, 0.13, 0.53, top - 0.19])
@@ -256,7 +257,8 @@ def slide_market(res: dict, main: str = "S&P 500", n_boot: int = 2000):
         t = ep[ep.instrument == inst].set_index("horizon").reindex(hz2) if len(ep) else pd.DataFrame(index=hz2)
         if "mean" in t:
             M[i] = 1e4 * t["mean"].to_numpy(float)
-            S[i] = t.get("istotne", pd.Series(False, index=t.index)).fillna(False).to_numpy(bool)
+            col = "istotne_fdr" if fdr and "istotne_fdr" in t else "istotne"
+            S[i] = t.get(col, pd.Series(False, index=t.index)).fillna(False).to_numpy(bool)
     lim = np.nanmax(np.abs(M)) if np.isfinite(M).any() else 1
     from matplotlib.colors import LinearSegmentedColormap
     cmap = LinearSegmentedColormap.from_list("div", [NEG, "#e9e8e4", POS])
@@ -275,7 +277,8 @@ def slide_market(res: dict, main: str = "S&P 500", n_boot: int = 2000):
     a2.set_yticks(np.arange(-.5, len(insts)), minor=True)
     a2.grid(which="minor", color=SURFACE, lw=2)
     a2.tick_params(which="minor", length=0)
-    a2.set_title("Epizody tweetów, wszystkie instrumenty [pb], * istotne", fontsize=10, color=INK2, loc="left", pad=8)
+    a2.set_title("Epizody, wszystkie instrumenty [pb]; " + ("* istotne po FDR" if fdr else "* istotne"),
+                 fontsize=10, color=INK2, loc="left", pad=8)
     return fig
 
 
@@ -397,11 +400,111 @@ def slide_media(res: dict, main: str = "S&P 500", lags=range(-5, 8)):
         yy -= 0.20
     ex = res["event_table"]
     if "gkg_files_post_1h" in ex:
-        cov = float((ex.loc[ex.kind == "trump_episode", "gkg_files_post_1h"] > 0).mean())
+        cov = float((ex.loc[ex.kind == "trump_episode", "gkg_files_post_1h"] >= 3).mean())
+        msg = (f"GKG co 15 min pokrywa {pl(100 * cov, 0)}% epizodów: kolejność w minutach pokazuje slajd minutowy (sekcja 8)."
+               if cov >= 0.3 else
+               f"paczki 15-min pokrywają {pl(100 * cov, 0)}% epizodów; do testu w minutach trzeba pobrać GKG wokół zdarzeń (sekcja 8).")
         fig.text(x0, yy, "GKG", fontsize=10, weight="bold", color=INK2, va="top")
-        fig.text(x0, yy - 0.03, "\n".join(textwrap.wrap(
-            f"paczki 15-min pokrywają {pl(100 * cov, 0)}% epizodów; do testu godzinowego trzeba dociągnąć GKG wokół zdarzeń.", 30)),
-            fontsize=9.5, color=INK2, va="top")
+        fig.text(x0, yy - 0.03, "\n".join(textwrap.wrap(msg, 30)), fontsize=9.5, color=INK2, va="top")
+    return fig
+
+
+# ============================================================================= SLAJD 3 (minuty): kto pierwszy
+@_styled
+def slide_order(res: dict, O: dict, num: int = 3, total: int = 3):
+    """Kolejność w minutach z order_test: skumulowany udział reakcji rynku i mediów po tweecie (0 -> 1) z 95% CI.
+    Linia przerywana = T50 (połowa reakcji). Nagłówek = O['verdict'] (wyliczony z wyniku)."""
+    C, S, n, prm = O["curves"], O["summary"].set_index("seria"), O["n"], O["params"]
+    inst = prm["instrument"]
+    off = C["min_od_t"].to_numpy(float)
+    step = float(O["bins"]["step_min"])
+    post = off >= 0
+    sub = (f"{pl(n['w_teście_media'], 0)} epizodów tweetów z otwartym rynkiem i gęstym GKG (z {pl(n['zdarzeń'], 0)}). "
+           f"Rynek: |zwrot| {inst} co {step:.0f} min minus 20 chwil placebo o tej samej porze tygodnia. "
+           f"Media: artykuły GKG o cłach na paczkę minus poziom z {prm['before']}–{prm['base_gap']} przed tweetem. "
+           "Krzywe: jaka część reakcji z całego okna nastąpiła do danej minuty.")
+    foot = ("Czas GKG to czas paczki 15-min (artykuły z poprzednich 15 min), więc media mogą wyglądać na spóźnione do 15 min; "
+            "test powtórzono z mediami cofniętymi o 15 min. T50 = minuta, w której skumulowana nadwyżka osiąga połowę sumy z okna "
+            f"(0, {prm['after']}]. Pasma i CI: bootstrap klastrowy po dniach NY ({prm['n_boot']} powtórzeń).")
+    fig, top = _canvas(num, "Kto pierwszy (minuty)", O["verdict"], sub, foot)
+    fig.texts[0].set_text(f"{num}/{total}  ·  KTO PIERWSZY (MINUTY)")
+    ax = fig.add_axes([0.07, 0.13, 0.62, top - 0.19])
+    B = O["bins"]
+    rng = np.random.default_rng(0)
+    for name, col, lab in (("rynek", BLUE, f"rynek: |zwrot| {inst}"), ("media", ORANGE, "media: artykuły GKG o cłach")):
+        m_ = C[name].to_numpy(float)[post]
+        x = np.r_[0.0, off[post] + step]
+        tot = np.nansum(m_)
+        if not tot > 0:
+            continue
+        share = np.r_[0.0, np.cumsum(np.nan_to_num(m_)) / tot]
+        # CI udziału: bootstrap po dniach (te same wagi co w order_test, tu uproszczony: losowanie zdarzeń w dniach)
+        X = O["X"][name]                       # te same zdarzenia co w order_test
+        use = np.isfinite(X[:, post]).any(1)
+        days = pd.factorize(B["events"]["day"])[0]
+        sh = []
+        for _ in range(300):
+            d = rng.integers(0, days.max() + 1, days.max() + 1)
+            w = np.bincount(d, minlength=days.max() + 1)[days] * use
+            xm = X[:, post]
+            with np.errstate(invalid="ignore", divide="ignore"):
+                mb = (w @ np.nan_to_num(xm)) / (w @ np.isfinite(xm))
+            tb = np.nansum(mb)
+            if tb > 0:
+                sh.append(np.r_[0.0, np.cumsum(np.nan_to_num(mb)) / tb])
+        if sh:
+            sh = np.array(sh)
+            ax.fill_between(x, np.percentile(sh, 2.5, 0), np.percentile(sh, 97.5, 0), color=col, alpha=0.14, lw=0)
+        ax.plot(x, share, color=col, lw=2.4, label=lab)
+        t50 = S.loc[name, "T50_min"]
+        if np.isfinite(t50):
+            ax.axvline(t50, color=col, lw=1.2, ls=(0, (3, 2)))
+            ax.text(t50, 1.03, f"T50 = {pl(t50, 0)} min", color=col, fontsize=9.5, ha="center", va="bottom",
+                    transform=ax.get_xaxis_transform())
+    ax.axhline(0.5, color=RULE, lw=0.8)
+    ax.set_ylim(-0.05, 1.12)
+    ax.set_xlim(0, off[post][-1] + step)
+    ax.set_xlabel("minuty od tweeta", fontsize=10.5)
+    ax.set_ylabel("skumulowana część reakcji", fontsize=10.5)
+    _axis_clean(ax, nd=1)
+    ax.legend(loc="lower right", frameon=False, fontsize=10, labelcolor=INK2)
+
+    # prawa kolumna: liczby
+    x0, yy = 0.73, top - 0.01
+    d, ds = S.loc["różnica media - rynek"], S.loc["różnica media_-krok - rynek"]
+    tiles = [(f"{pl(S.loc['rynek', 'T50_min'], 0)} min", f"połowa reakcji rynku ({inst})"),
+             (f"{pl(S.loc['media', 'T50_min'], 0)} min", "połowa reakcji mediów (GKG)"),
+             (f"{'+' if d['T50_min'] > 0 else ''}{pl(d['T50_min'], 0)} min",
+              f"media minus rynek, 95% CI {pl(d['T50_lo'], 0)} do {pl(d['T50_hi'], 0)}"),
+             (f"{'+' if ds['T50_min'] > 0 else ''}{pl(ds['T50_min'], 0)} min",
+              f"to samo, media cofnięte o 15 min: CI {pl(ds['T50_lo'], 0)} do {pl(ds['T50_hi'], 0)}")]
+    gap_ = min(0.11, (top - 0.20) / len(tiles))
+    for big, small in tiles:
+        fig.text(x0, yy, big, fontsize=17, weight="bold", color=INK, va="top")
+        fig.text(x0, yy - 0.045, "\n".join(textwrap.wrap(small, 40)), fontsize=9.2, color=INK2, va="top")
+        yy -= gap_
+    pre = S.loc["media", "przed_tweetem_1h"]
+    if np.isfinite(pre):
+        lo_, hi_ = S.loc["media", "przed_lo"], S.loc["media", "przed_hi"]
+        txt = (f"Godzina przed tweetem: media {'+' if pre > 0 else ''}{pl(pre, 2)} art./paczkę (CI {pl(lo_, 2)} do {pl(hi_, 2)}), "
+               + ("czyli ruszyły PRZED Trumpem." if lo_ > 0 else "bez istotnego wyprzedzenia."))
+        fig.text(x0, max(yy, 0.17), "\n".join(textwrap.wrap(txt, 44)), fontsize=9.2, color=INK2, va="top")
+    return fig
+
+
+@_styled
+def slide_order_profile(res: dict, O: dict):
+    """Pomocniczo (do notebooka, nie na slajd): surowe nadwyżki na przedział z CI, także przed tweetem."""
+    C = O["curves"]
+    fig, axes = plt.subplots(2, 1, figsize=(10, 6), sharex=True)
+    for ax, name, col, unit in ((axes[0], "rynek", BLUE, "pb"), (axes[1], "media", ORANGE, "art./paczkę")):
+        ax.fill_between(C["min_od_t"], C[f"{name}_lo"], C[f"{name}_hi"], color=col, alpha=0.15, lw=0, step="post")
+        ax.step(C["min_od_t"], C[name], where="post", color=col, lw=2)
+        ax.axhline(0, color=INK2, lw=0.8)
+        ax.axvline(0, color=RULE, lw=1, ls="--")
+        ax.set_ylabel(f"{name}: nadwyżka [{unit}]")
+    axes[1].set_xlabel("minuty od tweeta (początek przedziału)")
+    fig.tight_layout()
     return fig
 
 

@@ -41,11 +41,11 @@ class Config:
         "IEEPA": "IEEPA tariff", "reciprocal": "reciprocal tariff"})
     fr_types: list = field(default_factory=lambda: ["RULE", "NOTICE", "PRESDOCU"])
     market_archive: str = "data/market_data"
-    gkg_cache_dir: str = "../gdelt_data/gkg"  # ten sam katalog, którego używa GDELTAnalyzer
+    gkg_cache_dir: str = "gdelt_data/gkg"          # ten sam katalog, którego używa GDELTAnalyzer
     gta_csv: str = "events_out/gta_interventions.csv"
     fr_csv: str = "events_out/fr_cache_v2.csv"
     dukascopy_cache: str = "data_raw/dukascopy"
-    market_work_dir: str = "../data_raw/market"
+    market_work_dir: str = "data_raw/market"
     vix_csv: str = "data/vix_daily.csv"
     market_instruments: dict = field(default_factory=lambda: {
         "S&P 500": "usa500idxusd", "Nasdaq": "usatechidxusd", "Hang Seng": "hkgidxhkd",
@@ -65,7 +65,7 @@ class Config:
     })
     # horyzonty analizy przyczynowej względem t = czas publikacji (etykieta -> odstęp)
     horizons: dict = field(default_factory=lambda: {
-        "1m": "1min", "5m": "5min", "1h": "1h", "3h": "3h", "1d": "1D", "3d": "3D", "7d": "7D"})
+        "5m": "5min", "1h": "1h", "3h": "3h", "1d": "1D", "3d": "3D", "7d": "7D"})
 
     def horizon_deltas(self) -> dict:
         return {k: pd.Timedelta(v) for k, v in self.horizons.items()}

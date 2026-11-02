@@ -48,7 +48,7 @@ def to_naive_day(t: pd.Series) -> pd.Series:
 
 
 class CleanLoader:
-    GKG_COLS = ["SourceCommonName", "DocumentIdentifier", "time_utc", "wordcount", "url_key"]   # bez tonu
+    GKG_COLS = ["SourceCommonName", "DocumentIdentifier", "time_utc", "wordcount", "url_key", "file_dense"]   # bez tonu
 
     def __init__(self, cfg: Config):
         self.cfg = cfg
@@ -109,23 +109,42 @@ class CleanLoader:
         have = pd.read_csv(p, nrows=0).columns
         d = pd.read_csv(p, usecols=[c for c in self.GKG_COLS if c in have], low_memory=False)
         d["time_utc"] = fast_utc(d["time_utc"])
+        d["file_dense"] = as_bool(d["file_dense"]) if "file_dense" in d else False
         return d.dropna(subset=["time_utc"]).sort_values("time_utc").reset_index(drop=True)
 
-    def gkg_files(self) -> pd.DatetimeIndex:
+    @staticmethod
+    def _dense(p: Path) -> bool:
+        """Paczka gęsta = zip z komentarzem 'topic-only' (download_gkg_dense)."""
+        import zipfile
+        try:
+            with zipfile.ZipFile(p) as z:
+                return z.comment == b"topic-only"
+        except (zipfile.BadZipFile, OSError):
+            return False
+
+    def gkg_files(self, with_dense: bool = False):
         """Znaczniki WSZYSTKICH pobranych paczek 15-min (także bez artykułów o cłach): mianownik stawek na paczkę.
+        with_dense=True: zwraca (znaczniki, maska paczek gęstych). Paczki gęste leżą tuż po tweetach, więc nie są
+        próbką równomierną: służą tylko oknom wokół zdarzeń, nie panelom.
         Gdy zipy usunięto, bierze listę zapisaną wcześniej w clean_out/gkg/gkg_files.csv."""
         listing = self.root / "gkg" / "gkg_files.csv"
         files = sorted(Path(self.cfg.gkg_cache_dir).glob("*.gkg.csv.zip"))
         if files:
             st = pd.to_datetime(pd.Series([p.name[:14] for p in files]), format="%Y%m%d%H%M%S", utc=True, errors="coerce")
-            idx = pd.DatetimeIndex(st.dropna().drop_duplicates().sort_values())
+            L = pd.DataFrame({"file_utc": st, "dense": [self._dense(p) for p in files]}).dropna(subset=["file_utc"])
+            L = L.drop_duplicates("file_utc").sort_values("file_utc")
             listing.parent.mkdir(parents=True, exist_ok=True)
-            pd.DataFrame({"file_utc": idx}).to_csv(listing, index=False)
-            return idx
-        if listing.exists():
-            return pd.DatetimeIndex(fast_utc(pd.read_csv(listing)["file_utc"]).sort_values())
-        print(f"UWAGA: brak paczek GKG w {self.cfg.gkg_cache_dir} i brak {listing}: stawki GKG nie będą liczone.")
-        return pd.DatetimeIndex([], tz="UTC")
+            L.to_csv(listing, index=False)
+        elif listing.exists():
+            L = pd.read_csv(listing)
+            L["file_utc"] = fast_utc(L["file_utc"])
+            L["dense"] = as_bool(L["dense"]) if "dense" in L else False
+            L = L.sort_values("file_utc")
+        else:
+            print(f"UWAGA: brak paczek GKG w {self.cfg.gkg_cache_dir} i brak {listing}: stawki GKG nie będą liczone.")
+            L = pd.DataFrame({"file_utc": pd.DatetimeIndex([], tz="UTC"), "dense": np.array([], bool)})
+        idx = pd.DatetimeIndex(L["file_utc"])
+        return (idx, L["dense"].to_numpy(bool)) if with_dense else idx
 
     # ------------------------------------------------------------------ GTA / FR (daty dzienne, bez strefy)
     def gta(self) -> pd.DataFrame:
@@ -184,7 +203,10 @@ class CleanLoader:
                        [(f"Rynek: {lab}", self.root / "market" / f"{tag_of(lab)}_mid.csv") for lab in self.cfg.market_instruments]:
             rows.append({"źródło": name, "plik": str(p), "istnieje": p.exists(),
                          "MB": round(p.stat().st_size / 1e6, 2) if p.exists() else None})
-        n_zip = len(list(Path(self.cfg.gkg_cache_dir).glob("*.gkg.csv.zip")))
-        rows.append({"źródło": "GKG: paczki 15-min (mianownik)", "plik": self.cfg.gkg_cache_dir, "istnieje": n_zip > 0,
-                     "MB": None, "pliki": n_zip})
+        zips = list(Path(self.cfg.gkg_cache_dir).glob("*.gkg.csv.zip"))
+        n_dense = sum(self._dense(p) for p in zips)
+        rows.append({"źródło": "GKG: paczki 15-min z próbki (panele)", "plik": self.cfg.gkg_cache_dir,
+                     "istnieje": len(zips) - n_dense > 0, "MB": None, "pliki": len(zips) - n_dense})
+        rows.append({"źródło": "GKG: paczki gęste wokół epizodów (test kolejności)", "plik": self.cfg.gkg_cache_dir,
+                     "istnieje": n_dense > 0, "MB": None, "pliki": n_dense})
         return pd.DataFrame(rows)

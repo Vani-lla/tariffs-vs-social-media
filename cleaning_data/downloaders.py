@@ -1,7 +1,8 @@
 """Pobieranie brakujących źródeł (tylko gdy plik/katalog nie istnieje).
 
 NIE pobiera: data.taz ani FNSPID (zostają ręcznie).
-Pobiera: Kaggle (tweety, Truth Social), GTA (API), Federal Register (API), GDELT GKG (próbka), Dukascopy (pip).
+Pobiera: Kaggle (tweety, Truth Social), GTA (API), Federal Register (API), GDELT GKG (próbka albo gęsto wokół
+zdarzeń: download_gkg_dense), Dukascopy (pip).
 """
 from __future__ import annotations
 
@@ -46,25 +47,118 @@ def download_vix(cfg: Config) -> str:
     return f"zapisano {len(df):,} dni VIX -> {out}"
 
 
-def download_gkg_dense(cfg: Config, centers, hours: float = 3, workers: int = 4) -> str:
-    """CIĄGŁE paczki 15-min w oknie ±hours wokół podanych momentów (np. godziny tweetów).
-    Domyślny plan_gkg_stamps daje próbkę co ok. 2h15, której nie da się użyć do pomiaru opóźnień rzędu godzin.
-    Uwaga na rozmiar: ±3h to 24 pliki (ok. 8 MB) na zdarzenie."""
+def _dense_stamps(centers, before="2h", after="4h") -> list[str]:
+    """Znaczniki paczek 15-min (RRRRMMDDGGMMSS) pokrywające okna [c - before, c + after] wokół momentów `centers`."""
+    b, a = pd.Timedelta(before), pd.Timedelta(after)
+    stamps = set()
+    for c in pd.to_datetime(pd.Series(list(centers)), utc=True).dropna():
+        c = c.tz_convert("UTC").tz_localize(None)
+        lo, hi = (c - b).floor("15min"), (c + a).ceil("15min")
+        stamps |= {t.strftime("%Y%m%d%H%M%S") for t in pd.date_range(lo, hi, freq="15min")}
+    return sorted(stamps)
+
+
+def plan_gkg_dense(centers, before: str = "2h", after: str = "4h", cache_dir: str | Path | None = None) -> pd.DataFrame:
+    """Ile paczek trzeba pobrać do gęstego GKG (przed uruchomieniem pobierania). Paczka GKG 2.1 to ok. 5-25 MB."""
+    st = _dense_stamps(centers, before, after)
+    have = 0
+    if cache_dir is not None and Path(cache_dir).exists():
+        names = {p.name[:14] for p in Path(cache_dir).glob("*.gkg.csv.zip")}
+        have = sum(x in names for x in st)
+    todo = len(st) - have
+    return pd.DataFrame([{"zdarzeń": int(pd.Series(list(centers)).notna().sum()), "okno": f"-{before} .. +{after}",
+                          "paczek w oknach": len(st), "już na dysku": have, "do pobrania": todo,
+                          "transfer [GB] (5-25 MB/paczkę)": f"{todo * 5 / 1024:.0f}-{todo * 25 / 1024:.0f}",
+                          "na dysku po odchudzeniu [GB]": f"~{todo * 0.3 / 1024:.1f}"}])
+
+
+TOPIC_COMMENT = b"topic-only"            # komentarz zipa: paczka odchudzona do artykułów o cłach
+
+
+def is_thinned(path) -> bool:
+    try:
+        with zipfile.ZipFile(path) as z:
+            return z.comment == TOPIC_COMMENT
+    except (zipfile.BadZipFile, OSError):
+        return False
+
+
+def thin_gkg_zip(path) -> tuple[int, int]:
+    """Zostawia w paczce tylko wiersze o cłach (ten sam filtr URL/motywów co GKGExplorer.clean), w tym samym formacie
+    i pod tą samą nazwą. Lista paczek (mianownik stawek) się nie zmienia, a plik maleje ok. 30-100 razy.
+    Zwraca (wiersze przed, wiersze po)."""
+    from .gdelt_gkg import GKGExplorer
+    path = Path(path)
+    if is_thinned(path):
+        return (-1, -1)
+    with zipfile.ZipFile(path) as z:
+        inner = z.namelist()[0]
+        raw = z.read(inner).decode("utf-8", errors="replace")
+    lines = [x for x in raw.split("\n") if x]
+    keep = []
+    for ln in lines:
+        f = ln.split("\t")
+        url = f[4] if len(f) > 4 else ""
+        themes = f[8] if len(f) > 8 else ""
+        if GKGExplorer.URL_RE.search(url) or GKGExplorer.THEME_RE.search(themes):
+            keep.append(ln)
+    tmp = path.with_suffix(".thin")
+    with zipfile.ZipFile(tmp, "w", compression=zipfile.ZIP_DEFLATED) as z:
+        z.writestr(inner, "\n".join(keep) + ("\n" if keep else ""))
+        z.comment = TOPIC_COMMENT
+    tmp.replace(path)
+    return len(lines), len(keep)
+
+
+def download_gkg_dense(cfg: Config, centers, before: str = "2h", after: str = "4h", workers: int = 4,
+                       hours: float | None = None, max_files: int | None = None) -> str:
+    """CIĄGŁE paczki 15-min w oknach [c - before, c + after] wokół momentów `centers` (np. początków epizodów tweetów).
+    Domyślna próbka (plan_gkg_stamps, co ok. 2h15) nie mierzy opóźnień rzędu minut; ta funkcja tak.
+    Każda paczka jest pobierana do pliku tymczasowego, odchudzana do artykułów o cłach (thin_gkg_zip, ok. 1-3% rozmiaru)
+    i dopiero wtedy dostaje nazwę RRRRMMDDGGMMSS.gkg.csv.zip. Paczka gęsta = zip z komentarzem 'topic-only': po tym
+    scalanie odróżnia ją od próbki równomiernej i NIE używa jej w panelach dziennym i godzinowym (patrz build_merged).
+    Paczki, które już są na dysku (np. z próbki), zostają bez zmian. Można przerwać i uruchomić ponownie.
+    Dziennik: <gkg_cache_dir>/gkg_dense_log.csv. Po pobraniu: run_cleaning(cfg, only=["GKG"]) i ponowne build_merged."""
+    import time
+    if hours is not None:                                   # zgodność ze starszym wywołaniem (±hours)
+        before = after = f"{hours}h"
     d = Path(cfg.gkg_cache_dir)
     d.mkdir(parents=True, exist_ok=True)
-    stamps = set()
-    for c in centers:
-        c = pd.Timestamp(c)
-        c = c.tz_convert("UTC").tz_localize(None) if c.tzinfo is not None else c
-        a = (c - pd.Timedelta(hours=hours)).floor("15min")
-        b = (c + pd.Timedelta(hours=hours)).floor("15min")
-        stamps |= {t.strftime("%Y%m%d%H%M%S") for t in pd.date_range(a, b, freq="15min")}
-    stamps = sorted(stamps)
-    print(f"  GKG (gęsto): {len(stamps)} plików")
+    stamps = _dense_stamps(centers, before, after)[:max_files]
+    print(plan_gkg_dense(centers, before, after, d).to_string(index=False))
     s = _session()
+    rows, t0 = [], time.time()
+
+    def one(st):
+        f = d / f"{st}.gkg.csv.zip"
+        if f.exists() and f.stat().st_size > 0:             # już jest (gęsta albo z próbki): bez zmian
+            return {"stamp": st, "wynik": "cache", "wiersze": None, "o_cłach": None}
+        tmp = d / f"{st}.dense.zip"                         # nie pasuje do *.gkg.csv.zip, więc nigdy nie wejdzie do danych
+        r = _fetch_gkg(s, st, tmp)
+        n0 = n1 = None
+        if r == "ok":
+            try:
+                n0, n1 = thin_gkg_zip(tmp)
+                tmp.replace(f)
+            except Exception as ex:                          # uszkodzony zip: przy następnym przebiegu pobierze się od nowa
+                r = f"błąd odchudzania: {str(ex)[:40]}"
+            finally:
+                tmp.unlink(missing_ok=True)
+        return {"stamp": st, "wynik": r, "wiersze": n0, "o_cłach": n1}
+
     with ThreadPoolExecutor(workers) as ex:
-        res = list(ex.map(lambda x: _get_gkg(s, x, d), stamps))
-    return str(pd.Series(res).map(lambda x: x if not x.startswith("błąd") else "błąd").value_counts().to_dict())
+        for i, row in enumerate(ex.map(one, stamps), 1):
+            rows.append(row)
+            if i % 100 == 0 or i == len(stamps):
+                el = time.time() - t0
+                print(f"  GKG gęsto: {i}/{len(stamps)}  ({el / 60:.0f} min, zostało ok. {el / i * (len(stamps) - i) / 60:.0f} min)")
+    log = pd.DataFrame(rows)
+    lp = d / "gkg_dense_log.csv"
+    if lp.exists():
+        log = pd.concat([pd.read_csv(lp, dtype={"stamp": str}), log]).drop_duplicates("stamp", keep="last")
+    log.to_csv(lp, index=False)
+    cnt = log.loc[log["stamp"].isin(stamps), "wynik"].map(lambda x: "błąd" if str(x).startswith("błąd") else x)
+    return f"{cnt.value_counts().to_dict()} -> {d} (dziennik: {lp})"
 
 
 # --------------------------------------------------------------------------- pomocnicze
@@ -259,6 +353,12 @@ def _get_gkg(session, stamp: str, dest_dir: Path):
     f = dest_dir / f"{stamp}.gkg.csv.zip"
     if f.exists() and f.stat().st_size > 0:
         return "cache"
+    return _fetch_gkg(session, stamp, f)
+
+
+def _fetch_gkg(session, stamp: str, f: Path):
+    """Pobiera paczkę GKG do pliku f (przez plik .part, żeby przerwanie nie zostawiło uciętego zipa)."""
+    dest_dir = f.parent
     tmp = dest_dir / f"{stamp}.part"
     try:
         r = session.get(GKG_URL.format(stamp=stamp), stream=True, timeout=120)
@@ -338,4 +438,4 @@ def ensure_all(cfg: Config, gta_api_key: str | None = None, gkg_files: int = 300
         status.append({"źródło": nm, "wynik": "jest" if ok else f"BRAK {p} (nie pobieram, dodaj ręcznie)"})
         if not ok:
             print(f"[{nm}] BRAK {p}: nie pobieram, dodaj ręcznie")
-    return pd.DataFrame(status)
+    return pd.DataFrame(status)

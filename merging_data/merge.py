@@ -19,7 +19,7 @@ import pandas as pd
 
 from cleaning_data.base import Config, show
 from .events import EventBuilder
-from .features import DAY, eff_day, fnspid_daily, media_features
+from .features import DAY, MEDIA_HORIZONS, eff_day, fnspid_daily, media_features
 from cleaning_data.horizons import HorizonTools
 from .loaders import CleanLoader, tag_of
 from .panel import build_daily_panel, build_hourly_panel, event_market_long, to_trading_days
@@ -37,9 +37,10 @@ def _wide_market(long: pd.DataFrame, values=("ret", "excess_ret", "excess_abs", 
 
 def build_merged(cfg: Config, gap: str = "6h", k: int = 20, seed: int = 0, instruments: list | None = None,
                  hourly: bool = True, save: bool = True, relevant_col: str = "relevant",
-                 trump: pd.DataFrame | None = None) -> dict:
+                 trump: pd.DataFrame | None = None, media_horizons: dict | None = None) -> dict:
     """relevant_col: która kolumna wybiera posty-zdarzenia (domyślnie słownik `relevant`; np. 'relevant_strict' albo
-    kolumna z predykcji klasyfikatora). trump: gotowa tabela postów (np. trump_clean z doklejonymi etykietami)."""
+    kolumna z predykcji klasyfikatora). trump: gotowa tabela postów (np. trump_clean z doklejonymi etykietami).
+    media_horizons: okna mediów (domyślnie MEDIA_HORIZONS: 15m ... 7d); rynek używa cfg.horizons."""
     L = CleanLoader(cfg)
     tr = L.trump() if trump is None else trump.copy()
     if relevant_col != "relevant":
@@ -47,7 +48,16 @@ def build_merged(cfg: Config, gap: str = "6h", k: int = 20, seed: int = 0, instr
             raise KeyError(f"Brak kolumny {relevant_col} w tabeli postów.")
         tr["relevant"] = tr[relevant_col].astype(str).str.lower().isin(["true", "1", "tak"])
     fn, gkg, gta, fr = L.optional("fnspid"), L.optional("gkg"), L.optional("gta"), L.optional("fr")
-    gkg_files = L.gkg_files() if gkg is not None else None
+    gkg_files, gkg_dense = L.gkg_files(with_dense=True) if gkg is not None else (None, None)
+    # paczki gęste (download_gkg_dense) leżą tuż po tweetach: tylko do okien wokół zdarzeń, NIE do paneli
+    gkg_s, files_s = gkg, gkg_files
+    if gkg is not None and gkg_dense is not None and gkg_dense.any():
+        files_s = gkg_files[~gkg_dense]
+        if "file_dense" in gkg and gkg["file_dense"].any():
+            gkg_s = gkg[~gkg["file_dense"].to_numpy(bool)]
+        else:                                         # starszy gkg_clean bez flagi: po czasie paczki
+            dn = HorizonTools._ns(pd.Series(gkg_files[gkg_dense]))
+            gkg_s = gkg[~np.isin(HorizonTools._ns(gkg["time_utc"]), dn)]
     mk = L.market_all()
     if instruments:
         mk = {k_: v for k_, v in mk.items() if k_ in instruments}
@@ -57,21 +67,23 @@ def build_merged(cfg: Config, gap: str = "6h", k: int = 20, seed: int = 0, instr
     E = EventBuilder(cfg, gap=gap).build(tr, gta, fr)
     ev, posts = E["events"], E["posts"]
     fn_d = fnspid_daily(fn) if fn is not None and len(fn) else None
-    media = media_features(ev, fn_d, gkg, gkg_files, posts, cfg.horizons)
+    mh = dict(media_horizons or MEDIA_HORIZONS)
+    media = media_features(ev, fn_d, gkg, gkg_files, posts, mh, gkg_sample=gkg_s, gkg_files_sample=files_s)
     long = event_market_long(ev, prices, cfg.horizons, cfg.period_bounds(), k=k, seed=seed)
 
     table = ev.merge(media, on="event_id", how="left", validate="1:1") \
               .merge(_wide_market(long), on="event_id", how="left", validate="1:1")
     tr_all = tr[~tr["is_retweet"]]
-    daily = build_daily_panel(cfg.period_bounds(), tr_all, posts, fn_d, gkg, gkg_files, ev, closes)
+    daily = build_daily_panel(cfg.period_bounds(), tr_all, posts, fn_d, gkg_s, files_s, ev, closes)
     trading = to_trading_days(daily) if closes else None
-    hour = build_hourly_panel(cfg.period_bounds(), posts, gkg, gkg_files, closes, tr_all=tr_all) if hourly else None
+    hour = build_hourly_panel(cfg.period_bounds(), posts, gkg_s, files_s, closes, tr_all=tr_all) if hourly else None
 
-    res = {"gap": gap, "events": ev, "posts": posts, "episodes": E["episodes"], "media": media, "market_long": long,
+    res = {"gap": gap, "media_horizons": mh, "events": ev, "posts": posts, "episodes": E["episodes"], "media": media, "market_long": long,
            "event_table": table, "daily": daily, "trading": trading, "hourly": hour,
-           "fn_daily": fn_d, "gkg_files": gkg_files, "prices": prices, "closes": closes, "cfg": cfg,
+           "fn_daily": fn_d, "gkg_files": gkg_files, "gkg": gkg, "gkg_dense": gkg_dense, "gkg_files_sample": files_s, "prices": prices, "closes": closes, "cfg": cfg,
            "sources": {"trump": len(tr), "fnspid": 0 if fn is None else len(fn), "gkg": 0 if gkg is None else len(gkg),
-                       "gkg_files": 0 if gkg_files is None else len(gkg_files), "gta": 0 if gta is None else len(gta),
+                       "gkg_files": 0 if files_s is None else len(files_s),
+                       "gkg_files_gęste": 0 if gkg_dense is None else int(gkg_dense.sum()), "gta": 0 if gta is None else len(gta),
                        "fr": 0 if fr is None else len(fr), "instrumenty": list(prices)}}
     if save:
         out = cfg.out("merged")
@@ -112,7 +124,28 @@ def excess_table(res: dict, kind: str = "trump_episode", metric: str = "excess_a
         order = {h: i for i, h in enumerate(res["cfg"].horizons)}
         out = out.sort_values(["instrument", "horizon"], key=lambda s: s.map(order) if s.name == "horizon" else s)
         out["istotne"] = (out.get("lo", np.nan) > 0) | (out.get("hi", np.nan) < 0)
+        if "p_boot" in out:                       # wiele testów naraz (instrumenty x horyzonty): korekta FDR
+            out["q_fdr"] = fdr_bh(out["p_boot"].to_numpy(float), floor=1 / n_boot)
+            out["istotne_fdr"] = out["q_fdr"] < 0.05
     return out.reset_index(drop=True)
+
+
+def fdr_bh(p: np.ndarray, floor: float = 0.0) -> np.ndarray:
+    """Wartości q Benjaminiego-Hochberga (NaN zostają NaN). floor: najmniejsze p możliwe przy danym bootstrapie."""
+    p = np.asarray(p, float).copy()
+    ok = np.isfinite(p)
+    q = np.full(len(p), np.nan)
+    m = int(ok.sum())
+    if m == 0:
+        return q
+    pv = np.maximum(p[ok], floor)
+    o = np.argsort(pv)
+    r = pv[o] * m / np.arange(1, m + 1)
+    r = np.minimum.accumulate(r[::-1])[::-1]
+    qq = np.empty(m)
+    qq[o] = np.minimum(r, 1.0)
+    q[ok] = qq
+    return q
 
 
 def coverage_table(res: dict) -> pd.DataFrame:
@@ -202,9 +235,10 @@ def check_merged(res: dict, n_sample: int = 200, seed: int = 0, strict: bool = T
     # --- media: niezależne przeliczenie okien tweetów (bez wycieku z przyszłości)
     ex = tab[tab["precision"] == "exact"]
     col = next((c for c in tab.columns if c.startswith("tw_n_post_")), None)
+    mh = res.get("media_horizons", hz)
     if col is not None and len(ex):
         lab = col.replace("tw_n_post_", "")
-        h = pd.Timedelta(hz[lab])
+        h = pd.Timedelta(mh[lab])
         pt = np.sort(HorizonTools._ns(res["posts"]["time_utc"]))
         hn = int(h.value)
         sm = ex.sample(min(n_sample, len(ex)), random_state=seed)
@@ -218,7 +252,7 @@ def check_merged(res: dict, n_sample: int = 200, seed: int = 0, strict: bool = T
     fcol = next((c for c in tab.columns if c.startswith("fn_n_post_")), None)
     if fcol is not None and res["fn_daily"] is not None:
         lab = fcol.replace("fn_n_post_", "")
-        n = int(pd.Timedelta(hz[lab]).days)
+        n = int(pd.Timedelta(mh[lab]).days)
         fd = res["fn_daily"]["fn_n"]
         sm = tab.sample(min(n_sample, len(tab)), random_state=seed)
         mism = 0
@@ -239,6 +273,12 @@ def check_merged(res: dict, n_sample: int = 200, seed: int = 0, strict: bool = T
 
     # --- panele
     D = res["daily"]
+    fs = res.get("gkg_files_sample")
+    if "gkg_files_n" in D and fs is not None:
+        k = pd.Series(eff_day(pd.Series(fs)))
+        n_in = int(((k >= D.index[0]) & (k <= D.index[-1])).sum())
+        add("panele: GKG tylko z próbki równomiernej (bez paczek gęstych)", int(D["gkg_files_n"].sum()) == n_in,
+            f"{int(D['gkg_files_n'].sum())} paczek w panelu, gęstych poza panelem: {res['sources'].get('gkg_files_gęste', 0)}")
     add("panel dzienny: ciągły kalendarz bez duplikatów",
         D.index.is_unique and D.index.is_monotonic_increasing and len(pd.date_range(D.index[0], D.index[-1])) == len(D),
         f"{len(D)} dni")

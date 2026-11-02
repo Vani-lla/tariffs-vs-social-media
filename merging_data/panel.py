@@ -219,7 +219,8 @@ def build_daily_panel(bounds, tr_all: pd.DataFrame, posts: pd.DataFrame, fn_dail
 
 
 def build_hourly_panel(bounds, posts: pd.DataFrame, gkg, gkg_files, closes: dict, tr_all: pd.DataFrame | None = None) -> pd.DataFrame:
-    """Panel godzinowy w UTC. Godziny bez paczki GKG mają gkg_files_n = 0 (GKG to próbka), a bez notowań NaN w rynku."""
+    """Panel godzinowy w UTC. Godziny bez paczki GKG mają gkg_files_n = 0 (GKG to próbka), a bez notowań NaN w rynku.
+    build_merged podaje tu tylko paczki z próbki równomiernej (gęste wokół epizodów zawyżałyby media po tweetach)."""
     lo, hi = _span(bounds)
     idx = pd.date_range(lo.tz_localize("UTC"), (hi - pd.Timedelta(hours=1)).tz_localize("UTC"), freq="h", name="hour_utc")
     cnt = lambda s: pd.Series(s).value_counts().reindex(idx, fill_value=0).astype(float)
