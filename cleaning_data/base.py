@@ -40,6 +40,14 @@ class Config:
         "301": '"Section 301" China tariff', "232": '"Section 232" tariff',
         "IEEPA": "IEEPA tariff", "reciprocal": "reciprocal tariff"})
     fr_types: list = field(default_factory=lambda: ["RULE", "NOTICE", "PRESDOCU"])
+    # ETF-y na chińskie spółki notowane w USA (handel w godzinach tweetów) + benchmark rynku USA.
+    # Koszyk ustalony z góry, bez doboru spółek ex post: brak survivorship/look-ahead bias.
+    china_etfs: dict = field(default_factory=lambda: {
+        "KWEB": "KraneShares CSI China Internet", "CQQQ": "Invesco China Technology",
+        "FXI": "iShares China Large-Cap", "MCHI": "iShares MSCI China", "ASHR": "Xtrackers CSI 300 China A-Shares"})
+    china_benchmark: str = "SPY"
+    china_etf_csv: str = "data/china_etfs_daily.csv"
+    china_estimation: tuple = ("2017-01-01", "2017-12-31")   # okno estymacji modelu rynkowego (przed okresem badania)
     market_archive: str = "data/market_data"
     gkg_cache_dir: str = "gdelt_data/gkg"          # ten sam katalog, którego używa GDELTAnalyzer
     gta_csv: str = "events_out/gta_interventions.csv"

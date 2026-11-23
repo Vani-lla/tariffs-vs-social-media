@@ -1,0 +1,288 @@
+
+====================================================================================================
+C1. DANE ETF (yfinance, ceny skorygowane) I MODEL RYNKOWY
+====================================================================================================
+       pierwszy_dzień ostatni_dzień  sesje  braki_w_środku  ceny<=0  |zwrot|>15%  max_|zwrot|_%
+ticker                                                                                         
+ASHR       2016-12-01    2020-03-31    837               0        0            0          11.66
+CQQQ       2016-12-01    2020-03-31    837               0        0            0          11.60
+FXI        2016-12-01    2020-03-31    837               0        0            0          10.86
+KWEB       2016-12-01    2020-03-31    837               0        0            0          10.66
+MCHI       2016-12-01    2020-03-31    837               0        0            0          10.28
+SPY        2016-12-01    2020-03-31    837               0        0            0          11.59
+
+Model rynkowy r_ETF = alfa + beta * r_SPY (AR = r - beta*r_SPY, alfy nie odejmujemy), okno estymacji 2017-01-01 - 2017-12-31:
+ticker  alfa_pb  beta    R2  sd_AR_pb  n_est
+  KWEB   10.662 1.331 0.211   109.409    251
+  CQQQ   11.541 1.354 0.226   106.500    251
+   FXI    3.354 1.146 0.285    77.064    251
+  MCHI    7.690 1.238 0.328    75.343    251
+  ASHR    8.239 0.417 0.042    84.876    251
+
+Zwroty 2018-2019 (pb/dzień): KWEB: śr=-3.0, sd=194, CQQQ: śr=-2.7, sd=178, FXI: śr=-0.1, sd=135, MCHI: śr=-0.2, sd=147, ASHR: śr=-0.5, sd=164, SPY: śr=4.5, sd=94
+Korelacja AR między ETF-ami (2018-2019):
+         KWEB_ar  CQQQ_ar  FXI_ar  MCHI_ar  ASHR_ar
+KWEB_ar     1.00     0.91    0.65     0.82     0.54
+CQQQ_ar     0.91     1.00    0.71     0.87     0.59
+FXI_ar      0.65     0.71    1.00     0.92     0.68
+MCHI_ar     0.82     0.87    0.92     1.00     0.68
+ASHR_ar     0.54     0.59    0.68     0.68     1.00
+
+====================================================================================================
+C2. KONTROLA SENSU: AR w znanych dniach eskalacji/deeskalacji (pb)
+====================================================================================================
+                               zdarzenie      dzień      sesja  SPY_ret  KWEB_ret  CHN_TECH_ar  CHN_ALL_ar
+         2018-03-08 stal/aluminium (232) 2018-03-08 2018-03-08     48.0      35.0        -31.0       -16.0
+               2018-03-22 memorandum 301 2018-03-22 2018-03-22   -253.0    -628.0       -254.0      -195.0
+          2018-06-15 lista 25% na 50 mld 2018-06-15 2018-06-15    -13.0     -57.0        -73.0       -65.0
+                  2018-07-06 cła wchodzą 2018-07-06 2018-07-06     84.0     222.0         73.0        49.0
+               2018-09-17 10% na 200 mld 2018-09-17 2018-09-17    -53.0    -238.0       -160.0       -74.0
+                2019-05-05 tweet 10->25% 2019-05-05 2019-05-06    -41.0    -330.0       -290.0      -308.0
+      2019-05-06 pon. po tweecie 10->25% 2019-05-06 2019-05-06    -41.0    -330.0       -290.0      -308.0
+                  2019-05-10 25% wchodzi 2019-05-10 2019-05-10     50.0     -48.0        -55.0        20.0
+         2019-08-01 tweet 10% na 300 mld 2019-08-01 2019-08-01    -87.0    -264.0       -162.0      -198.0
+2019-08-02 pt. po tweecie 10% na 300 mld 2019-08-02 2019-08-02    -76.0    -152.0        -51.0       -28.0
+           2019-08-05 Chiny manipulantem 2019-08-05 2019-08-05   -305.0    -561.0       -110.0      -131.0
+                   2019-08-23 odwet Chin 2019-08-23 2019-08-23   -260.0    -232.0         99.0        62.0
+                2019-12-13 faza pierwsza 2019-12-13 2019-12-13      6.0     -74.0        -73.0       -47.0
+
+====================================================================================================
+C3. ETYKIETY (gold z adnotacji MG + PK, te same co w analizie S&P)
+====================================================================================================
+MG_pierwszy  n=167  {'nie_cla': 103, 'ESKALACJA': 35, 'NEUTRALNE': 15, 'DEESKALACJA': 12, nan: 2}
+PK_pierwszy  n=167  {'nie_cla': 99, 'NEUTRALNE': 28, 'DEESKALACJA': 21, 'ESKALACJA': 19}
+zgodne       n=123  {'nie_cla': 93, 'ESKALACJA': 14, 'DEESKALACJA': 10, 'NEUTRALNE': 6}
+
+====================================================================================================
+C4. TESTY: ESKALACJA vs DEESKALACJA (i inne kontrasty) dla zwrotów nadzwyczajnych chińskich ETF-ów
+====================================================================================================
+Główny test - ESKALACJA vs DEESKALACJA, AR koszyków (pb):
+    wariant            miara                 kontrast  n_A  n_B  śr_A_pb  śr_B_pb  różnica_pb         CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy    CHN_ALL_ar_d0 ESKALACJA vs DEESKALACJA   35 12.0  -27.250   38.754     -66.004   [-132.2; 8.6]    -0.600           0.071        0.629
+MG_pierwszy    CHN_ALL_ar_d1 ESKALACJA vs DEESKALACJA   35 12.0  -23.179    0.473     -23.651  [-108.7; 62.5]    -0.188           0.527        0.786
+MG_pierwszy  CHN_ALL_ar_d0_2 ESKALACJA vs DEESKALACJA   35 12.0  -45.468   -4.669     -40.800  [-162.1; 95.9]    -0.204           0.534        0.790
+MG_pierwszy  CHN_ALL_ar_d0_4 ESKALACJA vs DEESKALACJA   35 12.0  -73.548  -14.397     -59.152 [-221.6; 120.7]    -0.235           0.445        0.756
+MG_pierwszy   CHN_TECH_ar_d0 ESKALACJA vs DEESKALACJA   35 12.0  -41.216   42.321     -83.538  [-158.4; -0.9]    -0.668           0.052        0.629
+MG_pierwszy   CHN_TECH_ar_d1 ESKALACJA vs DEESKALACJA   35 12.0  -35.912    2.845     -38.756  [-155.9; 65.4]    -0.237           0.453        0.758
+MG_pierwszy CHN_TECH_ar_d0_2 ESKALACJA vs DEESKALACJA   35 12.0  -82.831    6.771     -89.602  [-235.1; 66.9]    -0.378           0.259        0.636
+MG_pierwszy CHN_TECH_ar_d0_4 ESKALACJA vs DEESKALACJA   35 12.0  -94.989  -14.255     -80.734 [-293.0; 150.7]    -0.243           0.446        0.756
+PK_pierwszy    CHN_ALL_ar_d0 ESKALACJA vs DEESKALACJA   19 21.0  -27.386   38.058     -65.444 [-118.8; -12.9]    -0.749           0.030        0.375
+PK_pierwszy    CHN_ALL_ar_d1 ESKALACJA vs DEESKALACJA   19 21.0  -35.220  -15.562     -19.658   [-91.8; 52.7]    -0.160           0.612        0.848
+PK_pierwszy  CHN_ALL_ar_d0_2 ESKALACJA vs DEESKALACJA   19 21.0  -55.156    0.008     -55.164  [-164.3; 62.7]    -0.293           0.355        0.775
+PK_pierwszy  CHN_ALL_ar_d0_4 ESKALACJA vs DEESKALACJA   19 21.0  -92.197  -32.051     -60.145  [-189.8; 73.7]    -0.273           0.392        0.777
+PK_pierwszy   CHN_TECH_ar_d0 ESKALACJA vs DEESKALACJA   19 21.0  -31.668   27.499     -59.166   [-127.3; 5.7]    -0.537           0.100        0.502
+PK_pierwszy   CHN_TECH_ar_d1 ESKALACJA vs DEESKALACJA   19 21.0  -40.505  -25.854     -14.651  [-113.5; 79.2]    -0.091           0.783        0.905
+PK_pierwszy CHN_TECH_ar_d0_2 ESKALACJA vs DEESKALACJA   19 21.0  -60.702  -18.793     -41.909 [-170.5; 107.9]    -0.178           0.603        0.846
+PK_pierwszy CHN_TECH_ar_d0_4 ESKALACJA vs DEESKALACJA   19 21.0  -85.503  -68.799     -16.704 [-182.7; 154.9]    -0.057           0.857        0.935
+     zgodne    CHN_ALL_ar_d0 ESKALACJA vs DEESKALACJA   14 10.0  -46.528   56.307    -102.835 [-170.3; -33.5]    -1.152           0.014        0.321
+     zgodne    CHN_ALL_ar_d1 ESKALACJA vs DEESKALACJA   14 10.0  -24.958   10.135     -35.093  [-143.0; 67.9]    -0.268           0.509        0.726
+     zgodne  CHN_ALL_ar_d0_2 ESKALACJA vs DEESKALACJA   14 10.0  -62.055   50.071    -112.126   [-228.1; 8.9]    -0.721           0.104        0.410
+     zgodne  CHN_ALL_ar_d0_4 ESKALACJA vs DEESKALACJA   14 10.0  -82.981   67.834    -150.815  [-313.4; 28.9]    -0.682           0.118        0.433
+     zgodne   CHN_TECH_ar_d0 ESKALACJA vs DEESKALACJA   14 10.0  -50.719   60.963    -111.681 [-195.1; -35.1]    -1.070           0.019        0.321
+     zgodne   CHN_TECH_ar_d1 ESKALACJA vs DEESKALACJA   14 10.0  -33.355    8.549     -41.904  [-181.5; 84.7]    -0.251           0.536        0.738
+     zgodne CHN_TECH_ar_d0_2 ESKALACJA vs DEESKALACJA   14 10.0  -61.775   69.801    -131.576   [-261.5; 9.1]    -0.761           0.077        0.387
+     zgodne CHN_TECH_ar_d0_4 ESKALACJA vs DEESKALACJA   14 10.0  -62.140   89.744    -151.884  [-357.0; 83.5]    -0.552           0.179        0.484
+
+ESKALACJA vs posty nie o cłach (tło):
+    wariant            miara             kontrast  n_A   n_B  śr_A_pb  śr_B_pb  różnica_pb         CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy    CHN_ALL_ar_d0 ESKALACJA vs nie_cla   35 103.0  -27.250    0.983     -28.233   [-67.3; 10.9]    -0.275           0.160        0.629
+MG_pierwszy    CHN_ALL_ar_d1 ESKALACJA vs nie_cla   35 103.0  -23.179    7.160     -30.339    [-74.1; 9.1]    -0.284           0.149        0.629
+MG_pierwszy  CHN_ALL_ar_d0_2 ESKALACJA vs nie_cla   35 103.0  -45.468   -2.616     -42.852  [-115.1; 22.8]    -0.245           0.208        0.629
+MG_pierwszy  CHN_ALL_ar_d0_4 ESKALACJA vs nie_cla   35 103.0  -73.548  -26.921     -46.628  [-129.2; 35.0]    -0.212           0.295        0.661
+MG_pierwszy   CHN_TECH_ar_d0 ESKALACJA vs nie_cla   35 103.0  -41.216    0.919     -42.135    [-89.9; 5.5]    -0.331           0.097        0.629
+MG_pierwszy   CHN_TECH_ar_d1 ESKALACJA vs nie_cla   35 103.0  -35.912   -9.359     -26.553   [-82.0; 22.0]    -0.201           0.307        0.661
+MG_pierwszy CHN_TECH_ar_d0_2 ESKALACJA vs nie_cla   35 103.0  -82.831  -29.608     -53.223  [-144.9; 33.2]    -0.236           0.231        0.629
+MG_pierwszy CHN_TECH_ar_d0_4 ESKALACJA vs nie_cla   35 103.0  -94.989  -63.982     -31.007  [-141.5; 75.8]    -0.111           0.598        0.818
+PK_pierwszy    CHN_ALL_ar_d0 ESKALACJA vs nie_cla   19  99.0  -27.386   -5.516     -21.870   [-68.3; 22.3]    -0.219           0.398        0.777
+PK_pierwszy    CHN_ALL_ar_d1 ESKALACJA vs nie_cla   19  99.0  -35.220   19.261     -54.480  [-105.7; -3.8]    -0.507           0.049        0.405
+PK_pierwszy  CHN_ALL_ar_d0_2 ESKALACJA vs nie_cla   19  99.0  -55.156    4.188     -59.344  [-136.4; 20.0]    -0.359           0.139        0.548
+PK_pierwszy  CHN_ALL_ar_d0_4 ESKALACJA vs nie_cla   19  99.0  -92.197   -8.226     -83.971  [-182.0; 14.4]    -0.395           0.129        0.548
+PK_pierwszy   CHN_TECH_ar_d0 ESKALACJA vs nie_cla   19  99.0  -31.668   -5.450     -26.218   [-83.8; 27.5]    -0.210           0.410        0.777
+PK_pierwszy   CHN_TECH_ar_d1 ESKALACJA vs nie_cla   19  99.0  -40.505    2.552     -43.057   [-103.3; 9.5]    -0.357           0.162        0.549
+PK_pierwszy CHN_TECH_ar_d0_2 ESKALACJA vs nie_cla   19  99.0  -60.702  -21.895     -38.808  [-125.5; 50.4]    -0.195           0.482        0.807
+PK_pierwszy CHN_TECH_ar_d0_4 ESKALACJA vs nie_cla   19  99.0  -85.503  -45.207     -40.295  [-148.8; 67.6]    -0.163           0.550        0.832
+     zgodne    CHN_ALL_ar_d0 ESKALACJA vs nie_cla   14  93.0  -46.528   -2.053     -44.474   [-98.3; 10.2]    -0.437           0.128        0.438
+     zgodne    CHN_ALL_ar_d1 ESKALACJA vs nie_cla   14  93.0  -24.958   14.068     -39.026   [-98.4; 12.5]    -0.378           0.212        0.494
+     zgodne  CHN_ALL_ar_d0_2 ESKALACJA vs nie_cla   14  93.0  -62.055    2.229     -64.284  [-149.8; 18.6]    -0.410           0.169        0.473
+     zgodne  CHN_ALL_ar_d0_4 ESKALACJA vs nie_cla   14  93.0  -82.981  -14.631     -68.350  [-186.0; 49.1]    -0.317           0.254        0.542
+     zgodne   CHN_TECH_ar_d0 ESKALACJA vs nie_cla   14  93.0  -50.719   -1.674     -49.045  [-120.8; 15.3]    -0.381           0.214        0.494
+     zgodne   CHN_TECH_ar_d1 ESKALACJA vs nie_cla   14  93.0  -33.355   -2.145     -31.210  [-101.6; 30.5]    -0.254           0.383        0.618
+     zgodne CHN_TECH_ar_d0_2 ESKALACJA vs nie_cla   14  93.0  -61.775  -24.218     -37.557  [-128.8; 52.0]    -0.197           0.521        0.726
+     zgodne CHN_TECH_ar_d0_4 ESKALACJA vs nie_cla   14  93.0  -62.140  -51.656     -10.484 [-143.5; 115.1]    -0.043           0.886        0.930
+
+Pojedyncze ETF-y, ESK vs DEESK, dzień 0 i 5 sesji:
+    wariant        miara                 kontrast  n_A  n_B  śr_A_pb  śr_B_pb  różnica_pb         CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy   KWEB_ar_d0 ESKALACJA vs DEESKALACJA   35 12.0  -51.614    6.746     -58.360  [-132.1; 23.9]    -0.464           0.181        0.629
+MG_pierwszy KWEB_ar_d0_4 ESKALACJA vs DEESKALACJA   35 12.0 -111.645  -45.468     -66.176 [-268.5; 157.7]    -0.206           0.495        0.780
+MG_pierwszy   CQQQ_ar_d0 ESKALACJA vs DEESKALACJA   35 12.0  -30.819   77.897    -108.716 [-193.2; -15.9]    -0.788           0.020        0.629
+MG_pierwszy CQQQ_ar_d0_4 ESKALACJA vs DEESKALACJA   35 12.0  -78.334   16.958     -95.292 [-329.6; 156.3]    -0.266           0.401        0.741
+MG_pierwszy    FXI_ar_d0 ESKALACJA vs DEESKALACJA   35 12.0  -19.042   40.856     -59.898  [-134.0; 16.2]    -0.539           0.100        0.629
+MG_pierwszy  FXI_ar_d0_4 ESKALACJA vs DEESKALACJA   35 12.0  -64.317   11.712     -76.029  [-213.6; 72.6]    -0.356           0.269        0.638
+MG_pierwszy   MCHI_ar_d0 ESKALACJA vs DEESKALACJA   35 12.0  -30.316   32.846     -63.162  [-135.6; 11.3]    -0.575           0.080        0.629
+MG_pierwszy MCHI_ar_d0_4 ESKALACJA vs DEESKALACJA   35 12.0  -85.047  -20.292     -64.755  [-208.3; 87.2]    -0.288           0.360        0.714
+MG_pierwszy   ASHR_ar_d0 ESKALACJA vs DEESKALACJA   35 12.0   -4.459   35.428     -39.886  [-137.1; 58.6]    -0.255           0.465        0.760
+MG_pierwszy ASHR_ar_d0_4 ESKALACJA vs DEESKALACJA   35 12.0  -28.400  -34.893       6.493 [-185.8; 187.7]     0.022           0.948        0.975
+
+Spearman: wynik kierunku (+1 ESK, 0 NEUTR, -1 DEESK) vs AR (cla=tak):
+    wariant            miara  n_A    rho  p_permutacyjny  q_FDR(perm)
+MG_pierwszy    CHN_ALL_ar_d0   62 -0.275           0.031        0.629
+MG_pierwszy    CHN_ALL_ar_d1   62 -0.075           0.562        0.813
+MG_pierwszy  CHN_ALL_ar_d0_2   62 -0.163           0.205        0.629
+MG_pierwszy  CHN_ALL_ar_d0_4   62 -0.154           0.232        0.629
+MG_pierwszy   CHN_TECH_ar_d0   62 -0.300           0.018        0.629
+MG_pierwszy   CHN_TECH_ar_d1   62 -0.016           0.899        0.943
+MG_pierwszy CHN_TECH_ar_d0_2   62 -0.214           0.095        0.629
+MG_pierwszy CHN_TECH_ar_d0_4   62 -0.136           0.293        0.661
+PK_pierwszy    CHN_ALL_ar_d0   68 -0.256           0.035        0.375
+PK_pierwszy    CHN_ALL_ar_d1   68 -0.074           0.549        0.832
+PK_pierwszy  CHN_ALL_ar_d0_2   68 -0.179           0.144        0.549
+PK_pierwszy  CHN_ALL_ar_d0_4   68 -0.123           0.318        0.747
+PK_pierwszy   CHN_TECH_ar_d0   68 -0.173           0.158        0.549
+PK_pierwszy   CHN_TECH_ar_d1   68 -0.026           0.832        0.922
+PK_pierwszy CHN_TECH_ar_d0_2   68 -0.124           0.313        0.747
+PK_pierwszy CHN_TECH_ar_d0_4   68 -0.087           0.480        0.807
+     zgodne    CHN_ALL_ar_d0   30 -0.438           0.015        0.321
+     zgodne    CHN_ALL_ar_d1   30 -0.166           0.380        0.618
+     zgodne  CHN_ALL_ar_d0_2   30 -0.325           0.079        0.389
+     zgodne  CHN_ALL_ar_d0_4   30 -0.290           0.120        0.433
+     zgodne   CHN_TECH_ar_d0   30 -0.392           0.032        0.321
+     zgodne   CHN_TECH_ar_d1   30 -0.009           0.962        0.975
+     zgodne CHN_TECH_ar_d0_2   30 -0.320           0.085        0.391
+     zgodne CHN_TECH_ar_d0_4   30 -0.267           0.154        0.472
+
+Zmienność |AR dnia 0| - cła vs nie cła:
+    wariant              miara             kontrast  n_A   n_B  śr_A_pb  śr_B_pb  różnica_pb       CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy  CHN_ALL_ar_d0_abs ESKALACJA vs nie_cla   35 103.0   85.663   81.708       3.955 [-19.5; 28.3]     0.065           0.726        0.894
+MG_pierwszy  CHN_ALL_ar_d0_abs   cla=tak vs cla=nie   64 103.0   84.667   81.708       2.960 [-15.9; 21.5]     0.050           0.763        0.895
+MG_pierwszy CHN_TECH_ar_d0_abs ESKALACJA vs nie_cla   35 103.0  105.065  107.596      -2.531 [-28.6; 24.7]    -0.034           0.869        0.934
+MG_pierwszy CHN_TECH_ar_d0_abs   cla=tak vs cla=nie   64 103.0  100.885  107.596      -6.711 [-28.1; 15.2]    -0.093           0.582        0.816
+PK_pierwszy  CHN_ALL_ar_d0_abs ESKALACJA vs nie_cla   19  99.0   76.747   84.289      -7.542 [-35.5; 21.4]    -0.125           0.612        0.848
+PK_pierwszy  CHN_ALL_ar_d0_abs   cla=tak vs cla=nie   68  99.0   80.735   84.289      -3.554 [-20.7; 14.7]    -0.060           0.694        0.871
+PK_pierwszy CHN_TECH_ar_d0_abs ESKALACJA vs nie_cla   19  99.0   89.991  109.250     -19.259 [-51.9; 18.4]    -0.251           0.331        0.747
+PK_pierwszy CHN_TECH_ar_d0_abs   cla=tak vs cla=nie   68  99.0   98.871  109.250     -10.380 [-32.3; 12.8]    -0.143           0.390        0.777
+     zgodne  CHN_ALL_ar_d0_abs ESKALACJA vs nie_cla   14  93.0   89.088   82.400       6.688 [-25.3; 41.5]     0.108           0.701        0.839
+     zgodne  CHN_ALL_ar_d0_abs   cla=tak vs cla=nie   30  93.0   84.235   82.400       1.834 [-22.4; 26.6]     0.031           0.882        0.930
+     zgodne CHN_TECH_ar_d0_abs ESKALACJA vs nie_cla   14  93.0  103.213  109.844      -6.631 [-44.6; 37.3]    -0.085           0.761        0.875
+     zgodne CHN_TECH_ar_d0_abs   cla=tak vs cla=nie   30  93.0   95.885  109.844     -13.958 [-39.4; 13.3]    -0.200           0.384        0.618
+
+Odwrotna przyczynowość - AR w 5 sesjach PRZED postem:
+    wariant              miara                 kontrast  n_A  n_B  śr_A_pb  śr_B_pb  różnica_pb         CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy  CHN_ALL_ar_pre_d5 ESKALACJA vs DEESKALACJA   35 12.0 -131.955   55.569    -187.524 [-283.7; -92.1]    -1.011           0.012        0.629
+MG_pierwszy CHN_TECH_ar_pre_d5 ESKALACJA vs DEESKALACJA   35 12.0 -132.682   34.288    -166.970 [-275.3; -62.2]    -0.812           0.040        0.629
+PK_pierwszy  CHN_ALL_ar_pre_d5 ESKALACJA vs DEESKALACJA   19 21.0 -133.285  -11.540    -121.745   [-245.4; 1.5]    -0.599           0.064        0.426
+PK_pierwszy CHN_TECH_ar_pre_d5 ESKALACJA vs DEESKALACJA   19 21.0 -132.366  -59.587     -72.778  [-210.3; 60.0]    -0.330           0.283        0.719
+     zgodne  CHN_ALL_ar_pre_d5 ESKALACJA vs DEESKALACJA   14 10.0 -159.528   50.358    -209.886 [-329.6; -94.6]    -1.305           0.008        0.321
+     zgodne CHN_TECH_ar_pre_d5 ESKALACJA vs DEESKALACJA   14 10.0 -160.332   26.279    -186.611 [-332.5; -43.4]    -0.946           0.038        0.321
+
+Zwroty surowe (bez odjęcia SPY), ESK vs DEESK:
+    wariant         miara                 kontrast  n_A  n_B  śr_A_pb  śr_B_pb  różnica_pb         CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy   KWEB_ret_d0 ESKALACJA vs DEESKALACJA   35 12.0  -43.917  -92.074      48.157  [-86.1; 179.8]     0.238           0.448        0.756
+MG_pierwszy KWEB_ret_d0_4 ESKALACJA vs DEESKALACJA   35 12.0  -53.503 -271.643     218.140 [-113.1; 527.2]     0.469           0.138        0.629
+MG_pierwszy    FXI_ret_d0 ESKALACJA vs DEESKALACJA   35 12.0  -12.412  -44.273      31.861  [-53.2; 121.3]     0.233           0.463        0.760
+MG_pierwszy  FXI_ret_d0_4 ESKALACJA vs DEESKALACJA   35 12.0  -14.230 -183.127     168.897  [-44.3; 366.1]     0.531           0.101        0.629
+PK_pierwszy   KWEB_ret_d0 ESKALACJA vs DEESKALACJA   19 21.0  -21.463  -29.362       7.899 [-112.7; 126.7]     0.039           0.911        0.956
+PK_pierwszy KWEB_ret_d0_4 ESKALACJA vs DEESKALACJA   19 21.0   14.905 -184.641     199.546  [-59.3; 453.7]     0.467           0.157        0.549
+PK_pierwszy    FXI_ret_d0 ESKALACJA vs DEESKALACJA   19 21.0   -8.217   10.188     -18.405   [-93.8; 61.0]    -0.141           0.669        0.871
+PK_pierwszy  FXI_ret_d0_4 ESKALACJA vs DEESKALACJA   19 21.0  -11.997  -73.470      61.472 [-107.7; 233.4]     0.210           0.508        0.807
+     zgodne   KWEB_ret_d0 ESKALACJA vs DEESKALACJA   14 10.0  -46.210 -104.310      58.100  [-98.1; 209.1]     0.294           0.494        0.720
+     zgodne KWEB_ret_d0_4 ESKALACJA vs DEESKALACJA   14 10.0  -14.951 -226.771     211.821 [-158.8; 594.5]     0.430           0.292        0.557
+     zgodne    FXI_ret_d0 ESKALACJA vs DEESKALACJA   14 10.0  -25.228  -43.278      18.051  [-85.3; 125.8]     0.131           0.758        0.875
+     zgodne  FXI_ret_d0_4 ESKALACJA vs DEESKALACJA   14 10.0  -43.038 -150.795     107.757 [-170.5; 373.3]     0.307           0.468        0.702
+
+Wszystkich testów: 648. Nominalnie p_perm<0.05: 67 (oczekiwane fałszywe przy braku efektu: ~32). Po FDR q<0.10: 0
+
+====================================================================================================
+C5. ODPORNOŚĆ: jeden dzień sesji = jedna obserwacja; posty o Chinach
+====================================================================================================
+[MG_pierwszy] CHN_ALL_ar_d0     dni ESK= 30 śr=  -34.4 pb | dni DEESK=  9 śr=   16.7 pb | różnica=  -51.1 pb, p_perm=0.245
+[MG_pierwszy] CHN_ALL_ar_d0_4   dni ESK= 30 śr= -102.3 pb | dni DEESK=  9 śr=  -87.0 pb | różnica=  -15.3 pb, p_perm=0.862
+[MG_pierwszy] CHN_TECH_ar_d0    dni ESK= 30 śr=  -50.9 pb | dni DEESK=  9 śr=   16.4 pb | różnica=  -67.3 pb, p_perm=0.170
+[MG_pierwszy] CHN_TECH_ar_d0_4  dni ESK= 30 śr= -134.4 pb | dni DEESK=  9 śr=  -97.4 pb | różnica=  -37.1 pb, p_perm=0.755
+[zgodne     ] CHN_ALL_ar_d0     dni ESK= 13 śr=  -56.7 pb | dni DEESK=  7 śr=   35.5 pb | różnica=  -92.2 pb, p_perm=0.053
+[zgodne     ] CHN_ALL_ar_d0_4   dni ESK= 13 śr= -108.7 pb | dni DEESK=  7 śr=    9.7 pb | różnica= -118.5 pb, p_perm=0.262
+[zgodne     ] CHN_TECH_ar_d0    dni ESK= 13 śr=  -62.9 pb | dni DEESK=  7 śr=   35.7 pb | różnica=  -98.6 pb, p_perm=0.063
+[zgodne     ] CHN_TECH_ar_d0_4  dni ESK= 13 śr=  -87.1 pb | dni DEESK=  7 śr=   27.4 pb | różnica= -114.5 pb, p_perm=0.390
+
+Obszar Chiny vs reszta (cla=tak):
+           miara    obszar  n_ESK  n_DEESK   ESK_pb  DEESK_pb  p_perm
+   CHN_ALL_ar_d0     Chiny     11        5  -76.592    90.534   0.021
+   CHN_ALL_ar_d0 nie-Chiny     24        7   -4.635     1.769   0.886
+ CHN_ALL_ar_d0_4     Chiny     11        5 -133.600   135.028   0.031
+ CHN_ALL_ar_d0_4 nie-Chiny     24        7  -46.025  -121.128   0.456
+  CHN_TECH_ar_d0     Chiny     11        5  -97.036    88.941   0.017
+  CHN_TECH_ar_d0 nie-Chiny     24        7  -15.632     9.022   0.638
+CHN_TECH_ar_d0_4     Chiny     11        5 -209.545   197.156   0.017
+CHN_TECH_ar_d0_4 nie-Chiny     24        7  -42.485  -165.264   0.329
+
+Posty DEESKALACJA (MG_pierwszy) - AR koszyka:
+   2018-09-24 20:44  sesja 2018-09-25  CHN_ALL d0=   54.4 pb  5 sesji=   47.1 pb  US-Korea Free Trade Agreement Signing Ceremony! https://t.co/yLFkAZgagG
+   2018-10-01 10:30  sesja 2018-10-01  CHN_ALL d0=  -29.8 pb  5 sesji= -488.2 pb  Late last night, our deadline, we reached a wonderful new Trade Deal with Canada
+   2018-10-02 15:02  sesja 2018-10-02  CHN_ALL d0= -245.3 pb  5 sesji= -588.3 pb  Great reviews on the new USMCA. Thank you! Mexico and Canada will be wonderful p
+   2018-12-03 04:00  sesja 2018-12-03  CHN_ALL d0=  110.1 pb  5 sesji=  108.8 pb  China has agreed to reduce and remove tariffs on cars coming into China from the
+   2018-12-04 14:30  sesja 2018-12-04  CHN_ALL d0=  142.7 pb  5 sesji=  106.7 pb  The negotiations with China have already started. Unless extended, they will end
+   2018-12-04 14:55  sesja 2018-12-04  CHN_ALL d0=  142.7 pb  5 sesji=  106.7 pb  ......on seeing whether or not a REAL deal with China is actually possible. If i
+   2018-12-14 16:35  sesja 2018-12-14  CHN_ALL d0=   49.4 pb  5 sesji=   64.6 pb  China just announced that their economy is growing much slower than anticipated 
+   2019-03-22 17:22  sesja 2019-03-22  CHN_ALL d0=  -86.3 pb  5 sesji=  -59.3 pb  It was announced today by the U.S. Treasury that additional large scale Sanction
+   2019-06-29 09:32  sesja 2019-07-01  CHN_ALL d0=  147.2 pb  5 sesji= -262.8 pb  I am in South Korea now. President Moon and I have “toasted” our new Trade Deal,
+   2019-09-02 09:58  sesja 2019-09-03  CHN_ALL d0=   86.1 pb  5 sesji=  251.8 pb  “Brazil will allow more American Ethanol to enter the country without Tariffs, a
+   2019-09-03 02:37  sesja 2019-09-03  CHN_ALL d0=   86.1 pb  5 sesji=  251.8 pb  “Brazil will allow more American Ethanol to enter the country without Tariffs, a
+   2019-12-31 14:16  sesja 2019-12-31  CHN_ALL d0=    7.7 pb  5 sesji=  288.3 pb  I will be signing our very large and comprehensive Phase One Trade Deal with Chi
+
+====================================================================================================
+C6. MOC (minimalny wykrywalny efekt, alfa=0.05, moc=0.8)
+====================================================================================================
+CHN_ALL_ar_d0     sd= 101.9 pb | ESK(n=35) vs DEESK(n=12): MDE=  95.5 pb
+CHN_TECH_ar_d0    sd= 128.6 pb | ESK(n=35) vs DEESK(n=12): MDE= 120.5 pb
+CHN_ALL_ar_d0_4   sd= 229.9 pb | ESK(n=35) vs DEESK(n=12): MDE= 215.5 pb
+
+====================================================================================================
+C7. CAŁY KORPUS: dzienny indeks z klasyfikatora vs AR chińskich ETF-ów
+====================================================================================================
+Dni sesji: 503
+corr(x_t, y_{t+k}); k>0 = tweety PRZED rynkiem, k<0 = rynek PRZED tweetami. e_net vs CHN_ALL_ar:
+    x          y  lag_k   n  pearson_r  p_pearson  spearman_rho  p_spearman  q_FDR
+e_net CHN_ALL_ar     -5 498     -0.041      0.366        -0.029       0.518  0.905
+e_net CHN_ALL_ar     -4 499     -0.031      0.490        -0.031       0.496  0.943
+e_net CHN_ALL_ar     -3 500     -0.050      0.264        -0.009       0.844  0.901
+e_net CHN_ALL_ar     -2 501     -0.018      0.695        -0.037       0.408  0.977
+e_net CHN_ALL_ar     -1 502     -0.070      0.116        -0.068       0.126  0.820
+e_net CHN_ALL_ar      0 503      0.001      0.981         0.024       0.594  0.996
+e_net CHN_ALL_ar      1 502      0.018      0.695         0.019       0.666  0.977
+e_net CHN_ALL_ar      2 501      0.068      0.130         0.071       0.115  0.820
+e_net CHN_ALL_ar      3 500     -0.002      0.967         0.028       0.530  0.996
+e_net CHN_ALL_ar      4 499     -0.093      0.039        -0.062       0.167  0.763
+e_net CHN_ALL_ar      5 498     -0.043      0.342        -0.014       0.757  0.905
+
+Najsilniejsze zależności (|r|):
+         x              y  lag_k   n  pearson_r  p_pearson  spearman_rho  p_spearman  q_FDR
+tw_topic_n    CHN_TECH_ar      4 499     -0.137      0.002        -0.108       0.016  0.215
+tw_topic_n     CHN_ALL_ar      4 499     -0.123      0.006        -0.093       0.037  0.291
+     e_net    CHN_TECH_ar      4 499     -0.113      0.012        -0.072       0.110  0.355
+     e_esk    CHN_TECH_ar      4 499     -0.110      0.014        -0.075       0.094  0.355
+     e_net     CHN_ALL_ar      4 499     -0.093      0.039        -0.062       0.167  0.763
+     e_net    CHN_TECH_ar     -1 502     -0.085      0.057        -0.071       0.112  0.764
+     e_esk     CHN_ALL_ar      4 499     -0.083      0.064        -0.054       0.232  0.764
+tw_topic_n     CHN_ALL_ar     -4 499     -0.082      0.067        -0.006       0.891  0.764
+     e_esk    CHN_TECH_ar     -1 502     -0.079      0.075        -0.084       0.061  0.764
+tw_topic_n CHN_ALL_ar_abs     -4 499      0.079      0.077         0.041       0.362  0.764
+
+Przyczynowość Grangera (F-test):
+ przyczyna         skutek  lagi      F      p   n
+     e_net     CHN_ALL_ar     1 0.1536 0.6953 502
+CHN_ALL_ar          e_net     1 2.5143 0.1135 502
+     e_esk CHN_ALL_ar_abs     1 0.0336 0.8546 502
+CHN_ALL_ar          e_esk     1 2.1111 0.1469 502
+tw_topic_n     CHN_ALL_ar     1 0.1433 0.7052 502
+CHN_ALL_ar     tw_topic_n     1 1.7228 0.1899 502
+     e_net     CHN_ALL_ar     2 1.1147 0.3288 501
+CHN_ALL_ar          e_net     2 1.2719 0.2812 501
+     e_esk CHN_ALL_ar_abs     2 0.9001 0.4072 501
+CHN_ALL_ar          e_esk     2 1.0552 0.3489 501
+tw_topic_n     CHN_ALL_ar     2 0.2969 0.7432 501
+CHN_ALL_ar     tw_topic_n     2 0.7914 0.4538 501
+     e_net     CHN_ALL_ar     5 1.2801 0.2711 498
+CHN_ALL_ar          e_net     5 1.1506 0.3327 498
+     e_esk CHN_ALL_ar_abs     5 0.5534 0.7357 498
+CHN_ALL_ar          e_esk     5 0.5597 0.7310 498
+tw_topic_n     CHN_ALL_ar     5 1.9502 0.0847 498
+CHN_ALL_ar     tw_topic_n     5 1.1421 0.3371 498

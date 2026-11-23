@@ -1,0 +1,23 @@
+﻿id;opis;kier;trump;oficj;wejscie;uwagi;trump_day;oficj_day;wejscie_day
+E01;Stal i aluminium (sekcja 232);1;2018-03-01 07:12;2018-03-08 15:30;2018-03-23 00:01;"tweet 1.03; proklamacja 8.03";2018-03-01;2018-03-08;2018-03-23
+E02;Memorandum 301 wobec Chin;1;;2018-03-22 12:30;;brak wcześniejszego tweeta;;2018-03-22;
+E03;Lista 301: 50 mld USD (projekt);1;2018-04-04 07:22;2018-04-03 17:00;2018-07-06 00:01;"USTR po sesji 3.04; tweet rano 4.04";2018-04-04;2018-04-04;2018-07-06
+E04;Groźba ceł na kolejne 100 mld USD;1;2018-04-05 19:00;;;oświadczenie Trumpa, bez dokumentu;2018-04-06;;
+E05;Lista 34 mld USD: decyzja ostateczna;1;;2018-06-15 08:00;2018-07-06 00:01;~godzina;;2018-06-15;2018-07-06
+E06;Lista 200 mld USD (projekt);1;;2018-07-10 18:30;;USTR wieczorem;;2018-07-11;
+E07;Lista 16 mld USD: decyzja;1;;2018-08-07 17:00;2018-08-23 00:01;~godzina;;2018-08-08;2018-08-23
+E08;Lista 200 mld USD: decyzja (10%);1;2018-09-17 06:11;2018-09-17 18:30;2018-09-24 00:01;tweet rano, ogłoszenie po sesji;2018-09-17;2018-09-18;2018-09-24
+E09;Rozejm G20 w Buenos Aires;-1;2018-12-02 23:00;2018-12-01 20:00;;"sobota; komunikat Białego Domu";2018-12-03;2018-12-03;
+E10;Odroczenie podwyżki z 1 marca;-1;2019-02-24 17:39;2019-03-05 08:45;;oficjalnie: Federal Register;2019-02-25;2019-03-05;
+E11;Podwyżka 10% -> 25% na 200 mld USD;1;2019-05-05 12:08;2019-05-09 08:45;2019-05-10 00:01;oficjalnie: Federal Register;2019-05-06;2019-05-09;2019-05-10
+E12;Lista 4 (300 mld USD): projekt;1;;2019-05-13 18:00;;~godzina;;2019-05-14;
+E13;10% na 300 mld USD od 1 września;1;2019-08-01 13:26;2019-08-20 08:45;2019-09-01 00:01;oficjalnie: Federal Register;2019-08-01;2019-08-20;2019-09-03
+E14;USTR odracza część listy do 15 grudnia;-1;;2019-08-13 10:00;;komunikat USTR;;2019-08-13;
+E15;Podwyżki 25->30% i 10->15%;1;2019-08-23 17:00;2019-08-30 08:45;;oficjalnie: Federal Register;2019-08-26;2019-08-30;
+E16;Odroczenie podwyżki z 1 października;-1;2019-09-11 19:17;;;tylko tweet;2019-09-12;;
+E17;Faza 1: porozumienie wstępne;-1;2019-10-11 10:15;;;tylko Trump;2019-10-11;;
+E18;Faza 1: umowa, odwołanie ceł z 15 grudnia;-1;2019-12-12 09:35;2019-12-13 10:30;;~godzina komunikatu USTR;2019-12-12;2019-12-13;
+C1;Chiny: odwet na 50 mld USD (zapowiedź);1;;2018-04-04 03:00;2018-07-06 00:01;MOFCOM, noc czasu NY;;2018-04-04;2018-07-06
+C2;Chiny: odwet na 60 mld USD;1;;2018-09-18 07:00;2018-09-24 00:01;~godzina;;2018-09-18;2018-09-24
+C3;Chiny: podwyżka ceł odwetowych;1;;2019-05-13 08:00;2019-06-01 00:01;~godzina;;2019-05-13;2019-06-03
+C4;Chiny: odwet na 75 mld USD;1;;2019-08-23 09:00;2019-09-01 00:01;~godzina;;2019-08-23;2019-09-03
