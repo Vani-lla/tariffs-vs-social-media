@@ -16,8 +16,10 @@ pb = punkt bazowy = 0,01%.
 ## Najciekawsze wyniki
 
 1. **Eskalacja NIE wiąże się ze spadkiem S&P.** Po postach eskalacyjnych rynek zachowuje się jak po zwykłych postach (lekko na plus). Brak efektu w każdym oknie: 1h, 3h, 24h, dzień, 3 i 5 sesji.
-2. **Deeskalacja wiąże się ze SPADKAMI, nie ze wzrostem.** To odwrotność intuicji. Różnica eskalacja vs deeskalacja w 5 sesjach ≈ +270 pb (p ≈ 0,003).
-3. **Ale ten wynik jest kruchy.** Napędzają go 3 złe dni: 2018-12-04 (−324 pb, wątek „Tariff Man”), 2018-12-14 (−187 pb) i 2019-03-22 (−194 pb). Po usunięciu 2 skrajnych obserwacji z każdej grupy różnica znika (p = 0,35). Po korekcie na wielokrotne testowanie nic nie jest istotne na poziomie 5%.
+2. **Deeskalacja wiąże się ze SPADKAMI, nie ze wzrostem.** To odwrotność intuicji. Różnica eskalacja vs deeskalacja w 5 sesjach ≈ +224 pb (p = 0,003); przy etykietach zgodnych +279 pb (p = 0,02).
+3. **Ale ten wynik jest kruchy.** Napędzają go 3 złe dni: 2018-12-04 (−324 pb, wątek „Tariff Man”), 2018-12-14 (−187 pb) i 2019-03-22 (−194 pb). Po usunięciu 2 skrajnych obserwacji z każdej grupy różnica znika (p = 0,35). Po korekcie FDR (594 testy) różnica w 5 sesjach ma q = 0,10, czyli nie jest istotna na poziomie 5%.
+   Korektę na poziomie 5% przechodzą tylko 3 testy (q = 0,044) i wszystkie mówią to samo: po postach deeskalacyjnych rynek spada w ciągu kilku godzin
+   (S&P 500 w 6 h: −69 pb wobec postów nie o cłach; Nasdaq w 3 h: −60 pb; posty o cłach ogółem wobec pozostałych, Nasdaq w 3 h: −41 pb).
 4. **Najbardziej prawdopodobna interpretacja: to rynek wpływa na Trumpa, a nie odwrotnie.** Uspokajające posty („negocjacje idą świetnie”, „umowa blisko”) pojawiały się w dni, kiedy rynek już spadał – próba uspokojenia rynku.
 5. **W ciągu 1 godziny nie ma żadnej reakcji** – różnice ≈ 0 pb dla wszystkich typów postów.
 6. **Posty o cłach (dowolny kierunek) idą w parze z większymi ruchami rynku:** średni ruch 24h ≈ 78–100 pb vs 52 pb dla innych postów. Wynika to głównie z tego, że posty o cłach skupiają się w niespokojnych okresach (IV kw. 2018, maj i sierpień 2019).

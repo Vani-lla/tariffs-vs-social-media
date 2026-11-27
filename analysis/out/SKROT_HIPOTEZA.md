@@ -64,7 +64,52 @@ W 2018 r. był nią zwykle komunikat USTR, w 2019 r. często tweet Trumpa. Dane 
 - tweety, które nie niosą nowej decyzji (zdecydowana większość), rynku nie ruszają;
 - wejście ceł w życie jest neutralne, bo zostało wycenione wcześniej.
 
-Kolejny krok to test tej hipotezy wprost: oznaczyć w kronice, która informacja była „nowa i wiarygodna” (zapowiedź konkretnej decyzji z datą i stawką), i porównać ją z resztą komunikatów z obu kanałów.
+Test tej hipotezy wprost jest w sekcji niżej.
+
+## Test wprost (układ 2×2: nowość informacji × kanał)
+
+Skrypt: `analysis/hypothesis_first_info_test.py`. Wyniki: `test_summary.txt`, `test_*.csv`.
+
+Komunikaty z obu kanałów podzieliłem na 4 klasy, ustalone przed patrzeniem na zwroty:
+
+| | Trump | Oficjalnie |
+|---|---|---|
+| **Nowa informacja** (pierwsza zapowiedź decyzji z kroniki) | 12 sesji | 10 sesji |
+| **Stara / brak nowej decyzji** | 25 sesji: tweety o cłach z próby gold, poza dniami kroniki (±1 sesja) | 7 sesji: oficjalne ogłoszenie decyzji, którą Trump podał wcześniej |
+
+Hipoteza przewiduje: efekt **nowości > 0**, efekt **kanału ≈ 0**, interakcja ≈ 0.
+
+![](fig_hip_6_test_2x2.png)
+
+![](fig_hip_7_regresja_2x2.png)
+
+**Ruch w oczekiwanym kierunku, 2 sesje (pb):**
+
+| | S&P 500 | Chińskie ETF-y |
+|---|---|---|
+| Nowa / Trump | +34 | +90 |
+| Nowa / oficjalnie | +27 | +6 |
+| Stara / Trump | −33 | +38 |
+| Stara / oficjalnie | −35 | −23 |
+| **Efekt nowości** (nowa − stara) | **+64 (p = 0,09)** | +28 (p = 0,55) |
+| **Efekt kanału** przy nowej informacji (Trump − oficjalnie) | +7 (p = 0,93) | +84 (p = 0,25) |
+
+**Wyniki:**
+1. **Znaki są zgodne z hipotezą na S&P 500.** Nowa informacja daje ruch w oczekiwanym kierunku w obu kanałach (+34 i +27 pb), stara w obu nie (−33 i −35 pb).
+   Kanał praktycznie nie ma znaczenia (różnica +7 pb przy nowej i +2 pb przy starej informacji).
+2. **Efekt nowości na S&P jest na granicy istotności:** +64 pb, p = 0,09 przy etykietach MG.
+   Przy etykietach zgodnych (MG i PK zgodni) wynosi **+97 pb, p = 0,04**, a w samym kanale Trumpa **+120 pb, p = 0,05**.
+3. **Chińskie ETF-y nie pasują do „niezależnie od kanału”.** Nowa informacja od Trumpa: +90 pb, nowa informacja oficjalna: tylko +6 pb.
+   Różnica jest nieistotna (p = 0,25), ale idzie w przeciwną stronę niż przewiduje hipoteza.
+   Możliwe wyjaśnienie: komunikaty USTR z 2018 r. częściowo poprzedzały przecieki prasowe, więc „pierwsza oficjalna” informacja nie zawsze była dla rynku pierwszą.
+4. **Wielkość ruchu |r| nie różnicuje klas** (nowa vs stara: +41 pb na S&P, p = 0,11; +6 pb na Chinach, p = 0,84).
+   Dni ze starą informacją ruszają się tak samo jak zwykłe dni.
+5. **Po korekcie FDR nic nie jest istotne.** Przy 7–25 obserwacjach na klasę test wykrywa dopiero różnice rzędu 150–200 pb.
+
+**Werdykt:** test wprost **nie obala** przeformułowanej hipotezy, ale też jej **nie potwierdza** na poziomie istotności.
+Na S&P 500 wzór jest dokładnie taki, jak przewiduje hipoteza (liczy się nowość, nie kanał), z efektem na granicy istotności.
+Na chińskich ETF-ach nowość od Trumpa działa mocniej niż nowość oficjalna, co podważa część „niezależnie od kanału”.
+Żeby rozstrzygnąć, potrzeba więcej epizodów (np. dodanie lat 2025–2026 z Truth Social) albo danych śróddziennych, które oddzielą tweet od komunikatu w tej samej sesji.
 
 ## Ograniczenia
 
