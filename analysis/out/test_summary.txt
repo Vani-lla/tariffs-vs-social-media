@@ -1,0 +1,105 @@
+
+====================================================================================================
+T1. JEDNOSTKI ANALIZY (klasy ustalone przed patrzeniem na zwroty)
+====================================================================================================
+klasa
+Nowa / Trump          12
+Nowa / oficjalnie     10
+Stara / Trump         26
+Stara / oficjalnie     7
+Dokumenty administracyjne FR (kanał oficjalny bez nowej decyzji, tylko |ruch|): 26 sesji
+
+====================================================================================================
+T2. ŚREDNIE W KLASACH (2 sesje; 'oczek' > 0 = ruch w oczekiwanym kierunku)
+====================================================================================================
+                     rynek                                   klasa             miara   n  średnia_pb  CI_lo  CI_hi  trafnie_%
+             S&P 500 (SPY)                            Nowa / Trump          kierunek  12        34.0  -42.9  105.6       66.7
+             S&P 500 (SPY)                            Nowa / Trump            |ruch|  12       109.7   69.0  149.6        NaN
+             S&P 500 (SPY)                            Nowa / Trump kierunek, 1 sesja  12        58.8    6.4  108.9       83.3
+             S&P 500 (SPY)                       Nowa / oficjalnie          kierunek  10        27.4  -76.0  152.4       50.0
+             S&P 500 (SPY)                       Nowa / oficjalnie            |ruch|  10       139.5   71.6  226.9        NaN
+             S&P 500 (SPY)                       Nowa / oficjalnie kierunek, 1 sesja  10        76.2   -8.1  163.1       70.0
+             S&P 500 (SPY)                           Stara / Trump          kierunek  25       -32.8  -80.3   11.1       36.0
+             S&P 500 (SPY)                           Stara / Trump            |ruch|  25        84.7   54.1  121.4        NaN
+             S&P 500 (SPY)                           Stara / Trump kierunek, 1 sesja  26       -22.4  -55.5    9.1       38.5
+             S&P 500 (SPY)                      Stara / oficjalnie          kierunek   7       -35.2 -106.7   27.4       28.6
+             S&P 500 (SPY)                      Stara / oficjalnie            |ruch|   7        74.5   34.9  128.0        NaN
+             S&P 500 (SPY)                      Stara / oficjalnie kierunek, 1 sesja   7         0.2  -29.7   32.1       57.1
+             S&P 500 (SPY) Stara / oficjalnie (FR administracyjne)            |ruch|  26        76.9   53.4  104.9        NaN
+             S&P 500 (SPY)                   Losowe 2 sesje (baza)            |ruch| 502        96.9    NaN    NaN        NaN
+Chińskie ETF-y (AR vs SPY)                            Nowa / Trump          kierunek  12        90.4    4.4  186.6       66.7
+Chińskie ETF-y (AR vs SPY)                            Nowa / Trump            |ruch|  12       143.2   81.9  217.2        NaN
+Chińskie ETF-y (AR vs SPY)                            Nowa / Trump kierunek, 1 sesja  12        86.1   20.4  154.3       83.3
+Chińskie ETF-y (AR vs SPY)                       Nowa / oficjalnie          kierunek  10         6.5  -92.1   95.5       50.0
+Chińskie ETF-y (AR vs SPY)                       Nowa / oficjalnie            |ruch|  10       120.7   68.8  179.1        NaN
+Chińskie ETF-y (AR vs SPY)                       Nowa / oficjalnie kierunek, 1 sesja  10        56.6   -9.4  116.3       70.0
+Chińskie ETF-y (AR vs SPY)                           Stara / Trump          kierunek  25        38.1  -24.8  102.1       56.0
+Chińskie ETF-y (AR vs SPY)                           Stara / Trump            |ruch|  25       131.4   93.2  175.1        NaN
+Chińskie ETF-y (AR vs SPY)                           Stara / Trump kierunek, 1 sesja  26        22.5  -22.6   67.2       65.4
+Chińskie ETF-y (AR vs SPY)                      Stara / oficjalnie          kierunek   7       -23.3 -143.6   79.4       42.9
+Chińskie ETF-y (AR vs SPY)                      Stara / oficjalnie            |ruch|   7       110.8   47.2  190.5        NaN
+Chińskie ETF-y (AR vs SPY)                      Stara / oficjalnie kierunek, 1 sesja   7        18.3  -45.2   91.0       57.1
+Chińskie ETF-y (AR vs SPY) Stara / oficjalnie (FR administracyjne)            |ruch|  26       124.4   89.8  162.6        NaN
+Chińskie ETF-y (AR vs SPY)                   Losowe 2 sesje (baza)            |ruch| 502       122.9    NaN    NaN        NaN
+
+====================================================================================================
+T3. KONTRASTY (różnica średnich, pb; CI z bootstrapu; p permutacyjne)
+====================================================================================================
+                     rynek    miara                                          kontrast  n_A  n_B    śr_A    śr_B  różnica    CI_lo   CI_hi  p_perm  q_FDR
+             S&P 500 (SPY) kierunek                            NOWOŚĆ w kanale Trumpa   12   25  33.964 -32.762   66.726  -15.100 149.241   0.131  0.873
+             S&P 500 (SPY) kierunek                        NOWOŚĆ w kanale oficjalnym   10    7  27.369 -35.185   62.554  -64.819 203.208   0.486  0.934
+             S&P 500 (SPY) kierunek  KANAŁ przy nowej informacji (Trump - oficjalnie)   12   10  33.964  27.369    6.596 -144.968 135.222   0.925  0.964
+             S&P 500 (SPY) kierunek KANAŁ przy starej informacji (Trump - oficjalnie)   25    7 -32.762 -35.185    2.424  -78.841  86.060   0.964  0.964
+             S&P 500 (SPY) kierunek                      NOWOŚĆ ogółem (nowa - stara)   22   32  30.966 -33.292   64.258   -9.227 139.733   0.094  0.873
+             S&P 500 (SPY)   |ruch|                            NOWOŚĆ w kanale Trumpa   12   25 109.727  84.681   25.046  -28.981  75.777   0.407  0.934
+             S&P 500 (SPY)   |ruch|                        NOWOŚĆ w kanale oficjalnym   10    7 139.546  74.483   65.062  -22.176 161.937   0.283  0.934
+             S&P 500 (SPY)   |ruch|  KANAŁ przy nowej informacji (Trump - oficjalnie)   12   10 109.727 139.546  -29.819 -124.946  50.775   0.552  0.934
+             S&P 500 (SPY)   |ruch| KANAŁ przy starej informacji (Trump - oficjalnie)   25    7  84.681  74.483   10.198  -51.651  66.617   0.790  0.934
+             S&P 500 (SPY)   |ruch|                      NOWOŚĆ ogółem (nowa - stara)   22   32 123.281  82.450   40.831   -7.751  94.084   0.114  0.873
+Chińskie ETF-y (AR vs SPY) kierunek                            NOWOŚĆ w kanale Trumpa   12   25  90.437  38.085   52.352  -59.857 164.794   0.384  0.934
+Chińskie ETF-y (AR vs SPY) kierunek                        NOWOŚĆ w kanale oficjalnym   10    7   6.488 -23.338   29.826 -109.734 170.047   0.697  0.934
+Chińskie ETF-y (AR vs SPY) kierunek  KANAŁ przy nowej informacji (Trump - oficjalnie)   12   10  90.437   6.488   83.949  -37.576 213.648   0.246  0.934
+Chińskie ETF-y (AR vs SPY) kierunek KANAŁ przy starej informacji (Trump - oficjalnie)   25    7  38.085 -23.338   61.423  -59.013 190.675   0.388  0.934
+Chińskie ETF-y (AR vs SPY) kierunek                      NOWOŚĆ ogółem (nowa - stara)   22   32  52.279  24.649   27.630  -62.274 113.038   0.552  0.934
+Chińskie ETF-y (AR vs SPY)   |ruch|                            NOWOŚĆ w kanale Trumpa   12   25 143.182 131.364   11.818  -64.783  95.220   0.775  0.934
+Chińskie ETF-y (AR vs SPY)   |ruch|                        NOWOŚĆ w kanale oficjalnym   10    7 120.715 110.797    9.919  -86.795  97.524   0.841  0.934
+Chińskie ETF-y (AR vs SPY)   |ruch|  KANAŁ przy nowej informacji (Trump - oficjalnie)   12   10 143.182 120.715   22.466  -59.074 113.149   0.647  0.934
+Chińskie ETF-y (AR vs SPY)   |ruch| KANAŁ przy starej informacji (Trump - oficjalnie)   25    7 131.364 110.797   20.567  -68.910  99.198   0.670  0.934
+Chińskie ETF-y (AR vs SPY)   |ruch|                      NOWOŚĆ ogółem (nowa - stara)   22   32 132.970 126.865    6.105  -49.922  63.645   0.839  0.934
+
+====================================================================================================
+T4. REGRESJA 2x2: y = a + b1*NOWA + b2*TRUMP + b3*NOWA*TRUMP (błędy HC3)
+====================================================================================================
+                     rynek                 y                    zmienna  beta_pb      SE    CI_lo   CI_hi     p  n
+             S&P 500 (SPY) kierunek, 2 sesje stała (stara / oficjalnie)  -35.185  40.738 -115.032  44.661 0.392 54
+             S&P 500 (SPY) kierunek, 2 sesje                     NOWOŚĆ   62.554  76.947  -88.263 213.371 0.420 54
+             S&P 500 (SPY) kierunek, 2 sesje                KANAŁ Trump    2.424  47.406  -90.492  95.339 0.959 54
+             S&P 500 (SPY) kierunek, 2 sesje             NOWOŚĆ x Trump    4.172  90.014 -172.256 180.600 0.963 54
+             S&P 500 (SPY)   |ruch|, 2 sesje stała (stara / oficjalnie)   74.483  28.663   18.303 130.663 0.012 54
+             S&P 500 (SPY)   |ruch|, 2 sesje                     NOWOŚĆ   65.062  52.643  -38.118 168.243 0.222 54
+             S&P 500 (SPY)   |ruch|, 2 sesje                KANAŁ Trump   10.198  33.833  -56.114  76.510 0.764 54
+             S&P 500 (SPY)   |ruch|, 2 sesje             NOWOŚĆ x Trump  -40.016  60.072 -157.758  77.726 0.508 54
+             S&P 500 (SPY) kierunek, 1 sesja stała (stara / oficjalnie)    0.237  18.510  -36.043  36.518 0.990 55
+             S&P 500 (SPY) kierunek, 1 sesja                     NOWOŚĆ   75.966  51.879  -25.718 177.650 0.149 55
+             S&P 500 (SPY) kierunek, 1 sesja                KANAŁ Trump  -22.647  25.524  -72.674  27.381 0.379 55
+             S&P 500 (SPY) kierunek, 1 sesja             NOWOŚĆ x Trump    5.270  62.061 -116.369 126.910 0.933 55
+Chińskie ETF-y (AR vs SPY) kierunek, 2 sesje stała (stara / oficjalnie)  -23.338  65.007 -150.751 104.076 0.721 54
+Chińskie ETF-y (AR vs SPY) kierunek, 2 sesje                     NOWOŚĆ   29.826  83.353 -133.547 193.199 0.722 54
+Chińskie ETF-y (AR vs SPY) kierunek, 2 sesje                KANAŁ Trump   61.423  73.511  -82.659 205.504 0.407 54
+Chińskie ETF-y (AR vs SPY) kierunek, 2 sesje             NOWOŚĆ x Trump   22.526 103.685 -180.697 225.749 0.829 54
+Chińskie ETF-y (AR vs SPY)   |ruch|, 2 sesje stała (stara / oficjalnie)  110.797  44.100   24.361 197.233 0.015 54
+Chińskie ETF-y (AR vs SPY)   |ruch|, 2 sesje                     NOWOŚĆ    9.919  53.599  -95.136 114.973 0.854 54
+Chińskie ETF-y (AR vs SPY)   |ruch|, 2 sesje                KANAŁ Trump   20.567  49.363  -76.186 117.319 0.679 54
+Chińskie ETF-y (AR vs SPY)   |ruch|, 2 sesje             NOWOŚĆ x Trump    1.900  69.048 -133.435 137.234 0.978 54
+Chińskie ETF-y (AR vs SPY) kierunek, 1 sesja stała (stara / oficjalnie)   18.316  41.511  -63.045  99.677 0.661 55
+Chińskie ETF-y (AR vs SPY) kierunek, 1 sesja                     NOWOŚĆ   38.325  54.898  -69.274 145.925 0.488 55
+Chińskie ETF-y (AR vs SPY) kierunek, 1 sesja                KANAŁ Trump    4.153  47.557  -89.058  97.365 0.931 55
+Chińskie ETF-y (AR vs SPY) kierunek, 1 sesja             NOWOŚĆ x Trump   25.321  70.427 -112.716 163.359 0.721 55
+
+====================================================================================================
+T5. ODPORNOŚĆ: etykiety 'zgodne' (MG i PK zgodni) zamiast MG_pierwszy
+====================================================================================================
+S&P 500 (SPY)                NOWOŚĆ w kanale Trumpa       n=12/11  różnica=+120.1 pb  p=0.048
+S&P 500 (SPY)                NOWOŚĆ ogółem                n=22/18  różnica=+97.3 pb  p=0.042
+Chińskie ETF-y (AR vs SPY)   NOWOŚĆ w kanale Trumpa       n=12/11  różnica=+30.5 pb  p=0.657
+Chińskie ETF-y (AR vs SPY)   NOWOŚĆ ogółem                n=22/18  różnica=+24.7 pb  p=0.646

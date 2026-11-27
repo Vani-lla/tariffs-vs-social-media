@@ -1,0 +1,546 @@
+
+====================================================================================================
+1. DANE I KONTROLA JAKOŚCI
+====================================================================================================
+Wiersze adnotacji: 334 | unikalne posty: 167
+                    n  cla_tak  ESK  DEESK  NEUTR
+plik                                             
+1_pilotaz_MG.csv   50       20   13      2      5
+1_pilotaz_PK.csv   50       22    9      5      8
+2_glowna_MG.csv   117       44   22     10     10
+2_glowna_PK.csv   117       46   10     16     20
+
+Problemy w arkuszach:
+            plik item_id                                                           problem   wartosc
+1_pilotaz_MG.csv   T0041                              kierunek przy cla=nie -> zignorowano NEUTRALNE
+ 2_glowna_MG.csv   T0060 brak kierunku przy cla=tak -> brak (wykluczone z analiz kierunku)          
+ 2_glowna_MG.csv   T0148 brak kierunku przy cla=tak -> brak (wykluczone z analiz kierunku)          
+ 2_glowna_PK.csv   T0052                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0054                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0058                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0060                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0064                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0066                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0070                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0072                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0076                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0078                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0082                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0084                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0088                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0090                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0094                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0096                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0100                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0102                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0106                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0108                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0112                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0114                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0118                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0120                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0124                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0126                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0130                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0132                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0136                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0138                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0142                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0144                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0148                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0150                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0154                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0156                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0160                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0162                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0166                                   post nieprzydzielony tej osobie     BB|MG
+ 2_glowna_PK.csv   T0168                                   post nieprzydzielony tej osobie     IK|MG
+ 2_glowna_PK.csv   T0173                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0177                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0181                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0185                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0189                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0193                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0197                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0201                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0205                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0209                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0213                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0217                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0221                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0225                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0229                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0233                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0237                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0241                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0245                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0249                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0253                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0257                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0261                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0265                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0269                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0273                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0277                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0281                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0285                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0289                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0293                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0297                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0301                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0305                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0309                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0313                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0317                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0321                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0325                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0329                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0333                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0337                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0341                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0345                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0349                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0353                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0357                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0361                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0365                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0369                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0373                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0377                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0381                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0385                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0389                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0393                                   post nieprzydzielony tej osobie        MG
+ 2_glowna_PK.csv   T0397                                   post nieprzydzielony tej osobie        MG
+
+====================================================================================================
+2. ZGODNOŚĆ MG vs PK (kappa Cohena, alfa Krippendorffa, AC1 Gweta; CI z bootstrapu)
+====================================================================================================
+  zbiór                                        etykieta   n  zgodność_%  kappa_Cohena   kappa_95CI  alfa_Krippendorffa  AC1_Gweta  PABAK interpretacja (Landis-Koch)
+pilotaż                                   cla (tak/nie)  50        88.0         0.754 [0.55; 0.92]               0.756      0.766  0.760                     znaczna
+pilotaż                         kierunek | obaj cla=tak  18        61.1         0.357 [0.00; 0.68]               0.355      0.450    NaN                       słaba
+pilotaż        etykieta 4-klasowa (nie/ESK/DEESK/NEUTR)  50        74.0         0.565 [0.38; 0.74]               0.566      0.676    NaN                 umiarkowana
+pilotaż ESKALACJA vs reszta (binarnie, wszystkie posty)  50        84.0         0.538 [0.23; 0.79]               0.538      0.756  0.680                 umiarkowana
+pilotaż                           obszar | obaj cla=tak  18        94.4         0.912 [0.70; 1.00]               0.914      0.934    NaN                prawie pełna
+ główna                                   cla (tak/nie) 117        91.5         0.820 [0.71; 0.92]               0.820      0.838  0.829                prawie pełna
+ główna                         kierunek | obaj cla=tak  39        48.7         0.267 [0.05; 0.47]               0.236      0.233    NaN                       słaba
+ główna        etykieta 4-klasowa (nie/ESK/DEESK/NEUTR) 115        74.8         0.558 [0.45; 0.67]               0.556      0.689    NaN                 umiarkowana
+ główna ESKALACJA vs reszta (binarnie, wszystkie posty) 117        84.6         0.363 [0.12; 0.57]               0.351      0.799  0.692                       słaba
+ główna                           obszar | obaj cla=tak  40        87.5         0.812 [0.64; 0.96]               0.814      0.840    NaN                prawie pełna
+  RAZEM                                   cla (tak/nie) 167        90.4         0.800 [0.70; 0.89]               0.800      0.816  0.808                     znaczna
+  RAZEM                         kierunek | obaj cla=tak  57        52.6         0.303 [0.12; 0.47]               0.277      0.299    NaN                       słaba
+  RAZEM        etykieta 4-klasowa (nie/ESK/DEESK/NEUTR) 165        74.5         0.562 [0.47; 0.66]               0.559      0.685    NaN                 umiarkowana
+  RAZEM ESKALACJA vs reszta (binarnie, wszystkie posty) 167        84.4         0.435 [0.26; 0.61]               0.427      0.786  0.689                 umiarkowana
+  RAZEM                           obszar | obaj cla=tak  58        89.7         0.845 [0.72; 0.95]               0.846      0.876    NaN                prawie pełna
+
+Macierz pomyłek (etykieta 4-klasowa, pilotaż + nakładka):
+PK           DEESKALACJA  ESKALACJA  NEUTRALNE  nie_cla
+MG                                                     
+DEESKALACJA           10          0          2        0
+ESKALACJA              5         14         14        2
+NEUTRALNE              3          3          6        3
+brak                   1          0          0        1
+nie_cla                2          2          6       93
+
+Sporne posty: 44 z 167 -> analysis/out/02_spory_do_rozstrzygniecia.csv
+Asymetria ESKALACJA (obaj cla=tak): MG=ESK a PK inne: 19, PK=ESK a MG inne: 3, McNemar exact p=0.0009
+
+====================================================================================================
+3. GOLD STANDARD (3 warianty: MG_pierwszy, PK_pierwszy, zgodne)
+====================================================================================================
+MG_pierwszy  n=167  {'nie_cla': 103, 'ESKALACJA': 35, 'NEUTRALNE': 15, 'DEESKALACJA': 12, nan: 2}
+PK_pierwszy  n=167  {'nie_cla': 99, 'NEUTRALNE': 28, 'DEESKALACJA': 21, 'ESKALACJA': 19}
+zgodne       n=123  {'nie_cla': 93, 'ESKALACJA': 14, 'DEESKALACJA': 10, 'NEUTRALNE': 6}
+Szacowany odsetek postów o cłach w populacji (ważony, MG_pierwszy): 5.0%  (nieważony: 38.3%)
+Słownik (hit) vs etykieta cla:
+cla    nie  tak  All
+hit                 
+False   80    0   80
+True    23   64   87
+All    103   64  167
+
+====================================================================================================
+4. REAKCJA RYNKU (wszystkie posty z próby; godzinowe i dzienne)
+====================================================================================================
+Pokrycie miar (niepuste):
+S_P_500_post_1h         125
+S_P_500_pre_1h          125
+S_P_500_post_3h         129
+S_P_500_pre_3h          131
+S_P_500_post_6h         133
+S_P_500_pre_6h          132
+S_P_500_post_24h        148
+S_P_500_pre_24h         146
+S_P_500_d0              167
+S_P_500_d1              166
+S_P_500_d0_2            166
+S_P_500_d0_4            166
+S_P_500_pre_d5          167
+S_P_500_d0_z            167
+S_P_500_d0_abs_z        167
+S_P_500_post_24h_abs    148
+
+====================================================================================================
+5. TESTY: czy kierunek ceł wiąże się ze zwrotem S&P 500 (i innych rynków)?
+====================================================================================================
+
+Główny test - ESKALACJA vs DEESKALACJA, S&P 500 (pb = punkty bazowe):
+    wariant            miara                 kontrast  n_A  n_B  śr_A_pb  śr_B_pb  różnica_pb           CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy  S_P_500_post_1h ESKALACJA vs DEESKALACJA   28 10.0    1.203    1.349      -0.145     [-16.0; 15.0]    -0.007           0.985        0.990
+MG_pierwszy  S_P_500_post_3h ESKALACJA vs DEESKALACJA   28 11.0    0.729  -34.672      35.402      [-2.3; 83.1]     0.598           0.069        0.280
+MG_pierwszy  S_P_500_post_6h ESKALACJA vs DEESKALACJA   29 11.0    2.153  -59.141      61.294      [2.8; 132.1]     0.681           0.038        0.228
+MG_pierwszy S_P_500_post_24h ESKALACJA vs DEESKALACJA   32 11.0   13.168  -54.348      67.517      [8.3; 129.7]     0.693           0.068        0.280
+MG_pierwszy       S_P_500_d0 ESKALACJA vs DEESKALACJA   35 12.0    6.656  -70.125      76.781     [-5.5; 163.4]     0.620           0.035        0.221
+MG_pierwszy       S_P_500_d1 ESKALACJA vs DEESKALACJA   35 11.0    0.826  -25.753      26.580    [-42.5; 107.6]     0.249           0.399        0.686
+MG_pierwszy     S_P_500_d0_2 ESKALACJA vs DEESKALACJA   35 11.0   28.999  -82.253     111.252    [-17.7; 240.8]     0.607           0.049        0.257
+MG_pierwszy     S_P_500_d0_4 ESKALACJA vs DEESKALACJA   35 11.0   39.884 -184.085     223.968     [24.6; 428.3]     0.848           0.003        0.099
+MG_pierwszy     S_P_500_d0_z ESKALACJA vs DEESKALACJA   35 12.0    0.026   -0.584       0.610 [-0.24; 1.48] (z)     0.471           0.122        0.364
+PK_pierwszy  S_P_500_post_1h ESKALACJA vs DEESKALACJA   15 16.0   -0.342   -0.101      -0.242     [-14.2; 12.8]    -0.012           0.968        0.979
+PK_pierwszy  S_P_500_post_3h ESKALACJA vs DEESKALACJA   15 17.0   -1.174  -18.057      16.883     [-19.3; 58.7]     0.284           0.442        0.703
+PK_pierwszy  S_P_500_post_6h ESKALACJA vs DEESKALACJA   15 18.0    7.553  -31.854      39.406     [-20.1; 98.9]     0.432           0.246        0.543
+PK_pierwszy S_P_500_post_24h ESKALACJA vs DEESKALACJA   17 19.0   40.121  -37.505      77.627      [7.6; 149.0]     0.704           0.042        0.376
+PK_pierwszy       S_P_500_d0 ESKALACJA vs DEESKALACJA   19 21.0   16.097  -24.033      40.130    [-30.6; 116.9]     0.328           0.321        0.616
+PK_pierwszy       S_P_500_d1 ESKALACJA vs DEESKALACJA   19 20.0   27.874   -7.975      35.848     [-25.2; 99.9]     0.351           0.299        0.590
+PK_pierwszy     S_P_500_d0_2 ESKALACJA vs DEESKALACJA   19 20.0   54.207  -10.459      64.666    [-48.5; 175.7]     0.355           0.268        0.552
+PK_pierwszy     S_P_500_d0_4 ESKALACJA vs DEESKALACJA   19 20.0   85.535  -79.946     165.482     [20.1; 318.3]     0.676           0.046        0.376
+PK_pierwszy     S_P_500_d0_z ESKALACJA vs DEESKALACJA   19 21.0    0.027   -0.086       0.114 [-0.74; 0.93] (z)     0.083           0.789        0.873
+     zgodne  S_P_500_post_1h ESKALACJA vs DEESKALACJA   12  9.0   -0.330    2.447      -2.777     [-21.7; 16.2]    -0.117           0.783        0.891
+     zgodne  S_P_500_post_3h ESKALACJA vs DEESKALACJA   12 10.0    7.255  -36.876      44.131     [-7.3; 102.8]     0.660           0.142        0.374
+     zgodne  S_P_500_post_6h ESKALACJA vs DEESKALACJA   12 10.0    2.560  -63.005      65.565    [-16.3; 156.4]     0.619           0.177        0.386
+     zgodne S_P_500_post_24h ESKALACJA vs DEESKALACJA   13 10.0   35.677  -62.067      97.744      [4.4; 188.3]     0.821           0.071        0.298
+     zgodne       S_P_500_d0 ESKALACJA vs DEESKALACJA   14 10.0   13.998  -92.124     106.121     [-2.3; 216.3]     0.760           0.077        0.298
+     zgodne       S_P_500_d1 ESKALACJA vs DEESKALACJA   14  9.0   23.973  -35.832      59.805    [-25.5; 156.2]     0.547           0.180        0.387
+     zgodne     S_P_500_d0_2 ESKALACJA vs DEESKALACJA   14  9.0   39.957 -113.564     153.521    [-11.9; 313.4]     0.754           0.095        0.331
+     zgodne     S_P_500_d0_4 ESKALACJA vs DEESKALACJA   14  9.0   49.189 -229.461     278.650     [31.0; 516.8]     0.971           0.019        0.209
+     zgodne     S_P_500_d0_z ESKALACJA vs DEESKALACJA   14 10.0   -0.042   -0.804       0.762 [-0.43; 1.89] (z)     0.502           0.247        0.453
+
+Spearman: wynik kierunku vs zwrot S&P (cla=tak):
+    wariant            miara  n_A    rho  p_permutacyjny  q_FDR(perm)
+MG_pierwszy  S_P_500_post_1h   49  0.084           0.564        0.778
+MG_pierwszy  S_P_500_post_3h   50  0.291           0.040        0.228
+MG_pierwszy  S_P_500_post_6h   51  0.198           0.163        0.420
+MG_pierwszy S_P_500_post_24h   54  0.199           0.149        0.395
+MG_pierwszy       S_P_500_d0   62  0.135           0.295        0.579
+MG_pierwszy       S_P_500_d1   61  0.048           0.713        0.860
+MG_pierwszy     S_P_500_d0_2   61  0.199           0.123        0.364
+MG_pierwszy     S_P_500_d0_4   61  0.143           0.270        0.552
+MG_pierwszy     S_P_500_d0_z   62  0.111           0.391        0.682
+PK_pierwszy  S_P_500_post_1h   52  0.032           0.821        0.888
+PK_pierwszy  S_P_500_post_3h   54  0.064           0.643        0.829
+PK_pierwszy  S_P_500_post_6h   55  0.167           0.223        0.543
+PK_pierwszy S_P_500_post_24h   60  0.307           0.017        0.350
+PK_pierwszy       S_P_500_d0   68  0.071           0.563        0.799
+PK_pierwszy       S_P_500_d1   67  0.098           0.430        0.703
+PK_pierwszy     S_P_500_d0_2   67  0.140           0.257        0.543
+PK_pierwszy     S_P_500_d0_4   67  0.228           0.064        0.376
+PK_pierwszy     S_P_500_d0_z   68  0.009           0.942        0.977
+     zgodne  S_P_500_post_1h   25 -0.008           0.970        0.985
+     zgodne  S_P_500_post_3h   26  0.311           0.122        0.346
+     zgodne  S_P_500_post_6h   26  0.246           0.226        0.430
+     zgodne S_P_500_post_24h   27  0.387           0.046        0.245
+     zgodne       S_P_500_d0   30  0.298           0.109        0.339
+     zgodne       S_P_500_d1   29  0.172           0.371        0.574
+     zgodne     S_P_500_d0_2   29  0.398           0.032        0.210
+     zgodne     S_P_500_d0_4   29  0.370           0.048        0.245
+     zgodne     S_P_500_d0_z   30  0.256           0.172        0.386
+
+Zmienność (|zwrot|) - cła vs nie cła:
+    wariant                miara             kontrast  n_A   n_B  śr_A_pb  śr_B_pb  różnica_pb           CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy S_P_500_post_24h_abs ESKALACJA vs nie_cla   32  93.0   78.772   53.041      25.731      [-0.6; 54.1]     0.396           0.037        0.228
+MG_pierwszy S_P_500_post_24h_abs   cla=tak vs cla=nie   55  93.0   78.451   53.041      25.410       [5.4; 47.1]     0.415           0.018        0.173
+MG_pierwszy     S_P_500_d0_abs_z ESKALACJA vs nie_cla   35 103.0    0.733    0.717       0.017 [-0.27; 0.33] (z)     0.020           0.932        0.956
+MG_pierwszy     S_P_500_d0_abs_z   cla=tak vs cla=nie   64 103.0    0.903    0.717       0.186 [-0.08; 0.46] (z)     0.213           0.188        0.459
+PK_pierwszy S_P_500_post_24h_abs ESKALACJA vs nie_cla   17  88.0  105.092   52.236      52.856      [15.9; 90.8]     0.795           0.001        0.198
+PK_pierwszy S_P_500_post_24h_abs   cla=tak vs cla=nie   60  88.0   77.515   52.236      25.278       [4.8; 46.3]     0.411           0.011        0.350
+PK_pierwszy     S_P_500_d0_abs_z ESKALACJA vs nie_cla   19  99.0    0.896    0.712       0.184 [-0.21; 0.68] (z)     0.201           0.422        0.703
+PK_pierwszy     S_P_500_d0_abs_z   cla=tak vs cla=nie   68  99.0    0.899    0.712       0.187 [-0.07; 0.46] (z)     0.213           0.178        0.505
+     zgodne S_P_500_post_24h_abs ESKALACJA vs nie_cla   13  83.0  120.557   51.447      69.110     [25.4; 113.0]     1.020           0.000        0.066
+     zgodne S_P_500_post_24h_abs   cla=tak vs cla=nie   27  83.0   99.790   51.447      48.343      [19.1; 79.1]     0.737           0.001        0.085
+     zgodne     S_P_500_d0_abs_z ESKALACJA vs nie_cla   14  93.0    1.079    0.707       0.372 [-0.12; 1.03] (z)     0.379           0.144        0.374
+     zgodne     S_P_500_d0_abs_z   cla=tak vs cla=nie   30  93.0    1.219    0.707       0.511  [0.12; 0.96] (z)     0.512           0.010        0.124
+
+Odwrotna przyczynowość - zwrot PRZED postem:
+    wariant           miara                 kontrast  n_A  n_B  śr_A_pb  śr_B_pb  różnica_pb         CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy  S_P_500_pre_1h ESKALACJA vs DEESKALACJA   28 11.0   -0.710    6.087      -6.797    [-16.7; 3.3]    -0.467           0.190        0.459
+MG_pierwszy  S_P_500_pre_3h ESKALACJA vs DEESKALACJA   29 11.0   -0.703    5.906      -6.609   [-23.6; 12.8]    -0.239           0.514        0.759
+MG_pierwszy S_P_500_pre_24h ESKALACJA vs DEESKALACJA   32 12.0    9.826  -20.330      30.155   [-11.0; 71.9]     0.448           0.223        0.513
+MG_pierwszy  S_P_500_pre_d5 ESKALACJA vs DEESKALACJA   35 12.0   57.667  140.007     -82.340  [-218.7; 50.2]    -0.393           0.267        0.550
+PK_pierwszy  S_P_500_pre_1h ESKALACJA vs DEESKALACJA   15 17.0   -3.491    8.666     -12.156   [-21.7; -1.8]    -0.816           0.024        0.376
+PK_pierwszy  S_P_500_pre_3h ESKALACJA vs DEESKALACJA   15 18.0   -1.040   10.491     -11.530    [-31.5; 7.5]    -0.386           0.282        0.576
+PK_pierwszy S_P_500_pre_24h ESKALACJA vs DEESKALACJA   17 20.0  -22.996   12.259     -35.255   [-83.6; 13.5]    -0.449           0.183        0.511
+PK_pierwszy  S_P_500_pre_d5 ESKALACJA vs DEESKALACJA   19 21.0  -30.755   80.600    -111.355  [-226.2; -2.7]    -0.596           0.062        0.376
+     zgodne  S_P_500_pre_1h ESKALACJA vs DEESKALACJA   12 10.0   -2.085    6.798      -8.884    [-21.2; 3.6]    -0.561           0.199        0.403
+     zgodne  S_P_500_pre_3h ESKALACJA vs DEESKALACJA   12 10.0    2.605    4.888      -2.284   [-27.2; 24.0]    -0.070           0.880        0.946
+     zgodne S_P_500_pre_24h ESKALACJA vs DEESKALACJA   13 10.0  -15.748  -26.624      10.876   [-43.2; 61.3]     0.160           0.703        0.834
+     zgodne  S_P_500_pre_d5 ESKALACJA vs DEESKALACJA   14 10.0   -7.823  169.741    -177.565 [-327.7; -28.6]    -0.947           0.027        0.210
+
+Inne rynki (ESK vs DEESK):
+    wariant              miara                 kontrast  n_A  n_B  śr_A_pb  śr_B_pb  różnica_pb        CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy     Nasdaq_post_3h ESKALACJA vs DEESKALACJA   28 11.0   -4.075  -46.005      41.930   [-3.9; 95.4]     0.590           0.083        0.314
+MG_pierwszy    Nasdaq_post_24h ESKALACJA vs DEESKALACJA   32 11.0    7.662  -76.902      84.565  [10.6; 161.8]     0.675           0.087        0.314
+MG_pierwszy          Nasdaq_d0 ESKALACJA vs DEESKALACJA   35 12.0   10.631  -84.023      94.654  [-9.3; 208.9]     0.603           0.053        0.257
+MG_pierwszy  Hang_Seng_post_3h ESKALACJA vs DEESKALACJA   24  6.0   -4.574  -17.016      12.442  [-11.2; 35.1]     0.308           0.587        0.797
+MG_pierwszy Hang_Seng_post_24h ESKALACJA vs DEESKALACJA   28  7.0   -7.053  -29.148      22.095 [-51.9; 107.9]     0.206           0.645        0.828
+MG_pierwszy       Hang_Seng_d0 ESKALACJA vs DEESKALACJA   33  9.0    2.096  -32.666      34.762 [-51.9; 116.2]     0.289           0.436        0.717
+MG_pierwszy     EURUSD_post_3h ESKALACJA vs DEESKALACJA   30 11.0    3.252   -3.869       7.121   [-4.6; 20.2]     0.392           0.250        0.539
+MG_pierwszy    EURUSD_post_24h ESKALACJA vs DEESKALACJA   32 11.0    1.004  -14.275      15.279   [-9.1; 40.6]     0.392           0.286        0.571
+MG_pierwszy          EURUSD_d0 ESKALACJA vs DEESKALACJA   35 12.0    9.000  -18.404      27.404    [7.2; 47.9]     0.830           0.023        0.204
+MG_pierwszy        TLT_post_3h ESKALACJA vs DEESKALACJA   23  7.0    4.477   29.916     -25.439   [-59.4; 6.1]    -0.666           0.080        0.314
+MG_pierwszy       TLT_post_24h ESKALACJA vs DEESKALACJA   30 10.0   -1.838   13.443     -15.281  [-51.5; 18.8]    -0.316           0.353        0.652
+MG_pierwszy             TLT_d0 ESKALACJA vs DEESKALACJA   34 11.0    3.479   34.969     -31.491  [-88.3; 27.0]    -0.386           0.210        0.496
+PK_pierwszy     Nasdaq_post_3h ESKALACJA vs DEESKALACJA   15 17.0   -8.949  -21.882      12.933  [-34.9; 64.0]     0.176           0.622        0.829
+PK_pierwszy    Nasdaq_post_24h ESKALACJA vs DEESKALACJA   17 19.0   38.587  -56.986      95.573   [0.1; 192.9]     0.646           0.062        0.376
+PK_pierwszy          Nasdaq_d0 ESKALACJA vs DEESKALACJA   19 21.0   15.943  -27.624      43.566 [-53.6; 145.7]     0.266           0.415        0.703
+PK_pierwszy  Hang_Seng_post_3h ESKALACJA vs DEESKALACJA   13 12.0  -21.171   -2.583     -18.588  [-59.0; 22.9]    -0.337           0.410        0.703
+PK_pierwszy Hang_Seng_post_24h ESKALACJA vs DEESKALACJA   15 14.0  -19.929   -5.003     -14.926  [-86.2; 66.1]    -0.137           0.719        0.845
+PK_pierwszy       Hang_Seng_d0 ESKALACJA vs DEESKALACJA   18 17.0  -10.193   55.101     -65.294 [-151.2; 20.4]    -0.507           0.138        0.505
+PK_pierwszy     EURUSD_post_3h ESKALACJA vs DEESKALACJA   16 18.0    9.525   -0.946      10.471    [0.5; 22.4]     0.628           0.081        0.406
+PK_pierwszy    EURUSD_post_24h ESKALACJA vs DEESKALACJA   17 19.0   19.368   -4.832      24.200   [-0.5; 51.2]     0.609           0.079        0.406
+PK_pierwszy          EURUSD_d0 ESKALACJA vs DEESKALACJA   19 21.0   17.786   -3.510      21.296    [0.9; 41.5]     0.616           0.060        0.376
+PK_pierwszy        TLT_post_3h ESKALACJA vs DEESKALACJA   11 10.0   17.795   24.256      -6.461  [-36.4; 20.8]    -0.183           0.689        0.842
+PK_pierwszy       TLT_post_24h ESKALACJA vs DEESKALACJA   16 18.0   -1.352   17.081     -18.434   [-47.3; 8.7]    -0.427           0.229        0.543
+PK_pierwszy             TLT_d0 ESKALACJA vs DEESKALACJA   19 20.0   10.616   24.275     -13.659  [-57.3; 30.8]    -0.189           0.573        0.799
+     zgodne     Nasdaq_post_3h ESKALACJA vs DEESKALACJA   12 10.0    4.078  -45.607      49.685 [-12.6; 115.9]     0.615           0.162        0.386
+     zgodne    Nasdaq_post_24h ESKALACJA vs DEESKALACJA   13 10.0   33.260  -82.297     115.556   [0.2; 231.1]     0.750           0.101        0.331
+     zgodne          Nasdaq_d0 ESKALACJA vs DEESKALACJA   14 10.0   23.310 -111.417     134.727   [1.2; 269.5]     0.777           0.065        0.284
+     zgodne  Hang_Seng_post_3h ESKALACJA vs DEESKALACJA   10  5.0   -8.775  -17.735       8.961  [-40.3; 55.8]     0.156           0.815        0.902
+     zgodne Hang_Seng_post_24h ESKALACJA vs DEESKALACJA   11  6.0  -21.404  -40.927      19.523 [-90.4; 144.1]     0.149           0.796        0.895
+     zgodne       Hang_Seng_d0 ESKALACJA vs DEESKALACJA   13  8.0  -11.844   -9.755      -2.088 [-106.0; 97.6]    -0.016           0.968        0.985
+     zgodne     EURUSD_post_3h ESKALACJA vs DEESKALACJA   13 10.0    8.909   -3.022      11.931   [-1.8; 28.0]     0.630           0.156        0.386
+     zgodne    EURUSD_post_24h ESKALACJA vs DEESKALACJA   13 10.0   19.251  -12.708      31.959   [-1.7; 66.2]     0.738           0.096        0.331
+     zgodne          EURUSD_d0 ESKALACJA vs DEESKALACJA   14 10.0    9.476  -12.322      21.798   [-1.8; 46.4]     0.697           0.114        0.340
+     zgodne        TLT_post_3h ESKALACJA vs DEESKALACJA   10  6.0   15.818   35.188     -19.370  [-60.5; 18.7]    -0.475           0.337        0.556
+     zgodne       TLT_post_24h ESKALACJA vs DEESKALACJA   13  9.0    3.110   22.220     -19.111  [-59.0; 19.3]    -0.397           0.357        0.563
+     zgodne             TLT_d0 ESKALACJA vs DEESKALACJA   14  9.0   19.379   40.237     -20.858  [-90.6; 50.9]    -0.248           0.546        0.746
+
+Nadwyżki z market_long (tylko posty słownikowe; zwrot minus okna kontrolne):
+    wariant                  miara                 kontrast  n_A  n_B  śr_A_pb  śr_B_pb  różnica_pb        CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy ML_SP500_excess_ret_1d ESKALACJA vs DEESKALACJA   26 10.0    8.065  -72.165      80.230   [5.1; 157.1]     0.741           0.053        0.257
+MG_pierwszy ML_SP500_excess_ret_1h ESKALACJA vs DEESKALACJA   26 10.0   -7.175    3.357     -10.532   [-31.3; 9.0]    -0.323           0.494        0.752
+MG_pierwszy ML_SP500_excess_ret_3d ESKALACJA vs DEESKALACJA   26 10.0   49.432 -108.558     157.990  [22.5; 299.2]     0.877           0.011        0.141
+MG_pierwszy ML_SP500_excess_ret_3h ESKALACJA vs DEESKALACJA   24  9.0    2.385  -44.377      46.763  [-0.1; 100.9]     0.745           0.031        0.216
+MG_pierwszy ML_SP500_excess_ret_5m ESKALACJA vs DEESKALACJA   26 10.0   -3.825   -0.744      -3.082    [-9.9; 2.3]    -0.267           0.627        0.816
+MG_pierwszy ML_SP500_excess_ret_7d ESKALACJA vs DEESKALACJA   26 10.0   50.919 -210.268     261.187  [67.2; 457.0]     1.056           0.002        0.099
+PK_pierwszy ML_SP500_excess_ret_1d ESKALACJA vs DEESKALACJA   14 16.0   22.706  -33.993      56.699 [-32.0; 143.0]     0.457           0.220        0.543
+PK_pierwszy ML_SP500_excess_ret_1h ESKALACJA vs DEESKALACJA   14 16.0  -19.286    1.667     -20.952   [-52.6; 2.5]    -0.548           0.101        0.455
+PK_pierwszy ML_SP500_excess_ret_3d ESKALACJA vs DEESKALACJA   14 16.0   47.737  -49.910      97.648 [-11.8; 215.4]     0.598           0.115        0.465
+PK_pierwszy ML_SP500_excess_ret_3h ESKALACJA vs DEESKALACJA   13 15.0    3.397  -28.165      31.562   [-7.8; 72.6]     0.553           0.164        0.505
+PK_pierwszy ML_SP500_excess_ret_5m ESKALACJA vs DEESKALACJA   14 16.0   -5.524    0.156      -5.681   [-17.9; 2.4]    -0.381           0.350        0.654
+PK_pierwszy ML_SP500_excess_ret_7d ESKALACJA vs DEESKALACJA   14 16.0   29.788 -111.245     141.033 [-15.5; 301.5]     0.603           0.104        0.455
+     zgodne ML_SP500_excess_ret_1d ESKALACJA vs DEESKALACJA   11  9.0   21.094  -82.034     103.129  [-9.5; 215.6]     0.746           0.118        0.341
+     zgodne ML_SP500_excess_ret_1h ESKALACJA vs DEESKALACJA   11  9.0  -20.334    1.061     -21.395   [-61.1; 9.3]    -0.488           0.371        0.574
+     zgodne ML_SP500_excess_ret_3d ESKALACJA vs DEESKALACJA   11  9.0   56.307 -104.393     160.700  [-3.1; 324.9]     0.816           0.075        0.298
+     zgodne ML_SP500_excess_ret_3h ESKALACJA vs DEESKALACJA   10  8.0   18.032  -52.778      70.810  [18.1; 131.5]     1.104           0.022        0.210
+     zgodne ML_SP500_excess_ret_5m ESKALACJA vs DEESKALACJA   11  9.0   -5.896   -0.739      -5.158   [-20.8; 5.3]    -0.305           0.779        0.891
+     zgodne ML_SP500_excess_ret_7d ESKALACJA vs DEESKALACJA   11  9.0    8.806 -211.620     220.426  [-7.9; 456.8]     0.815           0.078        0.298
+
+Wszystkich testów: 594. Nominalnie p_perm<0.05: 99 (oczekiwane fałszywe przy braku efektu: ~30). Po FDR q<0.10: 14
+    wariant                  miara                 kontrast  n_A  n_B  śr_A_pb  śr_B_pb  różnica_pb         CI95_pb  d_Cohena  p_permutacyjny  q_FDR(perm)
+MG_pierwszy        S_P_500_post_3h       cla=tak vs cla=nie   51 78.0  -15.719    8.725     -24.444   [-41.0; -7.9]    -0.528           0.003        0.099
+MG_pierwszy        S_P_500_post_6h   DEESKALACJA vs nie_cla   11 81.0  -59.141   10.289     -69.430 [-137.9; -17.0]    -0.869           0.001        0.044
+MG_pierwszy           S_P_500_d0_4 ESKALACJA vs DEESKALACJA   35 11.0   39.884 -184.085     223.968   [24.6; 428.3]     0.848           0.003        0.099
+MG_pierwszy         Nasdaq_post_3h   DEESKALACJA vs nie_cla   11 78.0  -46.005   14.259     -60.264 [-111.7; -19.2]    -0.908           0.001        0.044
+MG_pierwszy         Nasdaq_post_3h       cla=tak vs cla=nie   51 78.0  -27.209   14.259     -41.468  [-64.1; -19.8]    -0.671           0.000        0.044
+MG_pierwszy ML_SP500_excess_ret_7d ESKALACJA vs DEESKALACJA   26 10.0   50.919 -210.268     261.187   [67.2; 457.0]     1.056           0.002        0.099
+     zgodne        S_P_500_post_6h   DEESKALACJA vs nie_cla   10 73.0  -63.005    8.185     -71.190 [-146.2; -14.9]    -0.865           0.002        0.085
+     zgodne             S_P_500_d0   DEESKALACJA vs nie_cla   10 93.0  -92.124   10.738    -102.861  [-200.8; -9.6]    -0.816           0.003        0.085
+     zgodne           S_P_500_d0_4   DEESKALACJA vs nie_cla    9 93.0 -229.461   20.754    -250.215 [-468.5; -22.0]    -0.873           0.003        0.085
+     zgodne   S_P_500_post_24h_abs     ESKALACJA vs nie_cla   13 83.0  120.557   51.447      69.110   [25.4; 113.0]     1.020           0.000        0.066
+     zgodne   S_P_500_post_24h_abs       cla=tak vs cla=nie   27 83.0   99.790   51.447      48.343    [19.1; 79.1]     0.737           0.001        0.085
+     zgodne         Nasdaq_post_3h   DEESKALACJA vs nie_cla   10 70.0  -45.607   12.067     -57.674 [-113.3; -13.1]    -0.851           0.003        0.085
+     zgodne         Nasdaq_post_3h       cla=tak vs cla=nie   26 70.0  -33.252   12.067     -45.320  [-78.9; -12.9]    -0.679           0.001        0.085
+     zgodne              Nasdaq_d0   DEESKALACJA vs nie_cla   10 93.0 -111.417   13.392    -124.809 [-240.6; -14.9]    -0.801           0.004        0.099
+
+Regresje OLS (SE klastrowane po dniu sesji), baza = posty nie o cłach, kontrola zwrotu przed postem:
+    wariant                y     zmienna      beta jednostka  SE_klastr      p     R2   n
+MG_pierwszy  S_P_500_post_1h   ESKALACJA   -1.3368        pb     4.3612 0.7599 0.0215 119
+MG_pierwszy  S_P_500_post_1h DEESKALACJA   -0.5267        pb     8.0751 0.9481 0.0215 119
+MG_pierwszy  S_P_500_post_1h   NEUTRALNE   -9.6143        pb     7.7961 0.2204 0.0215 119
+MG_pierwszy  S_P_500_post_3h   ESKALACJA   -9.0282        pb     9.5270 0.3455 0.1439 126
+MG_pierwszy  S_P_500_post_3h DEESKALACJA  -43.8995        pb    27.7405 0.1166 0.1439 126
+MG_pierwszy  S_P_500_post_3h   NEUTRALNE  -49.6630        pb    17.7052 0.0060 0.1439 126
+MG_pierwszy S_P_500_post_24h   ESKALACJA   -6.9476        pb    22.1960 0.7549 0.0491 127
+MG_pierwszy S_P_500_post_24h DEESKALACJA  -70.1780        pb    33.5766 0.0390 0.0491 127
+MG_pierwszy S_P_500_post_24h   NEUTRALNE   -4.3319        pb    37.1995 0.9075 0.0491 127
+MG_pierwszy       S_P_500_d0   ESKALACJA   -4.0328        pb    14.6238 0.7832 0.0567 165
+MG_pierwszy       S_P_500_d0 DEESKALACJA  -78.4656        pb    49.2964 0.1140 0.0567 165
+MG_pierwszy       S_P_500_d0   NEUTRALNE  -30.5611        pb    25.0650 0.2250 0.0567 165
+MG_pierwszy     S_P_500_d0_2   ESKALACJA   16.4548        pb    28.6440 0.5667 0.0318 164
+MG_pierwszy     S_P_500_d0_2 DEESKALACJA  -91.8427        pb    71.7856 0.2031 0.0318 164
+MG_pierwszy     S_P_500_d0_2   NEUTRALNE  -28.6776        pb    53.2384 0.5911 0.0318 164
+MG_pierwszy     S_P_500_d0_z   ESKALACJA   -0.0641         z     0.1603 0.6901 0.0253 165
+MG_pierwszy     S_P_500_d0_z DEESKALACJA   -0.6691         z     0.4790 0.1650 0.0253 165
+MG_pierwszy     S_P_500_d0_z   NEUTRALNE   -0.3266         z     0.3157 0.3030 0.0253 165
+PK_pierwszy  S_P_500_post_1h   ESKALACJA   -2.6086        pb     5.6096 0.6429 0.0063 120
+PK_pierwszy  S_P_500_post_1h DEESKALACJA   -1.2789        pb     5.6417 0.8211 0.0063 120
+PK_pierwszy  S_P_500_post_1h   NEUTRALNE   -1.3837        pb     6.1964 0.8238 0.0063 120
+PK_pierwszy  S_P_500_post_3h   ESKALACJA   -7.8726        pb    14.9811 0.6004 0.0440 127
+PK_pierwszy  S_P_500_post_3h DEESKALACJA  -23.6277        pb    20.0852 0.2421 0.0440 127
+PK_pierwszy  S_P_500_post_3h   NEUTRALNE  -18.0332        pb    14.7097 0.2230 0.0440 127
+PK_pierwszy S_P_500_post_24h   ESKALACJA   22.3305        pb    33.9640 0.5123 0.0572 128
+PK_pierwszy S_P_500_post_24h DEESKALACJA  -51.3878        pb    26.1894 0.0524 0.0572 128
+PK_pierwszy S_P_500_post_24h   NEUTRALNE   10.0945        pb    24.9687 0.6868 0.0572 128
+PK_pierwszy       S_P_500_d0   ESKALACJA    5.7110        pb    21.4047 0.7900 0.0202 167
+PK_pierwszy       S_P_500_d0 DEESKALACJA  -30.6973        pb    36.0071 0.3955 0.0202 167
+PK_pierwszy       S_P_500_d0   NEUTRALNE  -13.5725        pb    13.6772 0.3229 0.0202 167
+PK_pierwszy     S_P_500_d0_2   ESKALACJA   42.9340        pb    41.2434 0.2999 0.0178 166
+PK_pierwszy     S_P_500_d0_2 DEESKALACJA  -18.0881        pb    48.5098 0.7099 0.0178 166
+PK_pierwszy     S_P_500_d0_2   NEUTRALNE  -23.4724        pb    36.5954 0.5224 0.0178 166
+PK_pierwszy     S_P_500_d0_z   ESKALACJA   -0.0260         z     0.2262 0.9087 0.0021 167
+PK_pierwszy     S_P_500_d0_z DEESKALACJA   -0.1265         z     0.3741 0.7357 0.0021 167
+PK_pierwszy     S_P_500_d0_z   NEUTRALNE   -0.0904         z     0.1887 0.6328 0.0021 167
+     zgodne  S_P_500_post_1h   ESKALACJA   -2.4285        pb     6.8186 0.7227 0.0515  89
+     zgodne  S_P_500_post_1h DEESKALACJA    1.3330        pb     8.9623 0.8821 0.0515  89
+     zgodne  S_P_500_post_1h   NEUTRALNE  -24.1145        pb    19.7219 0.2252 0.0515  89
+     zgodne  S_P_500_post_3h   ESKALACJA   -0.7906        pb    16.8893 0.9628 0.1966  95
+     zgodne  S_P_500_post_3h DEESKALACJA  -44.6985        pb    30.3554 0.1447 0.1966  95
+     zgodne  S_P_500_post_3h   NEUTRALNE  -82.7657        pb     7.3830 0.0000 0.1966  95
+     zgodne S_P_500_post_24h   ESKALACJA   13.2881        pb    40.0238 0.7407 0.1013  95
+     zgodne S_P_500_post_24h DEESKALACJA  -70.1869        pb    35.9856 0.0545 0.1013  95
+     zgodne S_P_500_post_24h   NEUTRALNE    4.8462        pb    68.6680 0.9439 0.1013  95
+     zgodne       S_P_500_d0   ESKALACJA    3.3583        pb    27.8533 0.9043 0.1005 123
+     zgodne       S_P_500_d0 DEESKALACJA -103.0317        pb    54.8135 0.0631 0.1005 123
+     zgodne       S_P_500_d0   NEUTRALNE  -78.8848        pb    41.0711 0.0576 0.1005 123
+     zgodne     S_P_500_d0_2   ESKALACJA   29.0429        pb    49.6654 0.5600 0.0822 122
+     zgodne     S_P_500_d0_2 DEESKALACJA -128.0248        pb    80.9344 0.1169 0.0822 122
+     zgodne     S_P_500_d0_2   NEUTRALNE -127.4159        pb    74.9356 0.0922 0.0822 122
+     zgodne     S_P_500_d0_z   ESKALACJA   -0.0802         z     0.2975 0.7881 0.0660 123
+     zgodne     S_P_500_d0_z DEESKALACJA   -0.9508         z     0.5429 0.0830 0.0660 123
+     zgodne     S_P_500_d0_z   NEUTRALNE   -0.9076         z     0.6359 0.1566 0.0660 123
+
+====================================================================================================
+5a. ODPORNOŚĆ: jeden dzień sesji = jedna obserwacja (posty z tego samego dnia dzielą zwrot)
+====================================================================================================
+[MG_pierwszy] postów o cłach: 64, unikalnych dni sesji z postem o cłach: 49
+   S_P_500_d0         dni ESK= 30 śr=    7.7 pb | dni DEESK=  9 śr=  -51.2 pb | różnica=   58.9 pb, p_perm=0.145, p_MW=0.433
+   S_P_500_d0_2       dni ESK= 30 śr=   29.8 pb | dni DEESK=  8 śr= -109.3 pb | różnica=  139.1 pb, p_perm=0.027, p_MW=0.026
+   S_P_500_d0_4       dni ESK= 30 śr=   32.3 pb | dni DEESK=  8 śr= -240.2 pb | różnica=  272.5 pb, p_perm=0.001, p_MW=0.013
+   S_P_500_post_24h   dni ESK= 27 śr=    9.7 pb | dni DEESK=  8 śr=  -40.8 pb | różnica=   50.6 pb, p_perm=0.257, p_MW=0.221
+[zgodne] postów o cłach: 30, unikalnych dni sesji z postem o cłach: 24
+   S_P_500_d0         dni ESK= 13 śr=   13.2 pb | dni DEESK=  8 śr=  -77.8 pb | różnica=   90.9 pb, p_perm=0.142, p_MW=0.268
+   S_P_500_d0_2       dni ESK= 13 śr=   22.9 pb | dni DEESK=  7 śr= -134.3 pb | różnica=  157.2 pb, p_perm=0.078, p_MW=0.056
+   S_P_500_d0_4       dni ESK= 13 śr=   32.1 pb | dni DEESK=  7 śr= -253.3 pb | różnica=  285.4 pb, p_perm=0.025, p_MW=0.056
+   S_P_500_post_24h   dni ESK= 12 śr=   33.4 pb | dni DEESK=  8 śr=  -55.0 pb | różnica=   88.4 pb, p_perm=0.144, p_MW=0.135
+
+Posty DEESKALACJA (MG_pierwszy) - które dni napędzają wynik:
+   2018-09-24 20:44  sesja 2018-09-25  d0=  -13.0 pb  24h=  -17.5 pb  US-Korea Free Trade Agreement Signing Ceremony! https://t.co/yLFkAZgagG
+   2018-10-01 10:30  sesja 2018-10-01  d0=   36.0 pb  24h=  -43.1 pb  Late last night, our deadline, we reached a wonderful new Trade Deal with Canada, to be ad
+   2018-10-02 15:02  sesja 2018-10-02  d0=   -4.4 pb  24h=   22.8 pb  Great reviews on the new USMCA. Thank you! Mexico and Canada will be wonderful partners in
+   2018-12-03 04:00  sesja 2018-12-03  d0=  118.3 pb  24h=  -90.6 pb  China has agreed to reduce and remove tariffs on cars coming into China from the U.S. Curr
+   2018-12-04 14:30  sesja 2018-12-04  d0= -324.2 pb  24h= -206.0 pb  The negotiations with China have already started. Unless extended, they will end 90 days f
+   2018-12-04 14:55  sesja 2018-12-04  d0= -324.2 pb  24h= -206.0 pb  ......on seeing whether or not a REAL deal with China is actually possible. If it is, we w
+   2018-12-14 16:35  sesja 2018-12-14  d0= -187.1 pb  24h=  -22.3 pb  China just announced that their economy is growing much slower than anticipated because of
+   2019-03-22 17:22  sesja 2019-03-22  d0= -194.1 pb  24h=   -1.8 pb  It was announced today by the U.S. Treasury that additional large scale Sanctions would be
+   2019-06-29 09:32  sesja 2019-07-01  d0=   84.2 pb  24h=    nan pb  I am in South Korea now. President Moon and I have “toasted” our new Trade Deal, a far bet
+   2019-09-02 09:58  sesja 2019-09-02  d0=  -81.2 pb  24h=  -90.7 pb  “Brazil will allow more American Ethanol to enter the country without Tariffs, a decision 
+   2019-09-03 02:37  sesja 2019-09-03  d0=   25.0 pb  24h=   25.4 pb  “Brazil will allow more American Ethanol to enter the country without Tariffs, a decision 
+   2019-12-31 14:16  sesja 2019-12-31  d0=   23.3 pb  24h=   31.9 pb  I will be signing our very large and comprehensive Phase One Trade Deal with China on Janu
+Bez 2 najbardziej skrajnych obserwacji w każdej grupie, S_P_500_d0: ESK=7.7 pb, DEESK=-19.3 pb, p_perm=0.346
+Bez 2 najbardziej skrajnych obserwacji w każdej grupie, S_P_500_post_24h: ESK=12.2 pb, DEESK=-20.6 pb, p_perm=0.311
+
+====================================================================================================
+5b. OBSZAR: Chiny vs reszta (cla=tak)
+====================================================================================================
+kierunek  DEESKALACJA  ESKALACJA  NEUTRALNE  brak_kierunku
+obszar                                                    
+Chiny               5         11          7              0
+Indie               0          1          0              0
+Meksyk              2          3          0              0
+UE                  0          7          0              0
+brak                5         13          8              2
+             miara    obszar  n_ESK  n_DEESK  ESK_pb  DEESK_pb  p_perm
+        S_P_500_d0     Chiny     11        5  -1.587  -138.762   0.101
+        S_P_500_d0 nie-Chiny     24        7  10.434   -21.099   0.402
+  S_P_500_post_24h     Chiny      9        5  29.902   -98.618   0.075
+  S_P_500_post_24h nie-Chiny     23        6   6.620   -17.456   0.568
+      Hang_Seng_d0     Chiny     11        5 -32.929    18.856   0.484
+      Hang_Seng_d0 nie-Chiny     22        4  19.609   -97.070   0.061
+Hang_Seng_post_24h     Chiny      9        3  12.257   -26.325   0.675
+Hang_Seng_post_24h nie-Chiny     19        4 -16.200   -31.265   0.804
+
+====================================================================================================
+6. MOC STATYSTYCZNA (minimalny wykrywalny efekt, alfa=0.05, moc=0.8)
+====================================================================================================
+1h       sd=  20.4 pb | ESK(n=35) vs DEESK(n=12): MDE=  19.1 pb | ESK vs nie_cla(n=103): MDE=  11.2 pb
+         n na grupę potrzebne do wykrycia 5 pb: 262
+24h      sd=  87.3 pb | ESK(n=35) vs DEESK(n=12): MDE=  81.8 pb | ESK vs nie_cla(n=103): MDE=  47.8 pb
+         n na grupę potrzebne do wykrycia 25 pb: 192
+dzień 0  sd=  94.1 pb | ESK(n=35) vs DEESK(n=12): MDE=  88.1 pb | ESK vs nie_cla(n=103): MDE=  51.6 pb
+         n na grupę potrzebne do wykrycia 25 pb: 223
+
+====================================================================================================
+7. INDEKS DZIENNY NA CAŁYM KORPUSIE (klasyfikator TF-IDF+LR uczony na gold 'MG_pierwszy')
+====================================================================================================
+Walidacja krzyżowa 5-fold, cla:
+              precision    recall  f1-score   support
+
+         nie      0.922     0.913     0.917       103
+         tak      0.857     0.871     0.864        62
+
+    accuracy                          0.897       165
+   macro avg      0.889     0.892     0.891       165
+weighted avg      0.897     0.897     0.897       165
+
+Walidacja krzyżowa, kierunek (wśród cla=tak):
+              precision    recall  f1-score   support
+
+ DEESKALACJA      1.000     0.083     0.154        12
+   ESKALACJA      0.607     0.971     0.747        35
+   NEUTRALNE      0.800     0.267     0.400        15
+
+    accuracy                          0.629        62
+   macro avg      0.802     0.440     0.434        62
+weighted avg      0.730     0.629     0.548        62
+
+macro-F1 kierunku = 0.434 (trafność klasy dominującej = 0.565)
+Posty w korpusie 2018-2019: 7890, przewidziane cla=tak: 729, ESK: 594, DEESK: 35
+Korelacje opóźnione corr(x_t, y_{t+k}); k>0 = tweety PRZED rynkiem, k<0 = rynek PRZED tweetami:
+    x           y  lag_k   n  pearson_r  p_pearson  spearman_rho  p_spearman  q_FDR
+e_net S_P_500_ret     -5 513     -0.029      0.506        -0.015       0.734  0.928
+e_net S_P_500_ret     -4 513     -0.021      0.634         0.010       0.827  0.928
+e_net S_P_500_ret     -3 514      0.005      0.906         0.004       0.935  0.961
+e_net S_P_500_ret     -2 515      0.028      0.519         0.027       0.543  0.928
+e_net S_P_500_ret     -1 516      0.005      0.914         0.004       0.922  0.961
+e_net S_P_500_ret      0 517     -0.020      0.653         0.039       0.373  0.928
+e_net S_P_500_ret      1 517     -0.027      0.541        -0.026       0.555  0.928
+e_net S_P_500_ret      2 516      0.082      0.064         0.059       0.177  0.885
+e_net S_P_500_ret      3 515      0.096      0.030         0.078       0.077  0.885
+e_net S_P_500_ret      4 514      0.027      0.544         0.020       0.650  0.928
+e_net S_P_500_ret      5 513     -0.032      0.469         0.003       0.944  0.928
+
+Najsilniejsze zależności (|r|) we wszystkich kombinacjach:
+         x              y  lag_k   n  pearson_r  p_pearson  spearman_rho  p_spearman  q_FDR
+     e_net    S_P_500_ret      3 515      0.096      0.030         0.078       0.077  0.885
+     e_net  Hang_Seng_ret      2 492      0.092      0.042         0.086       0.056  0.885
+tw_topic_n  Hang_Seng_ret     -1 492     -0.085      0.061        -0.034       0.447  0.885
+     e_esk    S_P_500_ret      3 515      0.083      0.061         0.047       0.287  0.885
+     e_net    S_P_500_ret      2 516      0.082      0.064         0.059       0.177  0.885
+     e_esk    S_P_500_ret      2 516      0.078      0.075         0.059       0.180  0.885
+tw_topic_n S_P_500_absret      4 514     -0.078      0.077        -0.107       0.015  0.885
+     e_esk S_P_500_absret      3 515     -0.076      0.086        -0.057       0.194  0.885
+     e_net S_P_500_absret      3 515     -0.074      0.092        -0.041       0.353  0.885
+tw_topic_n  Hang_Seng_ret      5 489     -0.074      0.103        -0.034       0.454  0.885
+
+Przyczynowość Grangera (F-test):
+  przyczyna         skutek  lagi      F      p   n
+      e_net    S_P_500_ret     1 0.0662 0.7970 516
+S_P_500_ret          e_net     1 0.0652 0.7985 516
+      e_esk S_P_500_absret     1 0.0535 0.8171 516
+S_P_500_ret          e_esk     1 0.1316 0.7170 516
+ tw_topic_n    S_P_500_ret     1 0.5620 0.4538 516
+S_P_500_ret     tw_topic_n     1 0.1013 0.7504 516
+      e_net    S_P_500_ret     2 1.0716 0.3432 515
+S_P_500_ret          e_net     2 0.1743 0.8401 515
+      e_esk S_P_500_absret     2 0.3246 0.7230 515
+S_P_500_ret          e_esk     2 0.4256 0.6536 515
+ tw_topic_n    S_P_500_ret     2 1.2415 0.2898 515
+S_P_500_ret     tw_topic_n     2 1.0540 0.3493 515
+      e_net    S_P_500_ret     5 1.4527 0.2039 512
+S_P_500_ret          e_net     5 0.6041 0.6968 512
+      e_esk S_P_500_absret     5 1.0639 0.3795 512
+S_P_500_ret          e_esk     5 0.3743 0.8663 512
+ tw_topic_n    S_P_500_ret     5 0.8030 0.5478 512
+S_P_500_ret     tw_topic_n     5 0.7651 0.5753 512
+
+Tygodniowo: corr(netto eskalacja_tydz, zwrot S&P ten sam tydzień) rho=0.052 p=0.5950; następny tydzień rho=0.015 p=0.8789  (n=105)
+Miesięcznie: corr(eskalacja, zwrot S&P) rho=0.061 p=0.7775 (n=24)

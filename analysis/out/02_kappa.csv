@@ -1,0 +1,16 @@
+﻿zbiór;etykieta;n;zgodność_%;kappa_Cohena;kappa_95CI;alfa_Krippendorffa;AC1_Gweta;PABAK;interpretacja (Landis-Koch)
+pilotaż;cla (tak/nie);50;88.0;0.754;"[0.55; 0.92]";0.756;0.766;0.76;znaczna
+pilotaż;kierunek | obaj cla=tak;18;61.1;0.357;"[0.00; 0.68]";0.355;0.45;;słaba
+pilotaż;etykieta 4-klasowa (nie/ESK/DEESK/NEUTR);50;74.0;0.565;"[0.38; 0.74]";0.566;0.676;;umiarkowana
+pilotaż;ESKALACJA vs reszta (binarnie, wszystkie posty);50;84.0;0.538;"[0.23; 0.79]";0.538;0.756;0.68;umiarkowana
+pilotaż;obszar | obaj cla=tak;18;94.4;0.912;"[0.70; 1.00]";0.914;0.934;;prawie pełna
+główna;cla (tak/nie);117;91.5;0.82;"[0.71; 0.92]";0.82;0.838;0.829;prawie pełna
+główna;kierunek | obaj cla=tak;39;48.7;0.267;"[0.05; 0.47]";0.236;0.233;;słaba
+główna;etykieta 4-klasowa (nie/ESK/DEESK/NEUTR);115;74.8;0.558;"[0.45; 0.67]";0.556;0.689;;umiarkowana
+główna;ESKALACJA vs reszta (binarnie, wszystkie posty);117;84.6;0.363;"[0.12; 0.57]";0.351;0.799;0.692;słaba
+główna;obszar | obaj cla=tak;40;87.5;0.812;"[0.64; 0.96]";0.814;0.84;;prawie pełna
+RAZEM;cla (tak/nie);167;90.4;0.8;"[0.70; 0.89]";0.8;0.816;0.808;znaczna
+RAZEM;kierunek | obaj cla=tak;57;52.6;0.303;"[0.12; 0.47]";0.277;0.299;;słaba
+RAZEM;etykieta 4-klasowa (nie/ESK/DEESK/NEUTR);165;74.5;0.562;"[0.47; 0.66]";0.559;0.685;;umiarkowana
+RAZEM;ESKALACJA vs reszta (binarnie, wszystkie posty);167;84.4;0.435;"[0.26; 0.61]";0.427;0.786;0.689;umiarkowana
+RAZEM;obszar | obaj cla=tak;58;89.7;0.845;"[0.72; 0.95]";0.846;0.876;;prawie pełna

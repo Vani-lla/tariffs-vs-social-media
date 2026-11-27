@@ -1,0 +1,107 @@
+
+====================================================================================================
+A. SYSTEMATYCZNIE: wszystkie sesje 2018-2019 (n=503)
+====================================================================================================
+Dni z >=1 tweetem Trumpa o cłach: 220 (44% sesji) - za często, by traktować każdy jako zdarzenie.
+Dzień intensywny Trumpa = >= 3 tweetów o cłach (górne 10%): 51 sesji.
+Dni oficjalnych ogłoszeń: 55, wejść w życie: 30 (źródła: {('ann', 'fr'): 19, ('ann', 'gta_announced'): 32, ('ann', 'kronika'): 19, ('imp', 'fr_effective'): 6, ('imp', 'gta_implemented'): 28, ('imp', 'kronika'): 11})
+
+Średnia wielkość ruchu |r| wg typu dnia (pb):
+                     rynek                  typ_dnia   n  śr_|r|_pb  CI_lo  CI_hi  mediana_pb  p_vs_spokojny
+             S&P 500 (SPY)            Spokojny dzień 209      62.13  53.16  71.74       37.83            NaN
+             S&P 500 (SPY) Tylko Trump (intensywnie)  28      60.84  40.54  85.04       42.95           0.92
+             S&P 500 (SPY)          Tylko ogłoszenie  85      78.18  61.49  96.44       56.21           0.03
+             S&P 500 (SPY)        Ogłoszenie + Trump  16      90.06  52.90 135.30       59.71           0.09
+             S&P 500 (SPY)           Wejście w życie  32      62.92  44.23  85.02       51.21           0.95
+Chińskie ETF-y (AR vs SPY)            Spokojny dzień 209      82.35  73.27  91.93       64.81            NaN
+Chińskie ETF-y (AR vs SPY) Tylko Trump (intensywnie)  28      93.19  67.30 123.16       74.28           0.40
+Chińskie ETF-y (AR vs SPY)          Tylko ogłoszenie  85      86.71  71.03 103.40       64.18           0.56
+Chińskie ETF-y (AR vs SPY)        Ogłoszenie + Trump  16      88.51  64.63 110.91       96.38           0.71
+Chińskie ETF-y (AR vs SPY)           Wejście w życie  32      91.33  71.10 113.30       80.59           0.45
+
+Regresja |r_t| (pb) = a + b*zdarzenia + c*|r_t-1| ; błędy Neweya-Westa (5 lagów):
+                     rynek                         zmienna  beta_pb     SE   CI_lo  CI_hi     p
+             S&P 500 (SPY)         Intensywny dzień Trumpa   -1.487 10.212 -21.502 18.528 0.884
+             S&P 500 (SPY)            Ogłoszenie (dzień t)   20.726 12.323  -3.428 44.880 0.093
+             S&P 500 (SPY)          Ogłoszenie (dzień t+1)   -0.515 10.054 -20.221 19.191 0.959
+             S&P 500 (SPY)             Wejście w życie (t)    9.438 11.057 -12.233 31.109 0.394
+             S&P 500 (SPY)           Wejście w życie (t+1)   -0.861 13.073 -26.484 24.763 0.948
+             S&P 500 (SPY) log(1+liczba tweetów) [wariant]    3.133  4.949  -6.566 12.833 0.527
+Chińskie ETF-y (AR vs SPY)         Intensywny dzień Trumpa    6.300 10.104 -13.504 26.105 0.533
+Chińskie ETF-y (AR vs SPY)            Ogłoszenie (dzień t)    2.591  9.497 -16.023 21.205 0.785
+Chińskie ETF-y (AR vs SPY)          Ogłoszenie (dzień t+1)   -0.004 10.660 -20.898 20.889 1.000
+Chińskie ETF-y (AR vs SPY)             Wejście w życie (t)    5.916 16.093 -25.625 37.458 0.713
+Chińskie ETF-y (AR vs SPY)           Wejście w życie (t+1)    4.602 11.709 -18.347 27.551 0.694
+Chińskie ETF-y (AR vs SPY) log(1+liczba tweetów) [wariant]    3.132  4.401  -5.494 11.758 0.477
+
+====================================================================================================
+B. KRONIKA KLUCZOWYCH EPIZODÓW: sygnał Trumpa vs ogłoszenie vs wejście w życie (okno 2 sesji)
+====================================================================================================
+ id                                      opis    etap      sesja  pierwsza_info  SPY_ret_2d  CHN_ALL_ar_2d
+E01             Stal i aluminium (sekcja 232)   trump 2018-03-01           True       -95.0          147.0
+E01             Stal i aluminium (sekcja 232)   oficj 2018-03-08          False       221.0           29.0
+E01             Stal i aluminium (sekcja 232) wejscie 2018-03-23          False        54.0           37.0
+E02                 Memorandum 301 wobec Chin   oficj 2018-03-22           True      -469.0         -196.0
+E03           Lista 301: 50 mld USD (projekt)   trump 2018-04-04           True       185.0         -138.0
+E03           Lista 301: 50 mld USD (projekt)   oficj 2018-04-04           True       185.0         -138.0
+E03           Lista 301: 50 mld USD (projekt) wejscie 2018-07-06          False       174.0          180.0
+E04         Groźba ceł na kolejne 100 mld USD   trump 2018-04-06           True      -176.0           68.0
+E05      Lista 34 mld USD: decyzja ostateczna   oficj 2018-06-15           True       -33.0         -122.0
+E05      Lista 34 mld USD: decyzja ostateczna wejscie 2018-07-06          False       174.0          180.0
+E06               Lista 200 mld USD (projekt)   oficj 2018-07-11           True        17.0           24.0
+E07                 Lista 16 mld USD: decyzja   oficj 2018-08-08           True       -18.0           15.0
+E07                 Lista 16 mld USD: decyzja wejscie 2018-08-23          False        47.0          -81.0
+E08          Lista 200 mld USD: decyzja (10%)   trump 2018-09-17           True         1.0           22.0
+E08          Lista 200 mld USD: decyzja (10%)   oficj 2018-09-18          False        65.0          317.0
+E08          Lista 200 mld USD: decyzja (10%) wejscie 2018-09-24          False       -43.0          -64.0
+E09                 Rozejm G20 w Buenos Aires   trump 2018-12-03           True      -198.0          253.0
+E09                 Rozejm G20 w Buenos Aires   oficj 2018-12-03           True      -198.0          253.0
+E10             Odroczenie podwyżki z 1 marca   trump 2019-02-25           True         6.0          190.0
+E10             Odroczenie podwyżki z 1 marca   oficj 2019-03-05          False       -74.0          202.0
+E11        Podwyżka 10% -> 25% na 200 mld USD   trump 2019-05-06           True      -210.0         -450.0
+E11        Podwyżka 10% -> 25% na 200 mld USD   oficj 2019-05-09          False        20.0          -67.0
+E11        Podwyżka 10% -> 25% na 200 mld USD wejscie 2019-05-10          False      -204.0         -127.0
+E12            Lista 4 (300 mld USD): projekt   oficj 2019-05-14           True       148.0          137.0
+E13          10% na 300 mld USD od 1 września   trump 2019-08-01           True      -163.0         -225.0
+E13          10% na 300 mld USD od 1 września   oficj 2019-08-20          False         4.0           46.0
+E13          10% na 300 mld USD od 1 września wejscie 2019-09-03          False        54.0          119.0
+E14    USTR odracza część listy do 15 grudnia   oficj 2019-08-13           True      -146.0          146.0
+E15                Podwyżki 25->30% i 10->15%   trump 2019-08-26           True        71.0           79.0
+E15                Podwyżki 25->30% i 10->15%   oficj 2019-08-30          False       -63.0           77.0
+E16      Odroczenie podwyżki z 1 października   trump 2019-09-12           True        28.0           98.0
+E17              Faza 1: porozumienie wstępne   trump 2019-10-11           True        92.0           31.0
+E18 Faza 1: umowa, odwołanie ceł z 15 grudnia   trump 2019-12-12           True        92.0           17.0
+E18 Faza 1: umowa, odwołanie ceł z 15 grudnia   oficj 2019-12-13          False        74.0           37.0
+ C1    Chiny: odwet na 50 mld USD (zapowiedź)   oficj 2018-04-04           True       185.0         -138.0
+ C1    Chiny: odwet na 50 mld USD (zapowiedź) wejscie 2018-07-06          False       174.0          180.0
+ C2                Chiny: odwet na 60 mld USD   oficj 2018-09-18           True        65.0          317.0
+ C2                Chiny: odwet na 60 mld USD wejscie 2018-09-24          False       -43.0          -64.0
+ C3            Chiny: podwyżka ceł odwetowych   oficj 2019-05-13           True      -164.0          -34.0
+ C3            Chiny: podwyżka ceł odwetowych wejscie 2019-06-03          False       189.0         -144.0
+ C4                Chiny: odwet na 75 mld USD   oficj 2019-08-23           True      -150.0           79.0
+ C4                Chiny: odwet na 75 mld USD wejscie 2019-09-03          False        54.0          119.0
+
+Podsumowanie etapów (okno 2 sesji; 'ruch w oczekiwanym kierunku' > 0 = eskalacja->spadek / deeskalacja->wzrost):
+                     rynek                                 grupa  n  ruch_w_oczek_kier_pb   CI_lo  CI_hi  p_kier(perm vs losowe dni)  trafny_kierunek_%  śr_|ruch|_pb  |ruch|_CI_lo  |ruch|_CI_hi  p_|ruch|(perm vs losowe dni)  baza_|ruch|_pb
+             S&P 500 (SPY)                         Sygnał Trumpa 12                 33.96  -36.70 101.52                        0.37              66.67        109.73         67.99        149.08                          0.63           96.89
+             S&P 500 (SPY)                  Oficjalne ogłoszenie 17                 -6.22  -77.64  76.68                        0.85              41.18        120.58         73.41        181.12                          0.27           96.89
+             S&P 500 (SPY)                       Wejście w życie  7                -38.80 -125.96  57.64                        0.42              28.57        109.36         64.70        163.88                          0.71           96.89
+             S&P 500 (SPY)  Pierwsza informacja (dowolne źródło) 21                 41.25  -23.99 106.73                        0.15              61.90        120.34         79.72        168.22                          0.23           96.89
+             S&P 500 (SPY) Potwierdzenie (ogłoszenie po sygnale)  7                -35.19 -108.73  26.63                        0.47              28.57         74.48         33.49        127.97                          0.50           96.89
+             S&P 500 (SPY)              Ogłoszenie jako pierwsze 11                  6.89  -94.63 125.08                        0.86              45.45        144.85         82.65        225.49                          0.07           96.89
+             S&P 500 (SPY)                   Trump jako pierwszy 12                 33.96  -42.28  99.70                        0.36              66.67        109.73         69.13        150.72                          0.63           96.89
+Chińskie ETF-y (AR vs SPY)                         Sygnał Trumpa 12                 90.44    1.45 184.74                        0.05              66.67        143.18         82.52        215.41                          0.50          122.86
+Chińskie ETF-y (AR vs SPY)                  Oficjalne ogłoszenie 17                 27.72  -41.64  88.63                        0.48              52.94        112.87         73.76        153.81                          0.69          122.86
+Chińskie ETF-y (AR vs SPY)                       Wejście w życie  7                 11.48  -77.68  92.74                        0.85              57.14        107.23         73.93        140.36                          0.69          122.86
+Chińskie ETF-y (AR vs SPY)  Pierwsza informacja (dowolne źródło) 21                 48.22  -19.63 118.89                        0.17              57.14        132.75         91.00        178.39                          0.66          122.86
+Chińskie ETF-y (AR vs SPY) Potwierdzenie (ogłoszenie po sygnale)  7                -23.34 -134.11  76.49                        0.69              42.86        110.80         46.18        190.49                          0.76          122.86
+Chińskie ETF-y (AR vs SPY)              Ogłoszenie jako pierwsze 11                 28.88  -68.33 118.90                        0.56              54.55        132.73         81.81        190.81                          0.76          122.86
+Chińskie ETF-y (AR vs SPY)                   Trump jako pierwszy 12                 90.44    0.08 184.27                        0.05              66.67        143.18         82.30        216.23                          0.50          122.86
+
+Uwaga: w epizodach, gdzie Trump był pierwszy, oficjalne ogłoszenie przychodzi po 4-19 dniach i jest już znane rynkowi.
+Kto pierwszy podał informację:
+kto_pierwszy
+tylko oficjalnie    10
+Trump                7
+tylko Trump          3
+ta sama sesja        2
